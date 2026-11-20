@@ -1,0 +1,7 @@
+# Ignore zip distribution files
+auraring-commercial-package.zip
+*.zip
+
+# OS artifacts
+Thumbs.db
+.DS_Store
