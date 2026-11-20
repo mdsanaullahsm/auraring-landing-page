@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <defs>
+    <!-- Studio Floor Radial Soft Shadow -->
+    <radialGradient id="floorShadow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.45"/>
+      <stop offset="40%" stop-color="#000000" stop-opacity="0.2"/>
+      <stop offset="80%" stop-color="#000000" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Studio Soft Warm Overhead Lighting -->
+    <radialGradient id="studioLighting" cx="40%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.12"/>
+      <stop offset="50%" stop-color="#E8E4DD" stop-opacity="0.03"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Matte Basalt Titanium Multi-Stop Anisotropic Gradient -->
+    <linearGradient id="basaltFinish" x1="15%" y1="10%" x2="85%" y2="90%">
+      <stop offset="0%" stop-color="#3A3937"/>
+      <stop offset="12%" stop-color="#1E1D1B"/>
+      <stop offset="28%" stop-color="#4A4844"/>
+      <stop offset="35%" stop-color="#2B2A28"/>
+      <stop offset="50%" stop-color="#181716"/>
+      <stop offset="68%" stop-color="#3A3835"/>
+      <stop offset="82%" stop-color="#1A1918"/>
+      <stop offset="100%" stop-color="#2D2B29"/>
+    </linearGradient>
+
+    <!-- Specular Chamfer Edge - Micro-Machined Titanium Highlight -->
+    <linearGradient id="chamferEdge" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4A4845"/>
+      <stop offset="15%" stop-color="#A8A49D"/>
+      <stop offset="22%" stop-color="#FFFFFF"/>
+      <stop offset="30%" stop-color="#6E6A63"/>
+      <stop offset="70%" stop-color="#383633"/>
+      <stop offset="85%" stop-color="#D5D0C7"/>
+      <stop offset="92%" stop-color="#8C877E"/>
+      <stop offset="100%" stop-color="#3E3C38"/>
+    </linearGradient>
+
+    <!-- Inner Core Medical Resin Dark Shade -->
+    <linearGradient id="innerResin" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#100F0E"/>
+      <stop offset="40%" stop-color="#1C1B19"/>
+      <stop offset="70%" stop-color="#282624"/>
+      <stop offset="100%" stop-color="#0E0D0C"/>
+    </linearGradient>
+
+    <!-- PPG Sensor Lens Glass Refraction -->
+    <radialGradient id="sensorDome" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#34D399" stop-opacity="0.9"/>
+      <stop offset="40%" stop-color="#059669" stop-opacity="0.6"/>
+      <stop offset="80%" stop-color="#064E3B" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#022C22" stop-opacity="0.9"/>
+    </radialGradient>
+
+    <radialGradient id="irSensorDome" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#F87171" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#DC2626" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#450A0A" stop-opacity="0.9"/>
+    </radialGradient>
+
+    <!-- Contact Pin Gold Electroplate -->
+    <linearGradient id="goldPin" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE68A"/>
+      <stop offset="50%" stop-color="#D97706"/>
+      <stop offset="100%" stop-color="#78350F"/>
+    </linearGradient>
+
+    <!-- Natural Ambient Shadow Filter -->
+    <filter id="naturalShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="35" stdDeviation="35" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Studio Floor Contact Shadow (Soft Ellipse) -->
+  <ellipse cx="400" cy="620" rx="280" ry="60" fill="url(#floorShadow)"/>
+  <ellipse cx="400" cy="600" rx="190" ry="25" fill="#000000" opacity="0.35"/>
+
+  <!-- Main Ring Body (Forged Titanium Cylinder) -->
+  <g filter="url(#naturalShadow)">
+    <!-- Outer Cylinder Shell -->
+    <ellipse cx="400" cy="380" rx="260" ry="260" fill="url(#basaltFinish)"/>
+
+    <!-- Micro-Beveled Precision Outer Chamfer Rim -->
+    <ellipse cx="400" cy="380" rx="258" ry="258" fill="none" stroke="url(#chamferEdge)" stroke-width="3" opacity="0.85"/>
+
+    <!-- Inner Core Cavity (Perspective Hole) -->
+    <ellipse cx="400" cy="380" rx="198" ry="198" fill="url(#innerResin)"/>
+
+    <!-- Inner Shadow Ring (Gives True Thickness Depth) -->
+    <ellipse cx="400" cy="380" rx="198" ry="198" fill="none" stroke="#000000" stroke-width="8" opacity="0.6"/>
+    <ellipse cx="400" cy="383" rx="196" ry="196" fill="none" stroke="url(#chamferEdge)" stroke-width="2" opacity="0.7"/>
+  </g>
+
+  <!-- Laser-Etched Hallmark on Titanium Inner Wall -->
+  <g opacity="0.45">
+    <path id="engravePath" d="M 230 360 A 198 198 0 0 1 570 360" fill="none"/>
+    <text font-family="'Plus Jakarta Sans', -apple-system, sans-serif" font-size="11" font-weight="700" fill="#D5D0C7" letter-spacing="4">
+      <textPath href="#engravePath" startOffset="50%" text-anchor="middle">
+        AURARING • TITANIUM GRADE 5 • 50M WATERPROOF • SN-9042
+      </textPath>
+    </text>
+  </g>
+
+  <!-- Physical Sub-Dermal Optical PPG Sensors (Molded in Medical Resin) -->
+  <g>
+    <!-- Sensor Pod 1: Green High-Frequency Arterial PPG -->
+    <g transform="translate(300, 480)">
+      <circle cx="0" cy="0" r="20" fill="#141312" stroke="#3A3835" stroke-width="1.5"/>
+      <circle cx="0" cy="0" r="15" fill="url(#sensorDome)"/>
+      <ellipse cx="-4" cy="-5" rx="5" ry="3" fill="#FFFFFF" opacity="0.65" transform="rotate(-30)"/>
+    </g>
+
+    <!-- Sensor Pod 2: Dual Infrared & Red Peripheral Oxygen SpO2 -->
+    <g transform="translate(400, 525)">
+      <circle cx="0" cy="0" r="22" fill="#141312" stroke="#3A3835" stroke-width="1.5"/>
+      <circle cx="0" cy="0" r="17" fill="url(#irSensorDome)"/>
+      <ellipse cx="-5" cy="-5" rx="6" ry="3.5" fill="#FFFFFF" opacity="0.6" transform="rotate(-30)"/>
+    </g>
+
+    <!-- Sensor Pod 3: Skin Temperature Thermistor & Gold Charging Node -->
+    <g transform="translate(500, 480)">
+      <circle cx="0" cy="0" r="19" fill="#141312" stroke="#3A3835" stroke-width="1.5"/>
+      <rect x="-6" y="-6" width="12" height="12" rx="3" fill="url(#goldPin)"/>
+      <ellipse cx="-3" cy="-4" rx="4" ry="2" fill="#FFFFFF" opacity="0.7"/>
+    </g>
+  </g>
+
+  <!-- Realistic Studio Light Glint Across Brushed Curved Surface (Top Rim) -->
+  <path d="M 220 240 A 260 260 0 0 1 580 240" fill="none" stroke="#FFFFFF" stroke-width="4.5" stroke-linecap="round" opacity="0.45"/>
+  <path d="M 290 160 A 260 260 0 0 1 510 160" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" opacity="0.75"/>
+
+  <!-- Soft Ambient Studio Fill Highlight -->
+  <circle cx="400" cy="380" r="340" fill="url(#studioLighting)" pointer-events="none"/>
+</svg>

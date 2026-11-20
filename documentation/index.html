@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AuraRing — Official Documentation &amp; Architecture Guide</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    :root {
+      --doc-bg: #121110;
+      --doc-sidebar: #0A0A09;
+      --doc-card: #1A1918;
+      --doc-accent: #C5A880;
+      --doc-action: #1D4ED8;
+      --doc-text: #F8F6F2;
+      --doc-muted: #A8A29E;
+      --doc-border: rgba(255, 255, 255, 0.08);
+      --doc-code: #050505;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Plus Jakarta Sans', sans-serif; background: var(--doc-bg); color: var(--doc-muted); line-height: 1.7; display: flex; }
+    
+    .sidebar { width: 280px; height: 100vh; position: sticky; top: 0; background: var(--doc-sidebar); border-right: 1px solid var(--doc-border); padding: 36px 24px; overflow-y: auto; }
+    .brand { font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 700; color: var(--doc-text); margin-bottom: 32px; letter-spacing: 0.1em; }
+    .nav a { display: block; padding: 10px 14px; border-radius: 6px; color: var(--doc-muted); text-decoration: none; font-size: 14px; font-weight: 500; margin-bottom: 4px; transition: all 0.2s; }
+    .nav a:hover, .nav a.active { background: rgba(197, 168, 128, 0.1); color: var(--doc-accent); }
+
+    .main { flex: 1; padding: 56px 80px; max-width: 960px; }
+    h1 { font-family: 'Cormorant Garamond', serif; font-size: 44px; font-weight: 700; color: var(--doc-text); margin-bottom: 16px; }
+    h2 { font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 700; color: var(--doc-text); margin: 48px 0 20px 0; border-bottom: 1px solid var(--doc-border); padding-bottom: 10px; }
+    p { margin-bottom: 18px; font-size: 15px; }
+    pre { background: var(--doc-code); border: 1px solid var(--doc-border); border-radius: 8px; padding: 20px; overflow-x: auto; margin-bottom: 24px; }
+    code { font-family: 'Fira Code', monospace; font-size: 13px; color: #E5D5BA; }
+    
+    .badge-box { background: rgba(197, 168, 128, 0.08); border-left: 4px solid var(--doc-accent); padding: 20px; border-radius: 0 8px 8px 0; margin-bottom: 28px; }
+    .badge-box strong { color: var(--doc-text); display: block; margin-bottom: 6px; }
+
+    table { width: 100%; border-collapse: collapse; margin-bottom: 24px; font-size: 14px; }
+    th, td { border: 1px solid var(--doc-border); padding: 14px 18px; text-align: left; }
+    th { background: rgba(255,255,255,0.02); color: var(--doc-text); }
+  </style>
+</head>
+<body>
+
+  <aside class="sidebar">
+    <div class="brand">AURA RING <span>DOCS</span></div>
+    <nav class="nav">
+      <a href="#overview" class="active">Overview &amp; Philosophy</a>
+      <a href="#design-system">Design System &amp; Tokens</a>
+      <a href="#customization">Palette Customization</a>
+      <a href="#github-pages">GitHub Pages Live Setup</a>
+      <a href="#checkout">Payment Gateways</a>
+      <a href="#licensing">Licensing &amp; Credits</a>
+    </nav>
+  </aside>
+
+  <main class="main">
+    <section id="overview">
+      <h1>AuraRing Documentation</h1>
+      <p>AuraRing is an editorial Nordic e-commerce template engineered for high-conversion physical hardware, luxury wearables, and direct-to-consumer flagship product launches.</p>
+      
+      <div class="badge-box">
+        <strong><i class="fa-solid fa-gem" style="color:var(--doc-accent);"></i> Pure Modern CSS &amp; Vanilla JavaScript</strong>
+        Zero dependencies, zero build steps. Fully responsive across 4K displays down to compact smartphones.
+      </div>
+    </section>
+
+    <section id="design-system">
+      <h2>The Editorial Design System</h2>
+      <p>The template pairs an editorial serif (<strong>Cormorant Garamond</strong>) with a precision geometric sans (<strong>Plus Jakarta Sans</strong>). Colors are grounded in organic Nordic sandstone and studio obsidian.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Token Name</th>
+            <th>Default Hex</th>
+            <th>Role</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>--canvas-dark</code></td>
+            <td><code>#121110</code></td>
+            <td>Studio Basalt background</td>
+          </tr>
+          <tr>
+            <td><code>--canvas-warm</code></td>
+            <td><code>#F4EFEA</code></td>
+            <td>Warm Sandstone editorial canvas</td>
+          </tr>
+          <tr>
+            <td><code>--accent-action</code></td>
+            <td><code>#1D4ED8</code></td>
+            <td>Royal Ultramarine conversion buttons</td>
+          </tr>
+          <tr>
+            <td><code>--accent-gold</code></td>
+            <td><code>#C5A880</code></td>
+            <td>18K Champagne Gold highlight seals</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="customization">
+      <h2>Customizing Colors in 30 Seconds</h2>
+      <p>Open <code>assets/css/style.css</code>. All primary tokens are located on lines 15–40:</p>
+      <pre><code>:root {
+  --canvas-dark: #121110;        /* Change background canvas */
+  --accent-action: #1D4ED8;      /* Change main CTA button color */
+  --accent-gold: #C5A880;        /* Change luxury accent color */
+}</code></pre>
+    </section>
+
+    <section id="github-pages">
+      <h2>Free One-Click Live Hosting on GitHub Pages</h2>
+      <p>To publish your live demo without paying for hosting:</p>
+      <ol style="margin-left: 20px; margin-bottom: 24px;">
+        <li>Create a repository on GitHub and push these files.</li>
+        <li>Open <strong>Settings &gt; Pages</strong> in your GitHub repository.</li>
+        <li>Select <strong>Branch: main</strong> and click <strong>Save</strong>.</li>
+        <li>Your store is instantaneously live with global HTTPS and CDN caching!</li>
+      </ol>
+    </section>
+
+    <section id="checkout">
+      <h2>Connecting Real Payment Processors</h2>
+      <p>Locate the <code>#editorialDrawer</code> checkout button in <code>index.html</code> (line ~430) and replace the button's <code>onclick</code> handler with your direct Stripe Checkout URL, Shopify Buy Button embed, or Lemon Squeezy checkout link.</p>
+    </section>
+
+    <section id="licensing">
+      <h2>Credits &amp; Licensing</h2>
+      <p>This template is built with 100% commercially cleared assets:</p>
+      <ul>
+        <li>Typography: Cormorant Garamond &amp; Plus Jakarta Sans (Google Fonts, Open Font License)</li>
+        <li>Icons: FontAwesome 6 Free (SIL Open Font License &amp; MIT)</li>
+        <li>Vector Assets: 100% custom-crafted studio SVGs included with commercial rights.</li>
+      </ul>
+      <p>&copy; 2026 AuraRing Studio Template.</p>
+    </section>
+  </main>
+
+</body>
+</html>

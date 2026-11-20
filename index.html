@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AuraRing — The Titanium Biometric Ring | Distraction-Free Health</title>
+  <meta name="description" content="AuraRing is a featherweight Grade-5 titanium wearable delivering clinical sleep architecture, continuous HRV, and temperature tracking with 7-day battery life and zero subscription fees.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/ring-stealth-black.svg">
+
+  <!-- Typography: Cormorant Garamond (Editorial Serif) & Plus Jakarta Sans (Precision Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Core Editorial Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ======================================================================
+       1. TOP NOTICE BAR (UNDERSTATED NORDIC ANNOUNCEMENT)
+       ====================================================================== -->
+  <div class="top-notice-bar">
+    <div class="container top-notice-content">
+      <span class="notice-pill">Launch Reserve Batch</span>
+      <span>Complimentary Precision Sizing Set Included with Every Order</span>
+      <div class="countdown-box">
+        <span>Allocation closes in:</span>
+        <span id="timerHours">11h</span>
+        <span id="timerMins">18m</span>
+        <span id="timerSecs">44s</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       2. EDITORIAL HEADER & NAVIGATION (REFINED LUXURY ISLAND)
+       ====================================================================== -->
+  <header class="editorial-header">
+    <div class="container header-wrapper">
+      <!-- Luxury Emblem & Wordmark (Single Line) -->
+      <a href="#" class="brand-mark" aria-label="AuraRing Home">
+        <img src="assets/images/auraring-logo.svg" alt="AuraRing" class="brand-logo-img">
+      </a>
+
+      <!-- Floating Glass Island Capsule Nav -->
+      <nav class="nav-links-desktop">
+        <a href="#philosophy" class="nav-anchor">Philosophy</a>
+        <a href="#engineering" class="nav-anchor">Engineering</a>
+        <a href="#app-experience" class="nav-anchor">App Experience</a>
+        <a href="#unboxing" class="nav-anchor">What's in the Box</a>
+        <a href="#reviews" class="nav-anchor">Reviews</a>
+        <a href="#faq" class="nav-anchor">FAQ</a>
+      </nav>
+
+      <!-- Balanced Luxury CTA & Compact Attached Cart -->
+      <div class="header-cta-group">
+        <button class="cart-trigger-btn trigger-checkout" aria-label="Open Shopping Bag">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="cart-count-badge">1</span>
+        </button>
+        <a href="#editions" class="btn-reserve-nav trigger-checkout" data-bundle="Single AuraRing Edition" data-price="199">
+          Reserve — $199
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ======================================================================
+       3. HERO SECTION (STUDIO PRODUCT SHOWCASE)
+       ====================================================================== -->
+  <section class="hero-stage" id="heroStage">
+    <div class="container hero-editorial-grid">
+      
+      <!-- Left: Story & Tactile Controls -->
+      <div class="hero-story-column">
+        <div class="hero-kicker">Grade-5 Titanium Biometric Wearable</div>
+        
+        <h1 class="serif-heading hero-headline">
+          The luxury of knowing your body, without the <span class="serif-italic">distraction</span> of a screen.
+        </h1>
+
+        <p class="hero-subhead">
+          Continuous clinical sleep architecture, real-time arterial HRV recovery, and subtle temperature trends. Zero notifications. Zero monthly subscriptions. Just 2.8 grams of pure titanium on your finger.
+        </p>
+
+        <!-- Tactile Material Selector -->
+        <div class="finish-selector-card">
+          <div class="finish-header">
+            <span class="finish-label">Selected Finish</span>
+            <span class="active-finish-name" id="activeFinishDisplay">Matte Basalt Titanium</span>
+          </div>
+
+          <!-- Swatches -->
+          <div class="swatch-tray">
+            <button class="swatch-btn active" data-finish-key="black" data-finish-title="Matte Basalt Titanium" title="Matte Basalt">
+              <div class="swatch-disc disc-basalt"></div>
+              <span class="swatch-title">Basalt</span>
+            </button>
+            <button class="swatch-btn" data-finish-key="silver" data-finish-title="Liquid Platinum Silver" title="Liquid Platinum Silver">
+              <div class="swatch-disc disc-silver"></div>
+              <span class="swatch-title">Platinum</span>
+            </button>
+            <button class="swatch-btn" data-finish-key="rose" data-finish-title="18K Horizon Rose Gold" title="18K Horizon Rose Gold">
+              <div class="swatch-disc disc-rose"></div>
+              <span class="swatch-title">Horizon Rose</span>
+            </button>
+            <button class="swatch-btn" data-finish-key="gold" data-finish-title="Champagne Horizon Gold" title="Champagne Horizon Gold">
+              <div class="swatch-disc disc-gold"></div>
+              <span class="swatch-title">Champagne</span>
+            </button>
+          </div>
+
+          <!-- Sizing Caliper -->
+          <div class="finish-header" style="margin-top: 20px;">
+            <span class="finish-label">Finger Size</span>
+            <span style="font-size: 13px; color: var(--accent-gold);" id="sizeMillimeterText">US 9 (19.0 mm inner diameter)</span>
+          </div>
+          <div class="size-caliper-strip">
+            <button class="caliper-btn" data-size="6">6</button>
+            <button class="caliper-btn" data-size="7">7</button>
+            <button class="caliper-btn" data-size="8">8</button>
+            <button class="caliper-btn active" data-size="9">9</button>
+            <button class="caliper-btn" data-size="10">10</button>
+            <button class="caliper-btn" data-size="11">11</button>
+            <button class="caliper-btn" data-size="12">12</button>
+            <button class="caliper-btn" data-size="13">13</button>
+          </div>
+
+          <div class="size-reassurance">
+            <i class="fa-solid fa-ring"></i>
+            <span>Uncertain of your exact size? Complimentary sizing kit dispatched first.</span>
+          </div>
+
+          <!-- Finger Fit & Swelling Advisory -->
+          <div class="finger-advisory-box">
+            <i class="fa-solid fa-hand-point-up finger-icon"></i>
+            <div>
+              <strong style="color:var(--ink-light); font-size:13px; display:block; margin-bottom:2px;">Recommended Finger: Index or Middle</strong>
+              <p style="font-size:12px; color:var(--ink-body-light); margin:0; line-height:1.5;">
+                Index finger captures the cleanest optical arterial signal. Smooth inner chamfer naturally breathes with 1mm seasonal hand swelling.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pricing Action Row -->
+        <div class="purchase-action-group">
+          <div class="hero-price-tag">
+            <span class="active-price">$199</span>
+            <span class="strikethrough-price">$329</span>
+            <span class="savings-tag">Launch Reserve (Save 40%)</span>
+          </div>
+          <button class="btn-pill btn-action-blue trigger-checkout" data-bundle="Single AuraRing Edition" data-price="199">
+            <i class="fa-solid fa-arrow-right"></i> Reserve Your Ring
+          </button>
+        </div>
+
+        <div style="display: flex; gap: 32px; font-size: 13px; color: var(--ink-body-light); flex-wrap: wrap;">
+          <span><i class="fa-solid fa-shield-halved" style="color:var(--accent-gold); margin-right: 6px;"></i> 2-Year International Warranty</span>
+          <span><i class="fa-solid fa-rotate-left" style="color:var(--accent-gold); margin-right: 6px;"></i> 30-Day Risk-Free Trial</span>
+          <span><i class="fa-solid fa-ban" style="color:var(--accent-gold); margin-right: 6px;"></i> $0 Monthly Subscription</span>
+        </div>
+      </div>
+
+      <!-- Right: Studio Lighting Product Stage -->
+      <div class="studio-product-frame">
+        <div class="product-canvas-holder">
+          <img src="assets/images/ring-stealth-black.svg" alt="AuraRing Titanium Wearable" id="heroMainRing" class="studio-main-ring">
+
+          <!-- Hotspots for Macro Engineering Details -->
+          <button class="hotspot-node hotspot-shell" data-hotspot="shell" title="Titanium Shell">
+            <i class="fa-solid fa-plus"></i>
+          </button>
+          <button class="hotspot-node hotspot-sensor" data-hotspot="sensor" title="PPG Sensors">
+            <i class="fa-solid fa-plus"></i>
+          </button>
+          <button class="hotspot-node hotspot-battery" data-hotspot="battery" title="Micro Battery">
+            <i class="fa-solid fa-plus"></i>
+          </button>
+        </div>
+
+        <!-- Interactive Hotspot Information Popup -->
+        <div id="hotspotInfoBox" style="display: none; background: #1B1A19; border: 1px solid var(--accent-gold); border-radius: 12px; padding: 18px 24px; max-width: 440px; margin-top: 24px; box-shadow: var(--shadow-studio);">
+          <h4 id="hotspotTitle" style="font-family: var(--font-serif); font-size: 18px; color: var(--ink-light); margin-bottom: 6px;"></h4>
+          <p id="hotspotDesc" style="font-size: 13px; color: var(--ink-body-light); margin: 0; line-height: 1.6;"></p>
+        </div>
+
+        <div style="font-size: 12px; color: var(--ink-muted-light); margin-top: 16px; letter-spacing: 0.08em; text-transform: uppercase;">
+          <i class="fa-solid fa-hand-pointer" style="margin-right: 6px;"></i> Click any hotspot pin to inspect engineering
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       4. SCANDINAVIAN PHILOSOPHY (EDITORIAL PULLQUOTE)
+       ====================================================================== -->
+  <section class="editorial-quote-section" id="philosophy">
+    <div class="container quote-container">
+      <blockquote class="editorial-pullquote">
+        “We designed AuraRing to disappear. True intelligence shouldn’t buzz on your wrist or demand your gaze. It should <span class="serif-italic">quietly</span> elevate your life.”
+      </blockquote>
+      <p class="editorial-byline">
+        The average smartwatch pesters you with over 80 interruptions a day. AuraRing replaces the digital anxiety of glowing displays with an intimate, screen-free heirloom that measures your biology with clinical precision while you sleep, work, and live.
+      </p>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       5. ENGINEERING TRILOGY (DARK STUDIO DEEP DIVE)
+       ====================================================================== -->
+  <section class="engineering-section" id="engineering">
+    <div class="container">
+      <div class="section-editorial-intro">
+        <span class="intro-tag">Hardware Engineering</span>
+        <h2 class="serif-heading intro-title">Precision Machining. Zero Compromise.</h2>
+        <p class="intro-desc">
+          By capturing pulse waves directly from the digital arteries of the finger, AuraRing accesses biometric signals 3x stronger and cleaner than the back of the wrist.
+        </p>
+      </div>
+
+      <div class="engineering-trio-grid">
+        <!-- Card 1 -->
+        <div class="engineering-card">
+          <div>
+            <div class="card-number">01</div>
+            <h3 class="card-title">Triple-Wavelength PPG Bio-Array</h3>
+            <p class="card-text">
+              Green, Red, and Infrared optical emitters sample your blood volume pulse at 250Hz. Provides continuous clinical heart rate variability (HRV), resting pulse, and oxygen saturation without disturbing light leaks.
+            </p>
+          </div>
+          <div class="card-asset-frame">
+            <img src="assets/images/sensor-tech.svg" alt="Optical Sensor Architecture">
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="engineering-card">
+          <div>
+            <div class="card-number">02</div>
+            <h3 class="card-title">7-Day Solid Continuous Battery</h3>
+            <p class="card-text">
+              Engineered with custom curved microcells that wrap naturally around your finger. Place AuraRing onto the weighted magnetic dock for 45 minutes to enjoy an entire week of uninterrupted power.
+            </p>
+          </div>
+          <div class="card-asset-frame">
+            <img src="assets/images/charger-dock.svg" alt="Magnetic Charger Dock">
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="engineering-card">
+          <div>
+            <div class="card-number">03</div>
+            <h3 class="card-title">Clinical Sleep Architecture</h3>
+            <p class="card-text">
+              Accurately separates REM, Deep, and Light sleep stages. Tracks respiratory stability, skin temperature micro-fluctuations, and recovery readiness so you wake up knowing exactly how prepared your body is.
+            </p>
+          </div>
+          <div class="card-asset-frame">
+            <img src="assets/images/sleep-chart.svg" alt="Sleep Architecture Chart">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       5B. COMPANION APP SHOWCASE (MOBILE SOFTWARE LUXURY)
+       ====================================================================== -->
+  <section class="app-showcase-section" id="app-experience">
+    <div class="container app-grid">
+      <!-- Left: iPhone Mobile UI Mockup -->
+      <div class="app-mockup-wrapper">
+        <img src="assets/images/app-showcase.svg" alt="Aura Companion App Interface" class="app-phone-img">
+      </div>
+
+      <!-- Right: App Software Story & Features -->
+      <div class="app-narrative-col">
+        <span class="intro-tag">Mobile Software Intelligence</span>
+        <h2 class="serif-heading intro-title">Your Biology, Translated in Absolute Clarity.</h2>
+        <p class="intro-desc" style="margin-bottom: 40px;">
+          Hardware is only half the instrument. The companion Aura app delivers quiet, distraction-free clarity every morning without charts designed to overwhelm.
+        </p>
+
+        <div class="app-feature-list">
+          <div class="app-feature-item">
+            <div class="app-icon-seal"><i class="fa-solid fa-chart-pie"></i></div>
+            <div>
+              <h4 class="app-feature-title">Algorithmic Daily Readiness</h4>
+              <p class="app-feature-desc">Combines your nocturnal HRV variance, basal skin temperature, and sleep recovery to generate a single 0–100 Readiness score. Know when to train and when to recover.</p>
+            </div>
+          </div>
+
+          <div class="app-feature-item">
+            <div class="app-icon-seal"><i class="fa-solid fa-moon"></i></div>
+            <div>
+              <h4 class="app-feature-title">Polysomnography Sleep Stages</h4>
+              <p class="app-feature-desc">Track deep, REM, and light restorative cycles with minute-by-minute hypnogram curves. Detects micro-awakenings that wristwatches miss.</p>
+            </div>
+          </div>
+
+          <div class="app-feature-item">
+            <div class="app-icon-seal"><i class="fa-solid fa-infinity"></i></div>
+            <div>
+              <h4 class="app-feature-title">Lifetime Free Companion Access</h4>
+              <p class="app-feature-desc">Zero paywalls. Every future algorithm update, sleep trend insight, and companion feature is included free forever for iOS and Android.</p>
+            </div>
+          </div>
+
+          <div class="app-feature-item">
+            <div class="app-icon-seal"><i class="fa-solid fa-heart-pulse"></i></div>
+            <div>
+              <h4 class="app-feature-title">Seamless 2-Way Health Sync</h4>
+              <p class="app-feature-desc">Bi-directional integration with Apple Health and Google Health Connect. Your data syncs effortlessly with Strava, Peloton, and your doctor's portal.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       6. COMPARISON MATRIX (RADICAL TRANSPARENCY)
+       ====================================================================== -->
+  <section class="matrix-section" id="comparison">
+    <div class="container">
+      <div class="section-editorial-intro" style="margin-bottom: 60px;">
+        <span class="intro-tag">Radical Transparency</span>
+        <h2 class="serif-heading intro-title">Why Discerning Buyers Choose AuraRing.</h2>
+      </div>
+
+      <table class="matrix-table">
+        <thead>
+          <tr>
+            <th>Feature Matrix</th>
+            <th class="col-highlight">AuraRing Gen 4</th>
+            <th>Leading Subscription Ring</th>
+            <th>Traditional Smartwatches</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Monthly Subscription Fee</strong></td>
+            <td class="col-highlight val-positive">$0 / Free Lifetime Access</td>
+            <td class="val-negative">$5.99 / Month ($72 per year)</td>
+            <td>$0 – $10 / Month</td>
+          </tr>
+          <tr>
+            <td><strong>Continuous Battery Endurance</strong></td>
+            <td class="col-highlight val-positive">7 Full Days Continuous</td>
+            <td>4 to 5 Days</td>
+            <td class="val-negative">18 to 36 Hours</td>
+          </tr>
+          <tr>
+            <td><strong>Display-Free Mindfulness</strong></td>
+            <td class="col-highlight val-positive">100% Screen-Free Zen</td>
+            <td>Screen-Free</td>
+            <td class="val-negative">Constant vibration alerts &amp; blue light</td>
+          </tr>
+          <tr>
+            <td><strong>Weight on Finger / Wrist</strong></td>
+            <td class="col-highlight val-positive">2.8 Grams (Featherweight)</td>
+            <td>4 to 6 Grams</td>
+            <td class="val-negative">38 to 65 Grams</td>
+          </tr>
+          <tr>
+            <td><strong>Water Immersion Rating</strong></td>
+            <td class="col-highlight val-positive">50 Meters (10 ATM Waterproof)</td>
+            <td>30 Meters</td>
+            <td>50 Meters</td>
+          </tr>
+          <tr>
+            <td><strong>Complimentary Sizing Set</strong></td>
+            <td class="col-highlight val-positive">Included Free in Box</td>
+            <td>Charged as separate order</td>
+            <td>N/A</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       7. SIZING JOURNEY (UNBOXING EXPERIENCE)
+       ====================================================================== -->
+  <section class="editorial-quote-section" id="sizing" style="background: #FAF7F2;">
+    <div class="container">
+      <div class="section-editorial-intro" style="margin-bottom: 60px;">
+        <span class="intro-tag" style="color: var(--ink-dark);">Guaranteed Perfect Fit</span>
+        <h2 class="serif-heading intro-title" style="color: var(--ink-dark);">The 4-Step Sizing Ritual.</h2>
+        <p class="intro-desc" style="color: var(--ink-body-dark);">
+          Your finger size fluctuates between morning and evening. Our complimentary sizing set ensures your custom titanium ring fits like a bespoke heirloom.
+        </p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; text-align: left;">
+        <div style="background: #FFFFFF; padding: 32px 24px; border-radius: 16px; border: 1px solid var(--border-light); box-shadow: var(--shadow-subtle);">
+          <span style="font-family: var(--font-serif); font-size: 24px; color: var(--accent-action); font-weight: 700;">01</span>
+          <h4 style="font-family: var(--font-serif); font-size: 20px; color: var(--ink-dark); margin: 12px 0 8px 0;">Reserve Your Finish</h4>
+          <p style="font-size: 14px; color: var(--ink-body-dark); line-height: 1.6;">Pick your preferred titanium alloy today. We instantly rush your physical sizing set via priority airmail.</p>
+        </div>
+
+        <div style="background: #FFFFFF; padding: 32px 24px; border-radius: 16px; border: 1px solid var(--border-light); box-shadow: var(--shadow-subtle);">
+          <span style="font-family: var(--font-serif); font-size: 24px; color: var(--accent-action); font-weight: 700;">02</span>
+          <h4 style="font-family: var(--font-serif); font-size: 20px; color: var(--ink-dark); margin: 12px 0 8px 0;">Wear for 24 Hours</h4>
+          <p style="font-size: 14px; color: var(--ink-body-dark); line-height: 1.6;">Test our molded precision samples on your index or middle finger overnight to guarantee total sleep comfort.</p>
+        </div>
+
+        <div style="background: #FFFFFF; padding: 32px 24px; border-radius: 16px; border: 1px solid var(--border-light); box-shadow: var(--shadow-subtle);">
+          <span style="font-family: var(--font-serif); font-size: 24px; color: var(--accent-action); font-weight: 700;">03</span>
+          <h4 style="font-family: var(--font-serif); font-size: 20px; color: var(--ink-dark); margin: 12px 0 8px 0;">Confirm in 1 Tap</h4>
+          <p style="font-size: 14px; color: var(--ink-body-dark); line-height: 1.6;">Scan the QR code inside the presentation box and confirm your chosen size in the companion app.</p>
+        </div>
+
+        <div style="background: #FFFFFF; padding: 32px 24px; border-radius: 16px; border: 1px solid var(--border-light); box-shadow: var(--shadow-subtle);">
+          <span style="font-family: var(--font-serif); font-size: 24px; color: var(--accent-action); font-weight: 700;">04</span>
+          <h4 style="font-family: var(--font-serif); font-size: 20px; color: var(--ink-dark); margin: 12px 0 8px 0;">Titanium Express</h4>
+          <p style="font-size: 14px; color: var(--ink-body-dark); line-height: 1.6;">Your calibrated titanium AuraRing is assembled, tested, and dispatched directly to your doorstep.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       7B. WHAT'S IN THE BOX (UNBOXING LUXURY PRESENTATION)
+       ====================================================================== -->
+  <section class="unboxing-section" id="unboxing">
+    <div class="container">
+      <div class="section-editorial-intro">
+        <span class="intro-tag">Complete Luxury Ensemble</span>
+        <h2 class="serif-heading intro-title">What Awaits You Inside the Presentation Box.</h2>
+        <p class="intro-desc">
+          Every AuraRing arrives as a complete heirloom ensemble. Zero accessories sold separately.
+        </p>
+      </div>
+
+      <!-- Main Visual Frame -->
+      <div class="unboxing-hero-frame">
+        <img src="assets/images/box-unboxing.svg" alt="AuraRing Luxury Unboxing Spread" class="unboxing-hero-img">
+      </div>
+
+      <!-- 4 Core Items Breakdown -->
+      <div class="unboxing-items-grid">
+        <div class="unboxing-card">
+          <h5>1. AuraRing Titanium</h5>
+          <p>Hand-finished Grade-5 aerospace titanium ring in your chosen alloy finish with medical-grade hypoallergenic resin interior.</p>
+        </div>
+
+        <div class="unboxing-card">
+          <h5>2. Weighted Magnetic Dock</h5>
+          <p>Solid CNC-machined aluminum desk dock with rapid magnetic alignment. Charges your ring to 100% in 45 minutes.</p>
+        </div>
+
+        <div class="unboxing-card">
+          <h5>3. Braided USB-C Cable</h5>
+          <p>1.5-meter durable braided cable with full-grain leather organizer tie and gold-plated connectors.</p>
+        </div>
+
+        <div class="unboxing-card">
+          <h5>4. Precision Sizing Set</h5>
+          <p>Complete 8-ring sizing set (Sizes 6–13), presentation collector box, and 2-Year International Warranty Certificate.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       8. LIFESTYLE VOICES & EDITORIAL REVIEWS
+       ====================================================================== -->
+  <section class="lifestyle-section" id="reviews">
+    <div class="container">
+      <div class="lifestyle-header">
+        <span class="intro-tag" style="color: var(--ink-dark);">Editorial Acclaim</span>
+        <h2 class="lifestyle-title">Voices of Daily Habit.</h2>
+      </div>
+
+      <div class="lifestyle-grid">
+        <div class="lifestyle-card">
+          <p class="lifestyle-quote">
+            “The absence of a glowing screen is restorative. It simply does its work in silence, and the morning recovery insights are genuinely life-changing.”
+          </p>
+          <div class="lifestyle-author">
+            <div class="author-monogram">EH</div>
+            <div class="author-details">
+              <h5>Dr. Eleanor Hayes</h5>
+              <p>Neuroscience Researcher • Matte Basalt</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="lifestyle-card">
+          <p class="lifestyle-quote">
+            “I refuse to pay recurring subscriptions to access my own biology. AuraRing provides better industrial design than Oura without holding my data hostage.”
+          </p>
+          <div class="lifestyle-author">
+            <div class="author-monogram">JL</div>
+            <div class="author-details">
+              <h5>Julian Lindqvist</h5>
+              <p>Architect &amp; Designer • Liquid Platinum</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="lifestyle-card">
+          <p class="lifestyle-quote">
+            “It has the weight and feel of high jewelry. When I wear it to black-tie dinners, nobody suspects it is continuously monitoring my arterial pulse.”
+          </p>
+          <div class="lifestyle-author">
+            <div class="author-monogram">CS</div>
+            <div class="author-details">
+              <h5>Claire Sterling</h5>
+              <p>Creative Director • 18K Horizon Rose</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       9. CURATED EDITIONS & PACKAGES
+       ====================================================================== -->
+  <section class="curated-pricing-section" id="editions">
+    <div class="container">
+      <div class="section-editorial-intro">
+        <span class="intro-tag">Curated Packages</span>
+        <h2 class="serif-heading intro-title">Select Your Edition.</h2>
+        <p class="intro-desc">Limited allocation reserved for the current titanium casting run.</p>
+      </div>
+
+      <div class="bundle-trio">
+        <!-- Single -->
+        <div class="editorial-bundle-card">
+          <h3 class="bundle-title">Single Edition</h3>
+          <p class="bundle-subtext">For personal bio-intelligence</p>
+          <div class="bundle-figure">$199 <span style="font-size: 18px; color: var(--ink-muted-light); text-decoration: line-through;">$329</span></div>
+          <button class="btn-pill btn-stone-outline trigger-checkout" style="width: 100%; margin-bottom: 24px;" data-bundle="Single AuraRing Edition" data-price="199">
+            Reserve Single Edition
+          </button>
+          <div class="bundle-perks-list">
+            <div class="bundle-perk"><i class="fa-solid fa-check"></i> 1x AuraRing (Any Titanium Finish)</div>
+            <div class="bundle-perk"><i class="fa-solid fa-check"></i> 1x Magnetic Qi Fast-Charge Dock</div>
+            <div class="bundle-perk"><i class="fa-solid fa-check"></i> Complimentary Precision Sizing Set</div>
+            <div class="bundle-perk"><i class="fa-solid fa-check"></i> Zero Subscription Fees for Life</div>
+          </div>
+        </div>
+
+        <!-- Duo -->
+        <div class="editorial-bundle-card featured">
+          <div class="featured-crest">Most Coveted Set</div>
+          <h3 class="bundle-title">Heritage Duo Set</h3>
+          <p class="bundle-subtext">Two rings for partners &amp; spouses</p>
+          <div class="bundle-figure">$349 <span style="font-size: 18px; color: var(--ink-muted-light); text-decoration: line-through;">$658</span></div>
+          <button class="btn-pill btn-action-blue trigger-checkout" style="width: 100%; margin-bottom: 24px;" data-bundle="Heritage Duo Set" data-price="349">
+            Reserve Duo Set ($349)
+          </button>
+          <div class="bundle-perks-list">
+            <div class="bundle-perk"><i class="fa-solid fa-check"></i> 2x AuraRings (Mix &amp; Match Any Finishes)</div>
+            <div class="bundle-perk"><i class="fa-solid fa-check"></i> 2x Magnetic Rapid Docks &amp; Cables</div>
+            <div class="bundle-perk"><i class="fa-solid fa-check"></i> 2x Sizing Sets Dispatched Immediately</div>
+            <div class="bundle-perk"><i class="fa-solid fa-check"></i> Private Couple Sync &amp; Sleep Insights</div>
+            <div class="bundle-perk"><i class="fa-solid fa-check"></i> Priority Express White-Glove Dispatch</div>
+          </div>
+        </div>
+
+        <!-- Trio -->
+        <div class="editorial-bundle-card">
+          <h3 class="bundle-title">Collector Trio</h3>
+          <p class="bundle-subtext">Complete family wellness suite</p>
+          <div class="bundle-figure">$489 <span style="font-size: 18px; color: var(--ink-muted-light); text-decoration: line-through;">$987</span></div>
+          <button class="btn-pill btn-stone-outline trigger-checkout" style="width: 100%; margin-bottom: 24px;" data-bundle="Collector Trio Set" data-price="489">
+            Reserve Collector Trio
+          </button>
+          <div class="bundle-perks-list">
+            <div class="bundle-perk"><i class="fa-solid fa-check"></i> 3x AuraRings (Customized Sizes &amp; Finishes)</div>
+            <div class="bundle-perk"><i class="fa-solid fa-check"></i> 3x Rapid Charging Docks</div>
+            <div class="bundle-perk"><i class="fa-solid fa-check"></i> 3-Year Extended International Warranty</div>
+            <div class="bundle-perk"><i class="fa-solid fa-check"></i> Lifetime VIP Concierge Support</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       10. NORDIC ACCORDION FAQ
+       ====================================================================== -->
+  <section class="editorial-faq-section" id="faq">
+    <div class="container faq-narrow-holder">
+      <div class="section-editorial-intro" style="margin-bottom: 50px;">
+        <span class="intro-tag">Answers &amp; Guidance</span>
+        <h2 class="serif-heading intro-title">Frequently Considered.</h2>
+      </div>
+
+      <div class="nordic-faq-item active">
+        <div class="nordic-faq-trigger">
+          <span>How does AuraRing function with zero subscription fees?</span>
+          <i class="fa-solid fa-chevron-down faq-chevron"></i>
+        </div>
+        <div class="nordic-faq-panel">
+          <p>We treat biometric hardware like high horology or fine cameras: you purchase the instrument, and the insights are yours forever. We do not maintain server paywalls or hostage fees. Our business model relies on hardware excellence, not recurring monthly subscription fees.</p>
+        </div>
+      </div>
+
+      <div class="nordic-faq-item">
+        <div class="nordic-faq-trigger">
+          <span>Is the companion app compatible with iOS and Android?</span>
+          <i class="fa-solid fa-chevron-down faq-chevron"></i>
+        </div>
+        <div class="nordic-faq-panel">
+          <p>Yes. The Aura companion software runs seamlessly on iPhone (iOS 15 and above) and modern Android devices. It natively syncs with Apple Health, Google Health Connect, Strava, and TrainingPeaks.</p>
+        </div>
+      </div>
+
+      <div class="nordic-faq-item">
+        <div class="nordic-faq-trigger">
+          <span>Can I wear the ring in hot saunas, ocean water, or heavy lifting?</span>
+          <i class="fa-solid fa-chevron-down faq-chevron"></i>
+        </div>
+        <div class="nordic-faq-panel">
+          <p>AuraRing is forged from solid Grade-5 titanium with a sealed medical resin inner core rated to 50 meters (10 ATM). It withstands ocean saltwater, high-heat dry saunas, and chlorinated pools without degradation.</p>
+        </div>
+      </div>
+
+      <div class="nordic-faq-item">
+        <div class="nordic-faq-trigger">
+          <span>What occurs if my ring does not fit comfortably?</span>
+          <i class="fa-solid fa-chevron-down faq-chevron"></i>
+        </div>
+        <div class="nordic-faq-panel">
+          <p>Every purchase includes a 30-Day Risk-Free Trial from the day your titanium ring arrives. If the fit feels imperfect, we provide one complimentary size exchange with prepaid return shipping.</p>
+        </div>
+      </div>
+
+      <div class="nordic-faq-item">
+        <div class="nordic-faq-trigger">
+          <span>How fast will my sizing kit and titanium ring arrive?</span>
+          <i class="fa-solid fa-chevron-down faq-chevron"></i>
+        </div>
+        <div class="nordic-faq-panel">
+          <p>Your complimentary Precision Sizing Set is dispatched within 24 hours of ordering (arriving in 2–3 business days via priority airmail). Once you confirm your size in the app, your custom titanium AuraRing is calibrated and delivered within 48–72 hours via express courier. Total time from order to finger is under 7 business days.</p>
+        </div>
+      </div>
+
+      <div class="nordic-faq-item">
+        <div class="nordic-faq-trigger">
+          <span>What is the lifespan of the battery over 2–5 years?</span>
+          <i class="fa-solid fa-chevron-down faq-chevron"></i>
+        </div>
+        <div class="nordic-faq-panel">
+          <p>AuraRing uses solid-state high-density microcells rated for 400+ complete charge cycles with less than 15% degradation (equivalent to over 5 years of daily continuous use). Should you experience any abnormal battery decline within your first 2 years, we replace the entire ring free under warranty.</p>
+        </div>
+      </div>
+
+      <div class="nordic-faq-item">
+        <div class="nordic-faq-trigger">
+          <span>Which finger is recommended for the most accurate readings?</span>
+          <i class="fa-solid fa-chevron-down faq-chevron"></i>
+        </div>
+        <div class="nordic-faq-panel">
+          <p>We recommend wearing AuraRing on your index finger for the highest optical PPG signal accuracy from the palmar digital arteries. However, the middle and ring fingers provide equally valid sleep staging. Our gentle internal chamfer naturally accommodates minor seasonal temperature swelling.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       11. STICKY STUDIO BUY BAR
+       ====================================================================== -->
+  <aside class="studio-sticky-bar" id="studioStickyBar">
+    <div class="container sticky-bar-flex">
+      <div class="sticky-product-meta">
+        <img src="assets/images/ring-stealth-black.svg" alt="AuraRing Thumbnail" id="stickyRingThumb" class="sticky-iconic-thumb">
+        <div>
+          <div class="sticky-ring-title">AuraRing Titanium Edition</div>
+          <div class="sticky-ring-desc"><span id="stickyFinishText">Matte Basalt Titanium</span> • $0 Subscriptions</div>
+        </div>
+      </div>
+      <div class="sticky-right-actions">
+        <div class="sticky-live-price">$199 <small style="font-size: 14px; color: var(--ink-muted-light); text-decoration: line-through;">$329</small></div>
+        <button class="btn-pill btn-action-blue trigger-checkout" data-bundle="Single AuraRing Edition" data-price="199">
+          Reserve Now
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ======================================================================
+       12. EDITORIAL SLIDE-OVER CHECKOUT DRAWER
+       ====================================================================== -->
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <div class="editorial-drawer" id="editorialDrawer">
+    <div class="drawer-top-banner">
+      <div class="drawer-headline">Your Reserve Allocation</div>
+      <button class="drawer-exit-btn" id="drawerExitBtn" aria-label="Close Bag">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <div class="drawer-scroll-body">
+      <!-- Priority Dispatch Delivery Urgency Banner -->
+      <div class="delivery-urgency-banner">
+        <i class="fa-solid fa-bolt"></i>
+        <span><strong>Priority Dispatch:</strong> Order within the next 2h 45m for Sizing Kit delivery by <strong>Tuesday</strong>.</span>
+      </div>
+
+      <!-- Item Box -->
+      <div class="drawer-item-box">
+        <img src="assets/images/ring-stealth-black.svg" alt="Selected Ring Finish" id="drawerRingThumb" class="drawer-product-thumb">
+        <div class="drawer-item-info">
+          <h4 id="drawerBundleTitle">Single AuraRing Edition</h4>
+          <p>Finish: <strong id="drawerFinishText" style="color:var(--ink-light);">Matte Basalt Titanium</strong></p>
+          <p>Size: <strong id="drawerSizeText" style="color:var(--ink-light);">US 9 (19.0 mm)</strong></p>
+          <p style="color: var(--accent-gold); font-size: 12px; margin-top: 4px;"><i class="fa-solid fa-check"></i> Precision Sizing Set Included Free</p>
+        </div>
+      </div>
+
+      <!-- Promo Code Field -->
+      <div style="margin-bottom: 24px;">
+        <label style="font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--ink-light); display: block; margin-bottom: 8px;">Collector Courtesy Code</label>
+        <div style="display: flex; gap: 8px;">
+          <input type="text" id="promoInput" placeholder="Enter NORDIC10" style="flex: 1; background: #1B1A19; border: 1px solid var(--border-dark); color: var(--ink-light); padding: 12px 16px; border-radius: var(--radius-sm);">
+          <button type="button" id="applyPromoBtn" class="btn-pill btn-stone-outline" style="border-radius: var(--radius-sm); padding: 10px 18px;">Apply</button>
+        </div>
+        <p id="promoFeedback" style="font-size: 12px; margin-top: 6px;"></p>
+      </div>
+
+      <!-- Guarantee -->
+      <div style="border: 1px solid var(--border-dark); border-radius: 12px; padding: 16px; font-size: 13px; background: rgba(255, 255, 255, 0.02);">
+        <div style="color: var(--accent-gold); font-weight: 600; margin-bottom: 4px;">
+          <i class="fa-solid fa-lock" style="margin-right: 6px;"></i> 256-Bit Encrypted Direct Checkout
+        </div>
+        <p style="color: var(--ink-muted-light); font-size: 12px; margin: 0; line-height: 1.6;">
+          Your allocation is held securely. You will receive tracking and sizing kit details immediately upon order confirmation.
+        </p>
+      </div>
+    </div>
+
+    <div class="drawer-bottom-cta">
+      <div class="breakdown-line">
+        <span>Subtotal:</span>
+        <span id="drawerSubtotal" style="color: var(--ink-light); font-weight: 600;">$199</span>
+      </div>
+      <div class="breakdown-line">
+        <span>Insured Priority Shipping:</span>
+        <span style="color: var(--accent-gold); font-weight: 600;">COMPLIMENTARY</span>
+      </div>
+      <div class="breakdown-line total-line">
+        <span>Grand Total:</span>
+        <span id="drawerGrandTotal" style="color: var(--accent-gold);">$199</span>
+      </div>
+
+      <button class="btn-pill btn-action-blue" style="width: 100%; margin-top: 16px; padding: 16px;" onclick="alert('Proceeding to payment gateway integration (Stripe / Shopify / Lemon Squeezy).')">
+        <i class="fa-solid fa-lock"></i> Proceed to Payment
+      </button>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       13. EDITORIAL FOOTER
+       ====================================================================== -->
+  <footer class="editorial-footer">
+    <div class="container">
+      <div class="footer-quad-grid">
+        <div class="footer-lead">
+          <a href="#" class="brand-mark" style="margin-bottom: 12px;">
+            <img src="assets/images/auraring-logo.svg" alt="AuraRing" class="brand-logo-img" style="height: 30px;">
+          </a>
+          <p>
+            An understated piece of biometric jewelry crafted from solid Grade-5 titanium. Continuous sleep architecture, arterial HRV, and circadian insights without screens.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Exploration</h4>
+          <ul class="footer-link-list">
+            <li><a href="#philosophy">The Philosophy</a></li>
+            <li><a href="#engineering">Bio-Sensors</a></li>
+            <li><a href="#comparison">Compare Wearables</a></li>
+            <li><a href="#sizing">Sizing Ritual</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Client Care</h4>
+          <ul class="footer-link-list">
+            <li><a href="#faq">FAQ &amp; Sizing</a></li>
+            <li><a href="#">Order Status</a></li>
+            <li><a href="#">30-Day Guarantee</a></li>
+            <li><a href="#">Warranty Registry</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Legal &amp; Privacy</h4>
+          <ul class="footer-link-list">
+            <li><a href="#">Biometric Privacy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">HIPAA Compliance</a></li>
+            <li><a href="#">Patent Architecture</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-closing-row">
+        <div>&copy; 2026 AuraRing Inc. Handcrafted for digital marketplace excellence.</div>
+        <div class="payment-seal-row">
+          <i class="fa-brands fa-cc-visa" title="Visa"></i>
+          <i class="fa-brands fa-cc-mastercard" title="Mastercard"></i>
+          <i class="fa-brands fa-cc-amex" title="American Express"></i>
+          <i class="fa-brands fa-cc-apple-pay" title="Apple Pay"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script Initialization -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
