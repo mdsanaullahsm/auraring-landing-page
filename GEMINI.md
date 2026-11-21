@@ -32,8 +32,12 @@
   3. **Multi-Asset Bundling:** Bundle multiple assets together (e.g. Carousel slides + matching vertical Stories + highlight covers + step-by-step PDF implementation guide).
   4. **Commercial Reason to Buy:** Every product must solve a specific expensive problem (saving 20+ hours of design work, landing clients, or raising venture capital) so the value proposition is unmistakable.
 
-## 6. Storefront Design & High-Conversion UX Principles
-- **Avoid "Generic AI" Aesthetics:** Avoid excessive rainbow neon glows, messy purple radial blobs, and buzzword-heavy AI fluff.
-- **Clean, Minimalist & Human-Centric:** Use modern graphite/charcoal surfaces, crisp high-contrast typography (Space Grotesk & Inter/Plus Jakarta Sans), clean 1px borders, and generous whitespace.
-- **Visual-First Product Cards:** Make product cover mockups large, crisp, and instantly eye-catching. Focus 80% of visual weight on the product preview so customers immediately see what they get.
-- **Conversion Optimization:** Prominent, high-contrast "Buy Now — $XX" buttons with Gumroad 1-click in-page checkout, clear price tags, commercial license trust badges, and instant download guarantees.
+## 6. Storefront Design & Apple-Inspired High-Conversion UX Principles
+- **Apple.com Aesthetic (Product-First & Invisible Canvas):** Take direct inspiration from `apple.com`. The website chrome and background must be completely neutral, silent, and invisible (pure #000000 canvas with #161617 surface blocks). Never use distracting neon radial glows, dot matrices, rainbow badges, or shifting background ambient lights that compete with the products.
+- **Heroic Visual Mockups (75%+ Visual Weight):** Just as Apple highlights the iPhone or MacBook with massive, razor-sharp imagery, every digital product must feature a gigantic, pristine preview mockup centered on the card/billboard with subtle realistic shadows.
+- **Apple Hierarchy & Typography:** Clean SF Pro / Inter typography stack:
+  1. Subtle category eyebrow (e.g. `FLAGSHIP CANVA SUITE`, `DTC WEB THEME`).
+  2. Large, confident product name (e.g. `The Estate.`, `AuraRing.`).
+  3. Single-sentence customer benefit & price.
+  4. Apple-style CTA pills: Primary Blue (`#0071e3`) `Buy Now — $XX` with Gumroad 1-click in-page checkout, and Secondary `Live Demo ↗`.
+- **Billboard & 2-Column Bento Layout:** Top flagship products receive full-width billboard treatments; remaining products sit in a balanced 2-column bento grid for frictionless visual scanning.
