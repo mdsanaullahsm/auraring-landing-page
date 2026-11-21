@@ -33,7 +33,7 @@
   4. **Commercial Reason to Buy:** Every product must solve a specific expensive problem (saving 20+ hours of design work, landing clients, or raising venture capital) so the value proposition is unmistakable.
 
 ## 6. Storefront Design & Apple-Inspired High-Conversion UX Principles
-- **Apple.com Aesthetic (Product-First & Invisible Canvas):** Take direct inspiration from `apple.com`. The website chrome and background must be completely neutral, silent, and invisible (pure #000000 canvas with #161617 surface blocks). Never use distracting neon radial glows, dot matrices, rainbow badges, or shifting background ambient lights that compete with the products.
+- **Apple.com Aesthetic (Product-First & Invisible Canvas):** Take direct inspiration from `apple.com`'s iconic light studio design. The website chrome and background must be completely neutral, silent, and invisible (ultra-clean `#f5f5f7` canvas with crisp `#ffffff` surface cards). This ensures zero dark boxes or heavy backgrounds compete with the products. Never use distracting neon radial glows, dot matrices, rainbow badges, or shifting background ambient lights.
 - **Heroic Visual Mockups (75%+ Visual Weight):** Just as Apple highlights the iPhone or MacBook with massive, razor-sharp imagery, every digital product must feature a gigantic, pristine preview mockup centered on the card/billboard with subtle realistic shadows.
 - **Apple Hierarchy & Typography:** Clean SF Pro / Inter typography stack:
   1. Subtle category eyebrow (e.g. `FLAGSHIP CANVA SUITE`, `DTC WEB THEME`).
