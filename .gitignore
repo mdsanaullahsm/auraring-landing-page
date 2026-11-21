@@ -2,6 +2,11 @@
 auraring-commercial-package.zip
 *.zip
 
+# Sensitive configs & secrets
+automation_config.py
+*.env
+__pycache__/
+
 # OS artifacts
 Thumbs.db
 .DS_Store
