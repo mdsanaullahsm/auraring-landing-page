@@ -33,11 +33,8 @@
   4. **Commercial Reason to Buy:** Every product must solve a specific expensive problem (saving 20+ hours of design work, landing clients, or raising venture capital) so the value proposition is unmistakable.
 
 ## 6. Storefront Design & Apple-Inspired High-Conversion UX Principles
-- **Apple.com Aesthetic (Product-First & Invisible Canvas):** Take direct inspiration from `apple.com`'s iconic light studio design. The website chrome and background must be completely neutral, silent, and invisible (ultra-clean `#f5f5f7` canvas with crisp `#ffffff` surface cards). This ensures zero dark boxes or heavy backgrounds compete with the products. Never use distracting neon radial glows, dot matrices, rainbow badges, or shifting background ambient lights.
-- **Heroic Visual Mockups (75%+ Visual Weight):** Just as Apple highlights the iPhone or MacBook with massive, razor-sharp imagery, every digital product must feature a gigantic, pristine preview mockup centered on the card/billboard with subtle realistic shadows.
-- **Apple Hierarchy & Typography:** Clean SF Pro / Inter typography stack:
-  1. Subtle category eyebrow (e.g. `FLAGSHIP CANVA SUITE`, `DTC WEB THEME`).
-  2. Large, confident product name (e.g. `The Estate.`, `AuraRing.`).
-  3. Single-sentence customer benefit & price.
-  4. Apple-style CTA pills: Primary Blue (`#0071e3`) `Buy Now — $XX` with Gumroad 1-click in-page checkout, and Secondary `Live Demo ↗`.
+- **Editorial Warm Neutral Canvas (Zero-Glare & Anti-Fatigue):** Avoid stark digital pure white (`#FFFFFF`) or clinical cold whites which cause luminous screen glare and wash out typography. Instead, use a warm, organic **Alabaster Stone / Japanese Linen canvas (`#F4F1EA`)** with **Ethereal Ivory cards (`#FAF8F5`)** and fine stone hairline borders (`#DFDBD0`). The background remains calm, warm, and invisible.
+- **High-Contrast Obsidian Ink Typography (14.5:1 Ratio):** Use deep **Obsidian Ink (`#1A1A18`)** for headlines and product titles with bold weights (`font-weight: 700-800`), paired with rich charcoal taupe (`#48453E`) for body copy, achieving WCAG AAA contrast where text leaps forward effortlessly.
+- **Heroic Visual Mockups (75%+ Visual Weight):** Against the glare-free alabaster canvas, product mockups become the vibrant centerpiece. Center large, crisp preview mockups with subtle natural diffused shadows (`0 20px 45px -10px rgba(40, 35, 25, 0.16)`).
+- **Tactile Obsidian Action CTAs:** Primary "Buy Now — $XX" buttons use deep Obsidian Ink (`#1A1A18`) with white text, functioning as unmistakable high-converting anchors, paired with clean ivory secondary pills.
 - **Billboard & 2-Column Bento Layout:** Top flagship products receive full-width billboard treatments; remaining products sit in a balanced 2-column bento grid for frictionless visual scanning.
