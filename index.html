@@ -1,828 +1,856 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AuraRing — The Titanium Biometric Ring | Distraction-Free Health</title>
-  <meta name="description" content="AuraRing is a featherweight Grade-5 titanium wearable delivering clinical sleep architecture, continuous HRV, and temperature tracking with 7-day battery life and zero subscription fees.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanaullah Studio — Premium Digital Templates & Web Systems</title>
+    <meta name="description" content="Discover premium Canva templates, responsive web themes, and executive business systems designed to land clients, raise capital, and scale revenue.">
+    <!-- Gumroad Overlay Integration for 1-Click In-Page Checkout -->
+    <script src="https://gumroad.com/js/gumroad.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #07090e;
+            --surface: #0e121b;
+            --surface-card: rgba(17, 24, 39, 0.85);
+            --border: rgba(255, 255, 255, 0.08);
+            --border-hover: rgba(59, 130, 246, 0.4);
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --accent-blue: #3b82f6;
+            --accent-cyan: #06b6d4;
+            --accent-emerald: #10b981;
+            --accent-purple: #8b5cf6;
+            --accent-amber: #f59e0b;
+            --font-sans: 'Plus Jakarta Sans', -apple-system, sans-serif;
+            --font-heading: 'Space Grotesk', sans-serif;
+        }
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="assets/images/ring-stealth-black.svg">
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: var(--font-sans);
+            background-color: var(--bg);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+            background-image: 
+                radial-gradient(circle at 50% 0%, rgba(59, 130, 246, 0.15) 0%, transparent 60%),
+                radial-gradient(circle at 100% 40%, rgba(139, 92, 246, 0.08) 0%, transparent 50%),
+                radial-gradient(circle at 0% 80%, rgba(6, 182, 212, 0.08) 0%, transparent 50%);
+            background-attachment: fixed;
+        }
 
-  <!-- Typography: Cormorant Garamond (Editorial Serif) & Plus Jakarta Sans (Precision Sans) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        /* Container */
+        .container {
+            max-width: 1240px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
 
-  <!-- FontAwesome 6 Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        /* Navigation */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(20px);
+            background: rgba(7, 9, 14, 0.8);
+            border-bottom: 1px solid var(--border);
+            padding: 18px 0;
+        }
+        .nav-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            color: #ffffff;
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 20px;
+            letter-spacing: -0.5px;
+        }
+        .logo-symbol {
+            width: 32px;
+            height: 32px;
+            background: linear-gradient(135deg, var(--accent-blue), var(--accent-cyan));
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 16px;
+            color: #fff;
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
+        }
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 28px;
+            list-style: none;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-secondary);
+            font-size: 14.5px;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        .nav-links a:hover { color: #ffffff; }
+        .nav-cta {
+            background: #ffffff;
+            color: #07090e;
+            padding: 10px 20px;
+            border-radius: 999px;
+            font-size: 14px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.25s;
+        }
+        .nav-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 255, 255, 0.25);
+        }
 
-  <!-- Core Editorial Stylesheet -->
-  <link rel="stylesheet" href="assets/css/style.css">
+        /* Hero */
+        .hero {
+            padding: 100px 0 60px;
+            text-align: center;
+        }
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(59, 130, 246, 0.1);
+            border: 1px solid rgba(59, 130, 246, 0.25);
+            padding: 6px 16px;
+            border-radius: 999px;
+            font-size: 13.5px;
+            font-weight: 600;
+            color: #60a5fa;
+            margin-bottom: 24px;
+        }
+        .hero h1 {
+            font-family: var(--font-heading);
+            font-size: clamp(38px, 6vw, 64px);
+            font-weight: 700;
+            line-height: 1.15;
+            letter-spacing: -1.5px;
+            max-width: 900px;
+            margin: 0 auto 24px;
+        }
+        .hero h1 span {
+            background: linear-gradient(135deg, #ffffff 40%, #94a3b8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero h1 .gradient-text {
+            background: linear-gradient(135deg, #60a5fa 0%, #38bdf8 50%, #c084fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero p {
+            font-size: clamp(16px, 2vw, 19px);
+            color: var(--text-secondary);
+            max-width: 680px;
+            margin: 0 auto 40px;
+            line-height: 1.6;
+        }
+        .hero-actions {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+            margin-bottom: 50px;
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, var(--accent-blue) 0%, #2563eb 100%);
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 600;
+            padding: 16px 32px;
+            border-radius: 12px;
+            text-decoration: none;
+            box-shadow: 0 10px 25px rgba(37, 99, 235, 0.35);
+            transition: all 0.25s;
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 35px rgba(37, 99, 235, 0.5);
+        }
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border);
+            color: var(--text-primary);
+            font-size: 16px;
+            font-weight: 600;
+            padding: 16px 30px;
+            border-radius: 12px;
+            text-decoration: none;
+            transition: all 0.25s;
+        }
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Trust Stats Bar */
+        .trust-bar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            padding: 24px;
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            max-width: 880px;
+            margin: 0 auto;
+        }
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+        .trust-item svg { color: var(--accent-emerald); }
+
+        /* Catalog Section */
+        .catalog {
+            padding: 90px 0 120px;
+        }
+        .section-header {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+        .section-header h2 {
+            font-family: var(--font-heading);
+            font-size: 34px;
+            letter-spacing: -0.8px;
+            margin-bottom: 12px;
+        }
+        .section-header p {
+            color: var(--text-secondary);
+            font-size: 17px;
+        }
+
+        /* Filter Pills */
+        .filters {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 50px;
+        }
+        .filter-btn {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid var(--border);
+            color: var(--text-secondary);
+            padding: 10px 20px;
+            border-radius: 999px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .filter-btn.active, .filter-btn:hover {
+            background: rgba(59, 130, 246, 0.15);
+            border-color: var(--accent-blue);
+            color: #ffffff;
+        }
+
+        /* Product Grid */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+            gap: 32px;
+        }
+        .card {
+            background: var(--surface-card);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            backdrop-filter: blur(16px);
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .card:hover {
+            transform: translateY(-6px);
+            border-color: var(--border-hover);
+            box-shadow: 0 20px 45px rgba(0, 0, 0, 0.6);
+        }
+        .card-img-wrapper {
+            position: relative;
+            width: 100%;
+            height: 220px;
+            background: #111827;
+            overflow: hidden;
+        }
+        .card-img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        .card:hover .card-img-wrapper img {
+            transform: scale(1.05);
+        }
+        .card-badge {
+            position: absolute;
+            top: 14px;
+            left: 14px;
+            padding: 5px 12px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            background: rgba(7, 9, 14, 0.85);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            color: #ffffff;
+        }
+        .badge-canva { border-color: rgba(139, 92, 246, 0.4); color: #c084fc; }
+        .badge-web { border-color: rgba(59, 130, 246, 0.4); color: #60a5fa; }
+        .badge-doc { border-color: rgba(16, 185, 129, 0.4); color: #34d399; }
+
+        .card-body {
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+        .card-title {
+            font-family: var(--font-heading);
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            line-height: 1.35;
+        }
+        .card-desc {
+            color: var(--text-secondary);
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+        .card-features {
+            list-style: none;
+            margin-bottom: 24px;
+            font-size: 13px;
+            color: #cbd5e1;
+        }
+        .card-features li {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 8px;
+        }
+        .card-features svg {
+            color: var(--accent-emerald);
+            flex-shrink: 0;
+        }
+        .card-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
+        }
+        .card-price {
+            font-family: var(--font-heading);
+            font-size: 24px;
+            font-weight: 700;
+            color: #ffffff;
+        }
+        .card-price span {
+            font-size: 13px;
+            color: var(--text-secondary);
+            font-weight: 400;
+        }
+        .card-actions {
+            display: flex;
+            gap: 10px;
+        }
+        .btn-buy {
+            background: linear-gradient(135deg, var(--accent-blue), #2563eb);
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 600;
+            padding: 10px 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .btn-buy:hover {
+            filter: brightness(1.15);
+            transform: translateY(-1px);
+        }
+        .btn-demo {
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid var(--border);
+            color: var(--text-primary);
+            font-size: 14px;
+            font-weight: 500;
+            padding: 10px 14px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+        .btn-demo:hover {
+            background: rgba(255, 255, 255, 0.12);
+        }
+
+        /* Value Pillars Section */
+        .pillars {
+            padding: 60px 0 100px;
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+            background: rgba(14, 18, 27, 0.4);
+        }
+        .pillars-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 30px;
+        }
+        .pillar-card {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 30px;
+        }
+        .pillar-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            background: rgba(59, 130, 246, 0.15);
+            color: var(--accent-blue);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .pillar-card h3 {
+            font-family: var(--font-heading);
+            font-size: 19px;
+            margin-bottom: 10px;
+        }
+        .pillar-card p {
+            color: var(--text-secondary);
+            font-size: 14.5px;
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        footer {
+            padding: 60px 0;
+            text-align: center;
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            margin-bottom: 20px;
+        }
+        .footer-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .footer-links a:hover { color: #ffffff; }
+
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .grid { grid-template-columns: 1fr; }
+            .hero { padding: 60px 0 40px; }
+        }
+    </style>
 </head>
 <body>
 
-  <!-- ======================================================================
-       1. TOP NOTICE BAR (UNDERSTATED NORDIC ANNOUNCEMENT)
-       ====================================================================== -->
-  <div class="top-notice-bar">
-    <div class="container top-notice-content">
-      <span class="notice-pill">Launch Reserve Batch</span>
-      <span>Complimentary Precision Sizing Set Included with Every Order</span>
-      <div class="countdown-box">
-        <span>Allocation closes in:</span>
-        <span id="timerHours">11h</span>
-        <span id="timerMins">18m</span>
-        <span id="timerSecs">44s</span>
-      </div>
-    </div>
-  </div>
+    <!-- Header -->
+    <header>
+        <div class="container nav-inner">
+            <a href="#" class="logo">
+                <div class="logo-symbol">S</div>
+                <span>Sanaullah Studio</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#catalog">Templates</a></li>
+                <li><a href="#pillars">Why Us</a></li>
+                <li><a href="https://mdsanaullahsm.gumroad.com" target="_blank">Gumroad Store</a></li>
+                <li><a href="https://www.pinterest.com/usajobsignals/" target="_blank">Pinterest</a></li>
+            </ul>
+            <a href="#catalog" class="nav-cta">Browse 10 Templates</a>
+        </div>
+    </header>
 
-  <!-- ======================================================================
-       2. EDITORIAL HEADER & NAVIGATION (REFINED LUXURY ISLAND)
-       ====================================================================== -->
-  <header class="editorial-header">
-    <div class="container header-wrapper">
-      <!-- Luxury Emblem & Wordmark (Single Line) -->
-      <a href="#" class="brand-mark" aria-label="AuraRing Home">
-        <img src="assets/images/auraring-logo.svg" alt="AuraRing" class="brand-logo-img">
-      </a>
-
-      <!-- Floating Glass Island Capsule Nav -->
-      <nav class="nav-links-desktop">
-        <a href="#philosophy" class="nav-anchor">Philosophy</a>
-        <a href="#engineering" class="nav-anchor">Engineering</a>
-        <a href="#app-experience" class="nav-anchor">App Experience</a>
-        <a href="#unboxing" class="nav-anchor">What's in the Box</a>
-        <a href="#reviews" class="nav-anchor">Reviews</a>
-        <a href="#faq" class="nav-anchor">FAQ</a>
-      </nav>
-
-      <!-- Balanced Luxury CTA & Compact Attached Cart -->
-      <div class="header-cta-group">
-        <button class="cart-trigger-btn trigger-checkout" aria-label="Open Shopping Bag">
-          <i class="fa-solid fa-bag-shopping"></i>
-          <span class="cart-count-badge">1</span>
-        </button>
-        <a href="#editions" class="btn-reserve-nav trigger-checkout" data-bundle="Single AuraRing Edition" data-price="199">
-          Reserve — $199
-        </a>
-      </div>
-    </div>
-  </header>
-
-  <!-- ======================================================================
-       3. HERO SECTION (STUDIO PRODUCT SHOWCASE)
-       ====================================================================== -->
-  <section class="hero-stage" id="heroStage">
-    <div class="container hero-editorial-grid">
-      
-      <!-- Left: Story & Tactile Controls -->
-      <div class="hero-story-column">
-        <div class="hero-kicker">Grade-5 Titanium Biometric Wearable</div>
-        
-        <h1 class="serif-heading hero-headline">
-          The luxury of knowing your body, without the <span class="serif-italic">distraction</span> of a screen.
-        </h1>
-
-        <p class="hero-subhead">
-          Continuous clinical sleep architecture, real-time arterial HRV recovery, and subtle temperature trends. Zero notifications. Zero monthly subscriptions. Just 2.8 grams of pure titanium on your finger.
-        </p>
-
-        <!-- Tactile Material Selector -->
-        <div class="finish-selector-card">
-          <div class="finish-header">
-            <span class="finish-label">Selected Finish</span>
-            <span class="active-finish-name" id="activeFinishDisplay">Matte Basalt Titanium</span>
-          </div>
-
-          <!-- Swatches -->
-          <div class="swatch-tray">
-            <button class="swatch-btn active" data-finish-key="black" data-finish-title="Matte Basalt Titanium" title="Matte Basalt">
-              <div class="swatch-disc disc-basalt"></div>
-              <span class="swatch-title">Basalt</span>
-            </button>
-            <button class="swatch-btn" data-finish-key="silver" data-finish-title="Liquid Platinum Silver" title="Liquid Platinum Silver">
-              <div class="swatch-disc disc-silver"></div>
-              <span class="swatch-title">Platinum</span>
-            </button>
-            <button class="swatch-btn" data-finish-key="rose" data-finish-title="18K Horizon Rose Gold" title="18K Horizon Rose Gold">
-              <div class="swatch-disc disc-rose"></div>
-              <span class="swatch-title">Horizon Rose</span>
-            </button>
-            <button class="swatch-btn" data-finish-key="gold" data-finish-title="Champagne Horizon Gold" title="Champagne Horizon Gold">
-              <div class="swatch-disc disc-gold"></div>
-              <span class="swatch-title">Champagne</span>
-            </button>
-          </div>
-
-          <!-- Sizing Caliper -->
-          <div class="finish-header" style="margin-top: 20px;">
-            <span class="finish-label">Finger Size</span>
-            <span style="font-size: 13px; color: var(--accent-gold);" id="sizeMillimeterText">US 9 (19.0 mm inner diameter)</span>
-          </div>
-          <div class="size-caliper-strip">
-            <button class="caliper-btn" data-size="6">6</button>
-            <button class="caliper-btn" data-size="7">7</button>
-            <button class="caliper-btn" data-size="8">8</button>
-            <button class="caliper-btn active" data-size="9">9</button>
-            <button class="caliper-btn" data-size="10">10</button>
-            <button class="caliper-btn" data-size="11">11</button>
-            <button class="caliper-btn" data-size="12">12</button>
-            <button class="caliper-btn" data-size="13">13</button>
-          </div>
-
-          <div class="size-reassurance">
-            <i class="fa-solid fa-ring"></i>
-            <span>Uncertain of your exact size? Complimentary sizing kit dispatched first.</span>
-          </div>
-
-          <!-- Finger Fit & Swelling Advisory -->
-          <div class="finger-advisory-box">
-            <i class="fa-solid fa-hand-point-up finger-icon"></i>
-            <div>
-              <strong style="color:var(--ink-light); font-size:13px; display:block; margin-bottom:2px;">Recommended Finger: Index or Middle</strong>
-              <p style="font-size:12px; color:var(--ink-body-light); margin:0; line-height:1.5;">
-                Index finger captures the cleanest optical arterial signal. Smooth inner chamfer naturally breathes with 1mm seasonal hand swelling.
-              </p>
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-badge">
+                <span>✨</span> Instant 1-Click Canva & Code Access
             </div>
-          </div>
-        </div>
-
-        <!-- Pricing Action Row -->
-        <div class="purchase-action-group">
-          <div class="hero-price-tag">
-            <span class="active-price">$199</span>
-            <span class="strikethrough-price">$329</span>
-            <span class="savings-tag">Launch Reserve (Save 40%)</span>
-          </div>
-          <button class="btn-pill btn-action-blue trigger-checkout" data-bundle="Single AuraRing Edition" data-price="199">
-            <i class="fa-solid fa-arrow-right"></i> Reserve Your Ring
-          </button>
-        </div>
-
-        <div style="display: flex; gap: 32px; font-size: 13px; color: var(--ink-body-light); flex-wrap: wrap;">
-          <span><i class="fa-solid fa-shield-halved" style="color:var(--accent-gold); margin-right: 6px;"></i> 2-Year International Warranty</span>
-          <span><i class="fa-solid fa-rotate-left" style="color:var(--accent-gold); margin-right: 6px;"></i> 30-Day Risk-Free Trial</span>
-          <span><i class="fa-solid fa-ban" style="color:var(--accent-gold); margin-right: 6px;"></i> $0 Monthly Subscription</span>
-        </div>
-      </div>
-
-      <!-- Right: Studio Lighting Product Stage -->
-      <div class="studio-product-frame">
-        <div class="product-canvas-holder">
-          <img src="assets/images/ring-stealth-black.svg" alt="AuraRing Titanium Wearable" id="heroMainRing" class="studio-main-ring">
-
-          <!-- Hotspots for Macro Engineering Details -->
-          <button class="hotspot-node hotspot-shell" data-hotspot="shell" title="Titanium Shell">
-            <i class="fa-solid fa-plus"></i>
-          </button>
-          <button class="hotspot-node hotspot-sensor" data-hotspot="sensor" title="PPG Sensors">
-            <i class="fa-solid fa-plus"></i>
-          </button>
-          <button class="hotspot-node hotspot-battery" data-hotspot="battery" title="Micro Battery">
-            <i class="fa-solid fa-plus"></i>
-          </button>
-        </div>
-
-        <!-- Interactive Hotspot Information Popup -->
-        <div id="hotspotInfoBox" style="display: none; background: #1B1A19; border: 1px solid var(--accent-gold); border-radius: 12px; padding: 18px 24px; max-width: 440px; margin-top: 24px; box-shadow: var(--shadow-studio);">
-          <h4 id="hotspotTitle" style="font-family: var(--font-serif); font-size: 18px; color: var(--ink-light); margin-bottom: 6px;"></h4>
-          <p id="hotspotDesc" style="font-size: 13px; color: var(--ink-body-light); margin: 0; line-height: 1.6;"></p>
-        </div>
-
-        <div style="font-size: 12px; color: var(--ink-muted-light); margin-top: 16px; letter-spacing: 0.08em; text-transform: uppercase;">
-          <i class="fa-solid fa-hand-pointer" style="margin-right: 6px;"></i> Click any hotspot pin to inspect engineering
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ======================================================================
-       4. SCANDINAVIAN PHILOSOPHY (EDITORIAL PULLQUOTE)
-       ====================================================================== -->
-  <section class="editorial-quote-section" id="philosophy">
-    <div class="container quote-container">
-      <blockquote class="editorial-pullquote">
-        “We designed AuraRing to disappear. True intelligence shouldn’t buzz on your wrist or demand your gaze. It should <span class="serif-italic">quietly</span> elevate your life.”
-      </blockquote>
-      <p class="editorial-byline">
-        The average smartwatch pesters you with over 80 interruptions a day. AuraRing replaces the digital anxiety of glowing displays with an intimate, screen-free heirloom that measures your biology with clinical precision while you sleep, work, and live.
-      </p>
-    </div>
-  </section>
-
-  <!-- ======================================================================
-       5. ENGINEERING TRILOGY (DARK STUDIO DEEP DIVE)
-       ====================================================================== -->
-  <section class="engineering-section" id="engineering">
-    <div class="container">
-      <div class="section-editorial-intro">
-        <span class="intro-tag">Hardware Engineering</span>
-        <h2 class="serif-heading intro-title">Precision Machining. Zero Compromise.</h2>
-        <p class="intro-desc">
-          By capturing pulse waves directly from the digital arteries of the finger, AuraRing accesses biometric signals 3x stronger and cleaner than the back of the wrist.
-        </p>
-      </div>
-
-      <div class="engineering-trio-grid">
-        <!-- Card 1 -->
-        <div class="engineering-card">
-          <div>
-            <div class="card-number">01</div>
-            <h3 class="card-title">Triple-Wavelength PPG Bio-Array</h3>
-            <p class="card-text">
-              Green, Red, and Infrared optical emitters sample your blood volume pulse at 250Hz. Provides continuous clinical heart rate variability (HRV), resting pulse, and oxygen saturation without disturbing light leaks.
+            <h1>
+                <span>Digital Assets Engineered for</span><br>
+                <span class="gradient-text">Founders, Creators & Builders.</span>
+            </h1>
+            <p>
+                Production-grade Canva suites, responsive web templates, and executive business systems designed to land 6-figure jobs, raise venture capital, and monetize audiences.
             </p>
-          </div>
-          <div class="card-asset-frame">
-            <img src="assets/images/sensor-tech.svg" alt="Optical Sensor Architecture">
-          </div>
-        </div>
-
-        <!-- Card 2 -->
-        <div class="engineering-card">
-          <div>
-            <div class="card-number">02</div>
-            <h3 class="card-title">7-Day Solid Continuous Battery</h3>
-            <p class="card-text">
-              Engineered with custom curved microcells that wrap naturally around your finger. Place AuraRing onto the weighted magnetic dock for 45 minutes to enjoy an entire week of uninterrupted power.
-            </p>
-          </div>
-          <div class="card-asset-frame">
-            <img src="assets/images/charger-dock.svg" alt="Magnetic Charger Dock">
-          </div>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="engineering-card">
-          <div>
-            <div class="card-number">03</div>
-            <h3 class="card-title">Clinical Sleep Architecture</h3>
-            <p class="card-text">
-              Accurately separates REM, Deep, and Light sleep stages. Tracks respiratory stability, skin temperature micro-fluctuations, and recovery readiness so you wake up knowing exactly how prepared your body is.
-            </p>
-          </div>
-          <div class="card-asset-frame">
-            <img src="assets/images/sleep-chart.svg" alt="Sleep Architecture Chart">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ======================================================================
-       5B. COMPANION APP SHOWCASE (MOBILE SOFTWARE LUXURY)
-       ====================================================================== -->
-  <section class="app-showcase-section" id="app-experience">
-    <div class="container app-grid">
-      <!-- Left: iPhone Mobile UI Mockup -->
-      <div class="app-mockup-wrapper">
-        <img src="assets/images/app-showcase.svg" alt="Aura Companion App Interface" class="app-phone-img">
-      </div>
-
-      <!-- Right: App Software Story & Features -->
-      <div class="app-narrative-col">
-        <span class="intro-tag">Mobile Software Intelligence</span>
-        <h2 class="serif-heading intro-title">Your Biology, Translated in Absolute Clarity.</h2>
-        <p class="intro-desc" style="margin-bottom: 40px;">
-          Hardware is only half the instrument. The companion Aura app delivers quiet, distraction-free clarity every morning without charts designed to overwhelm.
-        </p>
-
-        <div class="app-feature-list">
-          <div class="app-feature-item">
-            <div class="app-icon-seal"><i class="fa-solid fa-chart-pie"></i></div>
-            <div>
-              <h4 class="app-feature-title">Algorithmic Daily Readiness</h4>
-              <p class="app-feature-desc">Combines your nocturnal HRV variance, basal skin temperature, and sleep recovery to generate a single 0–100 Readiness score. Know when to train and when to recover.</p>
+            <div class="hero-actions">
+                <a href="#catalog" class="btn-primary">Explore All Templates</a>
+                <a href="https://mdsanaullahsm.gumroad.com" target="_blank" class="btn-secondary">Official Gumroad Store ↗</a>
             </div>
-          </div>
 
-          <div class="app-feature-item">
-            <div class="app-icon-seal"><i class="fa-solid fa-moon"></i></div>
-            <div>
-              <h4 class="app-feature-title">Polysomnography Sleep Stages</h4>
-              <p class="app-feature-desc">Track deep, REM, and light restorative cycles with minute-by-minute hypnogram curves. Detects micro-awakenings that wristwatches miss.</p>
+            <div class="trust-bar">
+                <div class="trust-item">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>100% Verified Commercial Licenses</span>
+                </div>
+                <div class="trust-item">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Free & Pro Canva Compatible</span>
+                </div>
+                <div class="trust-item">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Instant Digital Delivery</span>
+                </div>
             </div>
-          </div>
+        </div>
+    </section>
 
-          <div class="app-feature-item">
-            <div class="app-icon-seal"><i class="fa-solid fa-infinity"></i></div>
-            <div>
-              <h4 class="app-feature-title">Lifetime Free Companion Access</h4>
-              <p class="app-feature-desc">Zero paywalls. Every future algorithm update, sleep trend insight, and companion feature is included free forever for iOS and Android.</p>
+    <!-- Product Catalog -->
+    <section class="catalog" id="catalog">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Digital Products</h2>
+                <p>Click any item to view details or check out instantly via Gumroad 1-click modal.</p>
             </div>
-          </div>
 
-          <div class="app-feature-item">
-            <div class="app-icon-seal"><i class="fa-solid fa-heart-pulse"></i></div>
-            <div>
-              <h4 class="app-feature-title">Seamless 2-Way Health Sync</h4>
-              <p class="app-feature-desc">Bi-directional integration with Apple Health and Google Health Connect. Your data syncs effortlessly with Strava, Peloton, and your doctor's portal.</p>
+            <!-- Category Filter Pills -->
+            <div class="filters">
+                <button class="filter-btn active" onclick="filterCatalog('all', this)">All Templates (10)</button>
+                <button class="filter-btn" onclick="filterCatalog('canva', this)">Canva Suites (6)</button>
+                <button class="filter-btn" onclick="filterCatalog('web', this)">Web Templates (3)</button>
+                <button class="filter-btn" onclick="filterCatalog('finance', this)">Planners & Finance (2)</button>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- ======================================================================
-       6. COMPARISON MATRIX (RADICAL TRANSPARENCY)
-       ====================================================================== -->
-  <section class="matrix-section" id="comparison">
-    <div class="container">
-      <div class="section-editorial-intro" style="margin-bottom: 60px;">
-        <span class="intro-tag">Radical Transparency</span>
-        <h2 class="serif-heading intro-title">Why Discerning Buyers Choose AuraRing.</h2>
-      </div>
+            <!-- Product Grid -->
+            <div class="grid" id="productGrid">
 
-      <table class="matrix-table">
-        <thead>
-          <tr>
-            <th>Feature Matrix</th>
-            <th class="col-highlight">AuraRing Gen 4</th>
-            <th>Leading Subscription Ring</th>
-            <th>Traditional Smartwatches</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><strong>Monthly Subscription Fee</strong></td>
-            <td class="col-highlight val-positive">$0 / Free Lifetime Access</td>
-            <td class="val-negative">$5.99 / Month ($72 per year)</td>
-            <td>$0 – $10 / Month</td>
-          </tr>
-          <tr>
-            <td><strong>Continuous Battery Endurance</strong></td>
-            <td class="col-highlight val-positive">7 Full Days Continuous</td>
-            <td>4 to 5 Days</td>
-            <td class="val-negative">18 to 36 Hours</td>
-          </tr>
-          <tr>
-            <td><strong>Display-Free Mindfulness</strong></td>
-            <td class="col-highlight val-positive">100% Screen-Free Zen</td>
-            <td>Screen-Free</td>
-            <td class="val-negative">Constant vibration alerts &amp; blue light</td>
-          </tr>
-          <tr>
-            <td><strong>Weight on Finger / Wrist</strong></td>
-            <td class="col-highlight val-positive">2.8 Grams (Featherweight)</td>
-            <td>4 to 6 Grams</td>
-            <td class="val-negative">38 to 65 Grams</td>
-          </tr>
-          <tr>
-            <td><strong>Water Immersion Rating</strong></td>
-            <td class="col-highlight val-positive">50 Meters (10 ATM Waterproof)</td>
-            <td>30 Meters</td>
-            <td>50 Meters</td>
-          </tr>
-          <tr>
-            <td><strong>Complimentary Sizing Set</strong></td>
-            <td class="col-highlight val-positive">Included Free in Box</td>
-            <td>Charged as separate order</td>
-            <td>N/A</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
+                <!-- Product 1: The Estate Real Estate Kit -->
+                <div class="card" data-category="canva">
+                    <div class="card-img-wrapper">
+                        <img src="products/real-estate-marketing-kit/gumroad-cover.png" alt="Luxury Real Estate Social Media Kit">
+                        <span class="card-badge badge-canva">Canva Social Suite</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">The Estate — Luxury Real Estate Social Media Kit</h3>
+                        <p class="card-desc">10 luxury Instagram & Facebook layouts for top realtors to showcase high-value listings, open houses, and market stats.</p>
+                        <ul class="card-features">
+                            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> 10 Architectural Portrait Templates (4:5)</li>
+                            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Just Listed, Open House & Sold Slides</li>
+                            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> 1-Click Instant Canva Access</li>
+                        </ul>
+                        <div class="card-footer">
+                            <div class="card-price">$29 <span>USD</span></div>
+                            <div class="card-actions">
+                                <a href="https://mdsanaullahsm.gumroad.com/l/ynnwrn" class="btn-buy gumroad-button">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-  <!-- ======================================================================
-       7. SIZING JOURNEY (UNBOXING EXPERIENCE)
-       ====================================================================== -->
-  <section class="editorial-quote-section" id="sizing" style="background: #FAF7F2;">
-    <div class="container">
-      <div class="section-editorial-intro" style="margin-bottom: 60px;">
-        <span class="intro-tag" style="color: var(--ink-dark);">Guaranteed Perfect Fit</span>
-        <h2 class="serif-heading intro-title" style="color: var(--ink-dark);">The 4-Step Sizing Ritual.</h2>
-        <p class="intro-desc" style="color: var(--ink-body-dark);">
-          Your finger size fluctuates between morning and evening. Our complimentary sizing set ensures your custom titanium ring fits like a bespoke heirloom.
-        </p>
-      </div>
+                <!-- Product 2: The Pitch Startup Deck -->
+                <div class="card" data-category="canva">
+                    <div class="card-img-wrapper">
+                        <img src="products/startup-pitch-deck/gumroad-cover.png" alt="Modern Tech Startup Pitch Deck">
+                        <span class="card-badge badge-canva">Canva Presentation</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">The Pitch — Tech Startup Investor Pitch Deck</h3>
+                        <p class="card-desc">15 institutional-grade slides designed for founders pitching venture capital and angel investors for Seed & Series A rounds.</p>
+                        <ul class="card-features">
+                            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> 15 Complete Slides (TAM/SAM, Unit Econ, Ask)</li>
+                            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Midnight Cyan High-Contrast Data Cards</li>
+                            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Export to PDF Standard or PowerPoint</li>
+                        </ul>
+                        <div class="card-footer">
+                            <div class="card-price">$29 <span>USD</span></div>
+                            <div class="card-actions">
+                                <a href="https://mdsanaullahsm.gumroad.com/l/fsjsd" class="btn-buy gumroad-button">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-      <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; text-align: left;">
-        <div style="background: #FFFFFF; padding: 32px 24px; border-radius: 16px; border: 1px solid var(--border-light); box-shadow: var(--shadow-subtle);">
-          <span style="font-family: var(--font-serif); font-size: 24px; color: var(--accent-action); font-weight: 700;">01</span>
-          <h4 style="font-family: var(--font-serif); font-size: 20px; color: var(--ink-dark); margin: 12px 0 8px 0;">Reserve Your Finish</h4>
-          <p style="font-size: 14px; color: var(--ink-body-dark); line-height: 1.6;">Pick your preferred titanium alloy today. We instantly rush your physical sizing set via priority airmail.</p>
-        </div>
+                <!-- Product 3: The Close Client Proposal -->
+                <div class="card" data-category="canva">
+                    <div class="card-img-wrapper">
+                        <img src="products/freelance-client-proposal/gumroad-cover.png" alt="Freelance Client Proposal & Contract Suite">
+                        <span class="card-badge badge-doc">Canva Document</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">The Close — Freelance Client Proposal & Contract</h3>
+                        <p class="card-desc">Win high-ticket agency & freelance clients with an 8-page structured scope of work, tiered pricing, and legal agreement.</p>
+                        <ul class="card-features">
+                            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> 8-Page Complete Executive Proposal</li>
+                            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Tiered Packages & Milestone Payments</li>
+                            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Pre-written Contract & Sign-Off Block</li>
+                        </ul>
+                        <div class="card-footer">
+                            <div class="card-price">$24 <span>USD</span></div>
+                            <div class="card-actions">
+                                <a href="https://mdsanaullahsm.gumroad.com/l/fbhqi" class="btn-buy gumroad-button">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-        <div style="background: #FFFFFF; padding: 32px 24px; border-radius: 16px; border: 1px solid var(--border-light); box-shadow: var(--shadow-subtle);">
-          <span style="font-family: var(--font-serif); font-size: 24px; color: var(--accent-action); font-weight: 700;">02</span>
-          <h4 style="font-family: var(--font-serif); font-size: 20px; color: var(--ink-dark); margin: 12px 0 8px 0;">Wear for 24 Hours</h4>
-          <p style="font-size: 14px; color: var(--ink-body-dark); line-height: 1.6;">Test our molded precision samples on your index or middle finger overnight to guarantee total sleep comfort.</p>
-        </div>
+                <!-- Product 4: The Creator Instagram Carousel -->
+                <div class="card" data-category="canva">
+                    <div class="card-img-wrapper">
+                        <img src="products/social-media-carousel-kit/gumroad-cover.png" alt="Viral Instagram Carousel Kit">
+                        <span class="card-badge badge-canva">Canva Social Suite</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">The Creator — Viral Instagram Carousel & Story Kit</h3>
+                        <p class="card-desc">Double saves and shares with 12 high-retention carousel frameworks designed for coaches, consultants, and educators.</p>
+                        <ul class="card-features">
+                            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> 12 Multi-Slide Retention Frameworks</li>
+                            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Electric Violet Dark Mode Aesthetic</li>
+                            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Includes Hook & Story Conversion Slides</li>
+                        </ul>
+                        <div class="card-footer">
+                            <div class="card-price">$19 <span>USD</span></div>
+                            <div class="card-actions">
+                                <a href="https://mdsanaullahsm.gumroad.com/l/stnsoe" class="btn-buy gumroad-button">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-        <div style="background: #FFFFFF; padding: 32px 24px; border-radius: 16px; border: 1px solid var(--border-light); box-shadow: var(--shadow-subtle);">
-          <span style="font-family: var(--font-serif); font-size: 24px; color: var(--accent-action); font-weight: 700;">03</span>
-          <h4 style="font-family: var(--font-serif); font-size: 20px; color: var(--ink-dark); margin: 12px 0 8px 0;">Confirm in 1 Tap</h4>
-          <p style="font-size: 14px; color: var(--ink-body-dark); line-height: 1.6;">Scan the QR code inside the presentation box and confirm your chosen size in the companion app.</p>
-        </div>
+                <!-- Product 5: Minimalist Habit Tracker -->
+                <div class="card" data-category="finance">
+                    <div class="card-img-wrapper">
+                        <img src="products/minimalist-habit-tracker/gumroad-cover.png" alt="Minimalist Daily Habit Tracker">
+                        <span class="card-badge badge-doc">Canva + Printable</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Minimalist Daily Habit & Goal Tracker 2026</h3>
+                        <p class="card-desc">Science-backed daily productivity planner sheet. Features 7-day habit grids, routine architecture, and energy monitor.</p>
+                        <ul class="card-features">
+                            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Scandinavian Minimalist Desk Planner</li>
+                            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Printable A4 PDF + GoodNotes Ready</li>
+                            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> 1-Click Editable in Canva Free or Pro</li>
+                        </ul>
+                        <div class="card-footer">
+                            <div class="card-price">$15 <span>USD</span></div>
+                            <div class="card-actions">
+                                <a href="https://mdsanaullahsm.gumroad.com/l/rbqxni" class="btn-buy gumroad-button">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-        <div style="background: #FFFFFF; padding: 32px 24px; border-radius: 16px; border: 1px solid var(--border-light); box-shadow: var(--shadow-subtle);">
-          <span style="font-family: var(--font-serif); font-size: 24px; color: var(--accent-action); font-weight: 700;">04</span>
-          <h4 style="font-family: var(--font-serif); font-size: 20px; color: var(--ink-dark); margin: 12px 0 8px 0;">Titanium Express</h4>
-          <p style="font-size: 14px; color: var(--ink-body-dark); line-height: 1.6;">Your calibrated titanium AuraRing is assembled, tested, and dispatched directly to your doorstep.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+                <!-- Product 6: The Executive ATS Resume -->
+                <div class="card" data-category="canva">
+                    <div class="card-img-wrapper">
+                        <img src="products/executive-ats-resume/gumroad-cover.png" alt="The Executive ATS Resume Suite">
+                        <span class="card-badge badge-canva">Canva Template</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">The Executive — Modern ATS-Friendly Resume Suite</h3>
+                        <p class="card-desc">Engineered to pass Applicant Tracking Systems with 100% compliance while delivering an executive aesthetic.</p>
+                        <ul class="card-features">
+                            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> 1-Page & 2-Page Resume + Cover Letter</li>
+                            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> High-Precision Typography & Whitespace</li>
+                            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Action Verb & Metric Bullet Playbook</li>
+                        </ul>
+                        <div class="card-footer">
+                            <div class="card-price">$19 <span>USD</span></div>
+                            <div class="card-actions">
+                                <a href="https://mdsanaullahsm.gumroad.com/l/jghcvo" class="btn-buy gumroad-button">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-  <!-- ======================================================================
-       7B. WHAT'S IN THE BOX (UNBOXING LUXURY PRESENTATION)
-       ====================================================================== -->
-  <section class="unboxing-section" id="unboxing">
-    <div class="container">
-      <div class="section-editorial-intro">
-        <span class="intro-tag">Complete Luxury Ensemble</span>
-        <h2 class="serif-heading intro-title">What Awaits You Inside the Presentation Box.</h2>
-        <p class="intro-desc">
-          Every AuraRing arrives as a complete heirloom ensemble. Zero accessories sold separately.
-        </p>
-      </div>
+                <!-- Product 7: AuraRing Web Landing Page -->
+                <div class="card" data-category="web">
+                    <div class="card-img-wrapper">
+                        <img src="preview-cover.png" alt="AuraRing Luxury Landing Page">
+                        <span class="card-badge badge-web">HTML5 Web Theme</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">AuraRing — Luxury Single Product E-Commerce</h3>
+                        <p class="card-desc">High-converting landing page for DTC hardware & smart wearables. Pure semantic HTML5, CSS tokens, and 3D showcase.</p>
+                        <ul class="card-features">
+                            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Interactive Finish Switcher (4 Colors)</li>
+                            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Zero Build Tool Dependencies (Pure Code)</li>
+                            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> 100/100 Google Lighthouse Speed</li>
+                        </ul>
+                        <div class="card-footer">
+                            <div class="card-price">$29 <span>USD</span></div>
+                            <div class="card-actions">
+                                <a href="auraring-demo.html" target="_blank" class="btn-demo">Live Demo ↗</a>
+                                <a href="https://mdsanaullahsm.gumroad.com/l/mcxejd" class="btn-buy gumroad-button">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-      <!-- Main Visual Frame -->
-      <div class="unboxing-hero-frame">
-        <img src="assets/images/box-unboxing.svg" alt="AuraRing Luxury Unboxing Spread" class="unboxing-hero-img">
-      </div>
+                <!-- Product 8: Nova SaaS Landing Page -->
+                <div class="card" data-category="web">
+                    <div class="card-img-wrapper">
+                        <img src="products/extra-pins/nova_cover.png" alt="Nova SaaS Landing Page">
+                        <span class="card-badge badge-web">HTML5 Web Theme</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Nova — Premium SaaS & Tech Startup Landing Page</h3>
+                        <p class="card-desc">Modern dark & light mode landing page template engineered for web apps, developer tools, and SaaS startups.</p>
+                        <ul class="card-features">
+                            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Seamless Dark & Light Mode Toggle</li>
+                            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Pricing Tiers, FAQ & Feature Grid</li>
+                            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Fully Responsive Mobile Optimization</li>
+                        </ul>
+                        <div class="card-footer">
+                            <div class="card-price">$19 <span>USD</span></div>
+                            <div class="card-actions">
+                                <a href="https://mdsanaullahsm.gumroad.com/l/nova-landing" class="btn-buy gumroad-button">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-      <!-- 4 Core Items Breakdown -->
-      <div class="unboxing-items-grid">
-        <div class="unboxing-card">
-          <h5>1. AuraRing Titanium</h5>
-          <p>Hand-finished Grade-5 aerospace titanium ring in your chosen alloy finish with medical-grade hypoallergenic resin interior.</p>
-        </div>
+                <!-- Product 9: Small Business Landing Kit -->
+                <div class="card" data-category="web">
+                    <div class="card-img-wrapper">
+                        <img src="products/extra-pins/biz_cover.png" alt="Small Business Landing Page Kit">
+                        <span class="card-badge badge-web">5-in-1 Web Bundle</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Small Business Landing Page Kit — 5 HTML Themes</h3>
+                        <p class="card-desc">All-in-one website bundle for creative agencies, local service providers, consultants, and portfolio showcases.</p>
+                        <ul class="card-features">
+                            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> 5 Complete Production-Ready Themes</li>
+                            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Fast HTML5, Modern CSS & Vanilla JS</li>
+                            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Full Commercial Client Resale Rights</li>
+                        </ul>
+                        <div class="card-footer">
+                            <div class="card-price">$19+ <span>USD</span></div>
+                            <div class="card-actions">
+                                <a href="https://mdsanaullahsm.gumroad.com/l/landingpages" class="btn-buy gumroad-button">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-        <div class="unboxing-card">
-          <h5>2. Weighted Magnetic Dock</h5>
-          <p>Solid CNC-machined aluminum desk dock with rapid magnetic alignment. Charges your ring to 100% in 45 minutes.</p>
-        </div>
+                <!-- Product 10: Wedding Budget & Planner -->
+                <div class="card" data-category="finance">
+                    <div class="card-img-wrapper">
+                        <img src="products/extra-pins/wed_cover.png" alt="Wedding Budget & Event Planner">
+                        <span class="card-badge badge-doc">Digital Spreadsheet</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Complete Wedding Budget & Event Planner</h3>
+                        <p class="card-desc">Smart automated expense tracker, vendor checklist, payment calendar, and seating plan calculator.</p>
+                        <ul class="card-features">
+                            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Automated Calculations & Budget Warnings</li>
+                            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Vendor Payment Tracking & Milestones</li>
+                            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Google Sheets & Excel Compatible</li>
+                        </ul>
+                        <div class="card-footer">
+                            <div class="card-price">$12 <span>USD</span></div>
+                            <div class="card-actions">
+                                <a href="https://mdsanaullahsm.gumroad.com/l/weddingbudget" class="btn-buy gumroad-button">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-        <div class="unboxing-card">
-          <h5>3. Braided USB-C Cable</h5>
-          <p>1.5-meter durable braided cable with full-grain leather organizer tie and gold-plated connectors.</p>
-        </div>
-
-        <div class="unboxing-card">
-          <h5>4. Precision Sizing Set</h5>
-          <p>Complete 8-ring sizing set (Sizes 6–13), presentation collector box, and 2-Year International Warranty Certificate.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ======================================================================
-       8. LIFESTYLE VOICES & EDITORIAL REVIEWS
-       ====================================================================== -->
-  <section class="lifestyle-section" id="reviews">
-    <div class="container">
-      <div class="lifestyle-header">
-        <span class="intro-tag" style="color: var(--ink-dark);">Editorial Acclaim</span>
-        <h2 class="lifestyle-title">Voices of Daily Habit.</h2>
-      </div>
-
-      <div class="lifestyle-grid">
-        <div class="lifestyle-card">
-          <p class="lifestyle-quote">
-            “The absence of a glowing screen is restorative. It simply does its work in silence, and the morning recovery insights are genuinely life-changing.”
-          </p>
-          <div class="lifestyle-author">
-            <div class="author-monogram">EH</div>
-            <div class="author-details">
-              <h5>Dr. Eleanor Hayes</h5>
-              <p>Neuroscience Researcher • Matte Basalt</p>
             </div>
-          </div>
         </div>
+    </section>
 
-        <div class="lifestyle-card">
-          <p class="lifestyle-quote">
-            “I refuse to pay recurring subscriptions to access my own biology. AuraRing provides better industrial design than Oura without holding my data hostage.”
-          </p>
-          <div class="lifestyle-author">
-            <div class="author-monogram">JL</div>
-            <div class="author-details">
-              <h5>Julian Lindqvist</h5>
-              <p>Architect &amp; Designer • Liquid Platinum</p>
+    <!-- Why Buy Pillars -->
+    <section class="pillars" id="pillars">
+        <div class="container">
+            <div class="section-header">
+                <h2>Built for Speed, Quality & Results</h2>
+                <p>Every digital product in our catalog meets strict commercial design standards.</p>
             </div>
-          </div>
-        </div>
-
-        <div class="lifestyle-card">
-          <p class="lifestyle-quote">
-            “It has the weight and feel of high jewelry. When I wear it to black-tie dinners, nobody suspects it is continuously monitoring my arterial pulse.”
-          </p>
-          <div class="lifestyle-author">
-            <div class="author-monogram">CS</div>
-            <div class="author-details">
-              <h5>Claire Sterling</h5>
-              <p>Creative Director • 18K Horizon Rose</p>
+            <div class="pillars-grid">
+                <div class="pillar-card">
+                    <div class="pillar-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                    </div>
+                    <h3>1-Click Canva Access</h3>
+                    <p>No software installations required. Open directly in Canva Free or Pro, tweak copy and brand colors, and export in seconds.</p>
+                </div>
+                <div class="pillar-card">
+                    <div class="pillar-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                    </div>
+                    <h3>Clean, Zero-Bloat Code</h3>
+                    <p>Web templates are written with semantic HTML5 and CSS design tokens. No heavyweight frameworks, ensuring blazing 100/100 performance.</p>
+                </div>
+                <div class="pillar-card">
+                    <div class="pillar-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <h3>Commercial License</h3>
+                    <p>Use for personal branding or client deliverables. Sell websites or present proposals to clients with full peace of mind.</p>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ======================================================================
-       9. CURATED EDITIONS & PACKAGES
-       ====================================================================== -->
-  <section class="curated-pricing-section" id="editions">
-    <div class="container">
-      <div class="section-editorial-intro">
-        <span class="intro-tag">Curated Packages</span>
-        <h2 class="serif-heading intro-title">Select Your Edition.</h2>
-        <p class="intro-desc">Limited allocation reserved for the current titanium casting run.</p>
-      </div>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="#catalog">Catalog</a>
+                <a href="https://mdsanaullahsm.gumroad.com" target="_blank">Gumroad Store</a>
+                <a href="https://www.pinterest.com/usajobsignals/" target="_blank">Pinterest Pins</a>
+                <a href="https://github.com/mdsanaullahsm/auraring-landing-page" target="_blank">GitHub Code</a>
+            </div>
+            <p>© 2026 Sanaullah Studio. All rights reserved. Secure global checkouts powered by Gumroad.</p>
+        </div>
+    </footer>
 
-      <div class="bundle-trio">
-        <!-- Single -->
-        <div class="editorial-bundle-card">
-          <h3 class="bundle-title">Single Edition</h3>
-          <p class="bundle-subtext">For personal bio-intelligence</p>
-          <div class="bundle-figure">$199 <span style="font-size: 18px; color: var(--ink-muted-light); text-decoration: line-through;">$329</span></div>
-          <button class="btn-pill btn-stone-outline trigger-checkout" style="width: 100%; margin-bottom: 24px;" data-bundle="Single AuraRing Edition" data-price="199">
-            Reserve Single Edition
-          </button>
-          <div class="bundle-perks-list">
-            <div class="bundle-perk"><i class="fa-solid fa-check"></i> 1x AuraRing (Any Titanium Finish)</div>
-            <div class="bundle-perk"><i class="fa-solid fa-check"></i> 1x Magnetic Qi Fast-Charge Dock</div>
-            <div class="bundle-perk"><i class="fa-solid fa-check"></i> Complimentary Precision Sizing Set</div>
-            <div class="bundle-perk"><i class="fa-solid fa-check"></i> Zero Subscription Fees for Life</div>
-          </div>
-        </div>
+    <!-- Filter Script -->
+    <script>
+        function filterCatalog(category, btn) {
+            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
 
-        <!-- Duo -->
-        <div class="editorial-bundle-card featured">
-          <div class="featured-crest">Most Coveted Set</div>
-          <h3 class="bundle-title">Heritage Duo Set</h3>
-          <p class="bundle-subtext">Two rings for partners &amp; spouses</p>
-          <div class="bundle-figure">$349 <span style="font-size: 18px; color: var(--ink-muted-light); text-decoration: line-through;">$658</span></div>
-          <button class="btn-pill btn-action-blue trigger-checkout" style="width: 100%; margin-bottom: 24px;" data-bundle="Heritage Duo Set" data-price="349">
-            Reserve Duo Set ($349)
-          </button>
-          <div class="bundle-perks-list">
-            <div class="bundle-perk"><i class="fa-solid fa-check"></i> 2x AuraRings (Mix &amp; Match Any Finishes)</div>
-            <div class="bundle-perk"><i class="fa-solid fa-check"></i> 2x Magnetic Rapid Docks &amp; Cables</div>
-            <div class="bundle-perk"><i class="fa-solid fa-check"></i> 2x Sizing Sets Dispatched Immediately</div>
-            <div class="bundle-perk"><i class="fa-solid fa-check"></i> Private Couple Sync &amp; Sleep Insights</div>
-            <div class="bundle-perk"><i class="fa-solid fa-check"></i> Priority Express White-Glove Dispatch</div>
-          </div>
-        </div>
-
-        <!-- Trio -->
-        <div class="editorial-bundle-card">
-          <h3 class="bundle-title">Collector Trio</h3>
-          <p class="bundle-subtext">Complete family wellness suite</p>
-          <div class="bundle-figure">$489 <span style="font-size: 18px; color: var(--ink-muted-light); text-decoration: line-through;">$987</span></div>
-          <button class="btn-pill btn-stone-outline trigger-checkout" style="width: 100%; margin-bottom: 24px;" data-bundle="Collector Trio Set" data-price="489">
-            Reserve Collector Trio
-          </button>
-          <div class="bundle-perks-list">
-            <div class="bundle-perk"><i class="fa-solid fa-check"></i> 3x AuraRings (Customized Sizes &amp; Finishes)</div>
-            <div class="bundle-perk"><i class="fa-solid fa-check"></i> 3x Rapid Charging Docks</div>
-            <div class="bundle-perk"><i class="fa-solid fa-check"></i> 3-Year Extended International Warranty</div>
-            <div class="bundle-perk"><i class="fa-solid fa-check"></i> Lifetime VIP Concierge Support</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ======================================================================
-       10. NORDIC ACCORDION FAQ
-       ====================================================================== -->
-  <section class="editorial-faq-section" id="faq">
-    <div class="container faq-narrow-holder">
-      <div class="section-editorial-intro" style="margin-bottom: 50px;">
-        <span class="intro-tag">Answers &amp; Guidance</span>
-        <h2 class="serif-heading intro-title">Frequently Considered.</h2>
-      </div>
-
-      <div class="nordic-faq-item active">
-        <div class="nordic-faq-trigger">
-          <span>How does AuraRing function with zero subscription fees?</span>
-          <i class="fa-solid fa-chevron-down faq-chevron"></i>
-        </div>
-        <div class="nordic-faq-panel">
-          <p>We treat biometric hardware like high horology or fine cameras: you purchase the instrument, and the insights are yours forever. We do not maintain server paywalls or hostage fees. Our business model relies on hardware excellence, not recurring monthly subscription fees.</p>
-        </div>
-      </div>
-
-      <div class="nordic-faq-item">
-        <div class="nordic-faq-trigger">
-          <span>Is the companion app compatible with iOS and Android?</span>
-          <i class="fa-solid fa-chevron-down faq-chevron"></i>
-        </div>
-        <div class="nordic-faq-panel">
-          <p>Yes. The Aura companion software runs seamlessly on iPhone (iOS 15 and above) and modern Android devices. It natively syncs with Apple Health, Google Health Connect, Strava, and TrainingPeaks.</p>
-        </div>
-      </div>
-
-      <div class="nordic-faq-item">
-        <div class="nordic-faq-trigger">
-          <span>Can I wear the ring in hot saunas, ocean water, or heavy lifting?</span>
-          <i class="fa-solid fa-chevron-down faq-chevron"></i>
-        </div>
-        <div class="nordic-faq-panel">
-          <p>AuraRing is forged from solid Grade-5 titanium with a sealed medical resin inner core rated to 50 meters (10 ATM). It withstands ocean saltwater, high-heat dry saunas, and chlorinated pools without degradation.</p>
-        </div>
-      </div>
-
-      <div class="nordic-faq-item">
-        <div class="nordic-faq-trigger">
-          <span>What occurs if my ring does not fit comfortably?</span>
-          <i class="fa-solid fa-chevron-down faq-chevron"></i>
-        </div>
-        <div class="nordic-faq-panel">
-          <p>Every purchase includes a 30-Day Risk-Free Trial from the day your titanium ring arrives. If the fit feels imperfect, we provide one complimentary size exchange with prepaid return shipping.</p>
-        </div>
-      </div>
-
-      <div class="nordic-faq-item">
-        <div class="nordic-faq-trigger">
-          <span>How fast will my sizing kit and titanium ring arrive?</span>
-          <i class="fa-solid fa-chevron-down faq-chevron"></i>
-        </div>
-        <div class="nordic-faq-panel">
-          <p>Your complimentary Precision Sizing Set is dispatched within 24 hours of ordering (arriving in 2–3 business days via priority airmail). Once you confirm your size in the app, your custom titanium AuraRing is calibrated and delivered within 48–72 hours via express courier. Total time from order to finger is under 7 business days.</p>
-        </div>
-      </div>
-
-      <div class="nordic-faq-item">
-        <div class="nordic-faq-trigger">
-          <span>What is the lifespan of the battery over 2–5 years?</span>
-          <i class="fa-solid fa-chevron-down faq-chevron"></i>
-        </div>
-        <div class="nordic-faq-panel">
-          <p>AuraRing uses solid-state high-density microcells rated for 400+ complete charge cycles with less than 15% degradation (equivalent to over 5 years of daily continuous use). Should you experience any abnormal battery decline within your first 2 years, we replace the entire ring free under warranty.</p>
-        </div>
-      </div>
-
-      <div class="nordic-faq-item">
-        <div class="nordic-faq-trigger">
-          <span>Which finger is recommended for the most accurate readings?</span>
-          <i class="fa-solid fa-chevron-down faq-chevron"></i>
-        </div>
-        <div class="nordic-faq-panel">
-          <p>We recommend wearing AuraRing on your index finger for the highest optical PPG signal accuracy from the palmar digital arteries. However, the middle and ring fingers provide equally valid sleep staging. Our gentle internal chamfer naturally accommodates minor seasonal temperature swelling.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ======================================================================
-       11. STICKY STUDIO BUY BAR
-       ====================================================================== -->
-  <aside class="studio-sticky-bar" id="studioStickyBar">
-    <div class="container sticky-bar-flex">
-      <div class="sticky-product-meta">
-        <img src="assets/images/ring-stealth-black.svg" alt="AuraRing Thumbnail" id="stickyRingThumb" class="sticky-iconic-thumb">
-        <div>
-          <div class="sticky-ring-title">AuraRing Titanium Edition</div>
-          <div class="sticky-ring-desc"><span id="stickyFinishText">Matte Basalt Titanium</span> • $0 Subscriptions</div>
-        </div>
-      </div>
-      <div class="sticky-right-actions">
-        <div class="sticky-live-price">$199 <small style="font-size: 14px; color: var(--ink-muted-light); text-decoration: line-through;">$329</small></div>
-        <button class="btn-pill btn-action-blue trigger-checkout" data-bundle="Single AuraRing Edition" data-price="199">
-          Reserve Now
-        </button>
-      </div>
-    </div>
-  </aside>
-
-  <!-- ======================================================================
-       12. EDITORIAL SLIDE-OVER CHECKOUT DRAWER
-       ====================================================================== -->
-  <div class="drawer-backdrop" id="drawerBackdrop"></div>
-  <div class="editorial-drawer" id="editorialDrawer">
-    <div class="drawer-top-banner">
-      <div class="drawer-headline">Your Reserve Allocation</div>
-      <button class="drawer-exit-btn" id="drawerExitBtn" aria-label="Close Bag">
-        <i class="fa-solid fa-xmark"></i>
-      </button>
-    </div>
-
-    <div class="drawer-scroll-body">
-      <!-- Priority Dispatch Delivery Urgency Banner -->
-      <div class="delivery-urgency-banner">
-        <i class="fa-solid fa-bolt"></i>
-        <span><strong>Priority Dispatch:</strong> Order within the next 2h 45m for Sizing Kit delivery by <strong>Tuesday</strong>.</span>
-      </div>
-
-      <!-- Item Box -->
-      <div class="drawer-item-box">
-        <img src="assets/images/ring-stealth-black.svg" alt="Selected Ring Finish" id="drawerRingThumb" class="drawer-product-thumb">
-        <div class="drawer-item-info">
-          <h4 id="drawerBundleTitle">Single AuraRing Edition</h4>
-          <p>Finish: <strong id="drawerFinishText" style="color:var(--ink-light);">Matte Basalt Titanium</strong></p>
-          <p>Size: <strong id="drawerSizeText" style="color:var(--ink-light);">US 9 (19.0 mm)</strong></p>
-          <p style="color: var(--accent-gold); font-size: 12px; margin-top: 4px;"><i class="fa-solid fa-check"></i> Precision Sizing Set Included Free</p>
-        </div>
-      </div>
-
-      <!-- Promo Code Field -->
-      <div style="margin-bottom: 24px;">
-        <label style="font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--ink-light); display: block; margin-bottom: 8px;">Collector Courtesy Code</label>
-        <div style="display: flex; gap: 8px;">
-          <input type="text" id="promoInput" placeholder="Enter NORDIC10" style="flex: 1; background: #1B1A19; border: 1px solid var(--border-dark); color: var(--ink-light); padding: 12px 16px; border-radius: var(--radius-sm);">
-          <button type="button" id="applyPromoBtn" class="btn-pill btn-stone-outline" style="border-radius: var(--radius-sm); padding: 10px 18px;">Apply</button>
-        </div>
-        <p id="promoFeedback" style="font-size: 12px; margin-top: 6px;"></p>
-      </div>
-
-      <!-- Guarantee -->
-      <div style="border: 1px solid var(--border-dark); border-radius: 12px; padding: 16px; font-size: 13px; background: rgba(255, 255, 255, 0.02);">
-        <div style="color: var(--accent-gold); font-weight: 600; margin-bottom: 4px;">
-          <i class="fa-solid fa-lock" style="margin-right: 6px;"></i> 256-Bit Encrypted Direct Checkout
-        </div>
-        <p style="color: var(--ink-muted-light); font-size: 12px; margin: 0; line-height: 1.6;">
-          Your allocation is held securely. You will receive tracking and sizing kit details immediately upon order confirmation.
-        </p>
-      </div>
-    </div>
-
-    <div class="drawer-bottom-cta">
-      <div class="breakdown-line">
-        <span>Subtotal:</span>
-        <span id="drawerSubtotal" style="color: var(--ink-light); font-weight: 600;">$199</span>
-      </div>
-      <div class="breakdown-line">
-        <span>Insured Priority Shipping:</span>
-        <span style="color: var(--accent-gold); font-weight: 600;">COMPLIMENTARY</span>
-      </div>
-      <div class="breakdown-line total-line">
-        <span>Grand Total:</span>
-        <span id="drawerGrandTotal" style="color: var(--accent-gold);">$199</span>
-      </div>
-
-      <button class="btn-pill btn-action-blue" style="width: 100%; margin-top: 16px; padding: 16px;" onclick="alert('Proceeding to payment gateway integration (Stripe / Shopify / Lemon Squeezy).')">
-        <i class="fa-solid fa-lock"></i> Proceed to Payment
-      </button>
-    </div>
-  </div>
-
-  <!-- ======================================================================
-       13. EDITORIAL FOOTER
-       ====================================================================== -->
-  <footer class="editorial-footer">
-    <div class="container">
-      <div class="footer-quad-grid">
-        <div class="footer-lead">
-          <a href="#" class="brand-mark" style="margin-bottom: 12px;">
-            <img src="assets/images/auraring-logo.svg" alt="AuraRing" class="brand-logo-img" style="height: 30px;">
-          </a>
-          <p>
-            An understated piece of biometric jewelry crafted from solid Grade-5 titanium. Continuous sleep architecture, arterial HRV, and circadian insights without screens.
-          </p>
-        </div>
-
-        <div>
-          <h4 class="footer-col-title">Exploration</h4>
-          <ul class="footer-link-list">
-            <li><a href="#philosophy">The Philosophy</a></li>
-            <li><a href="#engineering">Bio-Sensors</a></li>
-            <li><a href="#comparison">Compare Wearables</a></li>
-            <li><a href="#sizing">Sizing Ritual</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h4 class="footer-col-title">Client Care</h4>
-          <ul class="footer-link-list">
-            <li><a href="#faq">FAQ &amp; Sizing</a></li>
-            <li><a href="#">Order Status</a></li>
-            <li><a href="#">30-Day Guarantee</a></li>
-            <li><a href="#">Warranty Registry</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h4 class="footer-col-title">Legal &amp; Privacy</h4>
-          <ul class="footer-link-list">
-            <li><a href="#">Biometric Privacy</a></li>
-            <li><a href="#">Terms of Service</a></li>
-            <li><a href="#">HIPAA Compliance</a></li>
-            <li><a href="#">Patent Architecture</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="footer-closing-row">
-        <div>&copy; 2026 AuraRing Inc. Handcrafted for digital marketplace excellence.</div>
-        <div class="payment-seal-row">
-          <i class="fa-brands fa-cc-visa" title="Visa"></i>
-          <i class="fa-brands fa-cc-mastercard" title="Mastercard"></i>
-          <i class="fa-brands fa-cc-amex" title="American Express"></i>
-          <i class="fa-brands fa-cc-apple-pay" title="Apple Pay"></i>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Script Initialization -->
-  <script src="assets/js/main.js"></script>
+            const cards = document.querySelectorAll('.card');
+            cards.forEach(card => {
+                if (category === 'all' || card.getAttribute('data-category') === category) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+    </script>
 </body>
 </html>
