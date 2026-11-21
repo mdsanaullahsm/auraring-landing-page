@@ -498,6 +498,190 @@
             color: var(--text-primary);
         }
 
+        /* Apple-Style Interactive Slide Preview Modal */
+        .preview-modal-backdrop {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.88);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            z-index: 10000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.25s ease, visibility 0.25s ease;
+        }
+
+        .preview-modal-backdrop.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .preview-modal-card {
+            background: #1c1c1e;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 20px;
+            width: 100%;
+            max-width: 940px;
+            max-height: 94vh;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.95);
+            transform: scale(0.96);
+            transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .preview-modal-backdrop.active .preview-modal-card {
+            transform: scale(1);
+        }
+
+        .preview-modal-header {
+            padding: 16px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            background: rgba(28, 28, 30, 0.95);
+        }
+
+        .preview-modal-title {
+            font-size: 17px;
+            font-weight: 700;
+            color: #ffffff;
+            letter-spacing: -0.01em;
+        }
+
+        .preview-modal-sub {
+            font-size: 12.5px;
+            color: var(--text-secondary);
+            margin-top: 2px;
+        }
+
+        .preview-modal-close {
+            background: rgba(255, 255, 255, 0.1);
+            border: none;
+            color: #ffffff;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            transition: background-color 0.2s;
+        }
+
+        .preview-modal-close:hover {
+            background: rgba(255, 255, 255, 0.22);
+        }
+
+        .preview-modal-viewport {
+            position: relative;
+            background: #0b0b0d;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+            min-height: 440px;
+            max-height: 62vh;
+            overflow: hidden;
+        }
+
+        .preview-slide-img-box {
+            position: relative;
+            max-height: 58vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .preview-slide-img-box img {
+            max-width: 100%;
+            max-height: 56vh;
+            object-fit: contain;
+            border-radius: 8px;
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.7);
+            display: block;
+        }
+
+        .preview-watermark-tag {
+            position: absolute;
+            bottom: 14px;
+            right: 14px;
+            background: rgba(0, 0, 0, 0.75);
+            backdrop-filter: blur(6px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            color: #f5f5f7;
+            font-size: 11px;
+            font-weight: 600;
+            padding: 4px 10px;
+            border-radius: 6px;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            pointer-events: none;
+        }
+
+        .preview-nav-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(30, 30, 32, 0.88);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            color: #ffffff;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 22px;
+            font-weight: 300;
+            transition: all 0.2s;
+            z-index: 10;
+        }
+
+        .preview-nav-btn:hover {
+            background: rgba(255, 255, 255, 0.25);
+            transform: translateY(-50%) scale(1.05);
+        }
+
+        .preview-nav-btn.prev { left: 16px; }
+        .preview-nav-btn.next { right: 16px; }
+
+        .preview-modal-footer {
+            padding: 16px 24px;
+            background: #161617;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .preview-modal-security {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 12.5px;
+            color: var(--text-secondary);
+        }
+
+        .preview-modal-security svg {
+            color: #f59e0b;
+            flex-shrink: 0;
+        }
+
         @media (max-width: 768px) {
             .billboard-title { font-size: 38px; }
             .billboard-tagline { font-size: 17px; }
@@ -564,7 +748,7 @@
 
             <div class="cta-group">
                 <a href="https://mdsanaullahsm.gumroad.com/l/ynnwrn" class="btn-apple-primary gumroad-button">Buy Now — $29</a>
-                <a href="https://canva.link/kikjun3b8bqflal" target="_blank" class="btn-apple-secondary">Live Demo ↗</a>
+                <button type="button" onclick="openSlidePreview('the-estate')" class="btn-apple-secondary">Interactive Preview ↗</button>
             </div>
 
             <div class="billboard-media">
@@ -602,7 +786,7 @@
 
             <div class="cta-group">
                 <a href="https://mdsanaullahsm.gumroad.com/l/fsjsd" class="btn-apple-primary gumroad-button">Buy Now — $29</a>
-                <a href="https://canva.link/jw5opycl1yvhfoj" target="_blank" class="btn-apple-secondary">Live Demo ↗</a>
+                <button type="button" onclick="openSlidePreview('the-pitch')" class="btn-apple-secondary">Interactive Preview ↗</button>
             </div>
 
             <div class="billboard-media">
@@ -624,7 +808,7 @@
                     <div class="bento-price">From <strong>$24</strong> · Free Canva Ready</div>
                     <div class="cta-group">
                         <a href="https://mdsanaullahsm.gumroad.com/l/fbhqi" class="btn-apple-primary gumroad-button">Buy — $24</a>
-                        <a href="https://canva.link/4retv3p2ek3lnl0" target="_blank" class="btn-apple-secondary">Demo ↗</a>
+                        <button type="button" onclick="openSlidePreview('the-close')" class="btn-apple-secondary">Preview ↗</button>
                     </div>
                 </div>
                 <div class="bento-media">
@@ -641,7 +825,7 @@
                     <div class="bento-price">From <strong>$19</strong> · Carousel + 9:16 Stories</div>
                     <div class="cta-group">
                         <a href="https://mdsanaullahsm.gumroad.com/l/stnsoe" class="btn-apple-primary gumroad-button">Buy — $19</a>
-                        <a href="https://canva.link/awhu6qvx9ud103u" target="_blank" class="btn-apple-secondary">Demo ↗</a>
+                        <button type="button" onclick="openSlidePreview('the-creator')" class="btn-apple-secondary">Preview ↗</button>
                     </div>
                 </div>
                 <div class="bento-media">
@@ -675,7 +859,7 @@
                     <div class="bento-price">From <strong>$15</strong> · GoodNotes & Canva Ready</div>
                     <div class="cta-group">
                         <a href="https://mdsanaullahsm.gumroad.com/l/rbqxni" class="btn-apple-primary gumroad-button">Buy — $15</a>
-                        <a href="https://canva.link/k39l1mn5qweebpv" target="_blank" class="btn-apple-secondary">Demo ↗</a>
+                        <button type="button" onclick="openSlidePreview('habit-tracker')" class="btn-apple-secondary">Preview ↗</button>
                     </div>
                 </div>
                 <div class="bento-media">
@@ -709,7 +893,7 @@
                     <div class="bento-price">From <strong>$19</strong> · Resume + Cover Letter</div>
                     <div class="cta-group">
                         <a href="https://mdsanaullahsm.gumroad.com/l/jghcvo" class="btn-apple-primary gumroad-button">Buy — $19</a>
-                        <a href="https://canva.link/acfdnemcyosabhd" target="_blank" class="btn-apple-secondary">Demo ↗</a>
+                        <button type="button" onclick="openSlidePreview('executive-resume')" class="btn-apple-secondary">Preview ↗</button>
                     </div>
                 </div>
                 <div class="bento-media">
@@ -760,6 +944,36 @@
 
     </main>
 
+    <!-- Apple-Style Interactive Slide Preview Modal -->
+    <div id="previewModal" class="preview-modal-backdrop" onclick="handleModalBackdropClick(event)">
+        <div class="preview-modal-card">
+            <div class="preview-modal-header">
+                <div>
+                    <h3 id="modalTitle" class="preview-modal-title">Product Preview</h3>
+                    <p id="modalSubtitle" class="preview-modal-sub">Slide 1 of 10 · Interactive Template Preview</p>
+                </div>
+                <button type="button" class="preview-modal-close" onclick="closePreviewModal()" aria-label="Close Preview">✕</button>
+            </div>
+
+            <div class="preview-modal-viewport">
+                <button type="button" class="preview-nav-btn prev" onclick="prevSlide()" aria-label="Previous Slide">‹</button>
+                <div class="preview-slide-img-box">
+                    <img id="modalSlideImg" src="" alt="Template Slide Preview">
+                    <div class="preview-watermark-tag">SM Studio Preview</div>
+                </div>
+                <button type="button" class="preview-nav-btn next" onclick="nextSlide()" aria-label="Next Slide">›</button>
+            </div>
+
+            <div class="preview-modal-footer">
+                <div class="preview-modal-security">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                    <span>Master Canva Template is locked. Purchase to customize text, colors & photos.</span>
+                </div>
+                <a id="modalBuyBtn" href="#" class="btn-apple-primary gumroad-button">Buy Now to Edit in Canva — $29</a>
+            </div>
+        </div>
+    </div>
+
     <!-- Apple Minimal Footer -->
     <footer>
         <div class="footer-inner">
@@ -809,6 +1023,122 @@
                 }
             });
         }
+
+        // Canva Slide Previews Data (100% Protected - No Direct Canva Edit Links)
+        const CANVA_PREVIEWS = {
+            'the-estate': {
+                title: 'The Estate — Luxury Real Estate Marketing Kit',
+                total: 10,
+                basePath: 'products/real-estate-marketing-kit/slides/slide_',
+                price: '$29',
+                gumroadUrl: 'https://mdsanaullahsm.gumroad.com/l/ynnwrn'
+            },
+            'the-pitch': {
+                title: 'The Pitch — Tech Startup Investor Pitch Deck',
+                total: 15,
+                basePath: 'products/startup-pitch-deck/slides/slide_',
+                price: '$29',
+                gumroadUrl: 'https://mdsanaullahsm.gumroad.com/l/fsjsd'
+            },
+            'the-close': {
+                title: 'The Close — Client Proposal & Legal Contract',
+                total: 3,
+                basePath: 'products/freelance-client-proposal/slides/slide_',
+                price: '$24',
+                gumroadUrl: 'https://mdsanaullahsm.gumroad.com/l/fbhqi'
+            },
+            'the-creator': {
+                title: 'The Creator — Viral Instagram Carousel & Story Kit',
+                total: 12,
+                basePath: 'products/social-media-carousel-kit/slides/slide_',
+                price: '$19',
+                gumroadUrl: 'https://mdsanaullahsm.gumroad.com/l/stnsoe'
+            },
+            'habit-tracker': {
+                title: 'Minimalist Daily Habit & Goal Tracker 2026',
+                total: 1,
+                basePath: 'products/minimalist-habit-tracker/slides/slide_',
+                price: '$15',
+                gumroadUrl: 'https://mdsanaullahsm.gumroad.com/l/rbqxni'
+            },
+            'executive-resume': {
+                title: 'The Executive — Modern ATS Resume Suite',
+                total: 2,
+                basePath: 'products/executive-ats-resume/slides/slide_',
+                price: '$19',
+                gumroadUrl: 'https://mdsanaullahsm.gumroad.com/l/jghcvo'
+            }
+        };
+
+        let currentPreview = null;
+        let currentSlideIdx = 1;
+
+        function openSlidePreview(productId) {
+            const data = CANVA_PREVIEWS[productId];
+            if (!data) return;
+            currentPreview = data;
+            currentSlideIdx = 1;
+
+            document.getElementById('modalTitle').textContent = data.title;
+            const buyBtn = document.getElementById('modalBuyBtn');
+            buyBtn.textContent = `Buy Now to Edit in Canva — ${data.price}`;
+            buyBtn.href = data.gumroadUrl;
+
+            updateModalSlide();
+            const modal = document.getElementById('previewModal');
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closePreviewModal() {
+            const modal = document.getElementById('previewModal');
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        function handleModalBackdropClick(e) {
+            if (e.target.id === 'previewModal') {
+                closePreviewModal();
+            }
+        }
+
+        function updateModalSlide() {
+            if (!currentPreview) return;
+            const img = document.getElementById('modalSlideImg');
+            img.src = `${currentPreview.basePath}${currentSlideIdx}.jpg`;
+            document.getElementById('modalSubtitle').textContent = `Slide ${currentSlideIdx} of ${currentPreview.total} · Interactive Template Preview (Locked)`;
+            
+            const prevBtn = document.querySelector('.preview-nav-btn.prev');
+            const nextBtn = document.querySelector('.preview-nav-btn.next');
+            if (currentPreview.total <= 1) {
+                prevBtn.style.display = 'none';
+                nextBtn.style.display = 'none';
+            } else {
+                prevBtn.style.display = 'flex';
+                nextBtn.style.display = 'flex';
+            }
+        }
+
+        function nextSlide() {
+            if (!currentPreview) return;
+            currentSlideIdx = currentSlideIdx >= currentPreview.total ? 1 : currentSlideIdx + 1;
+            updateModalSlide();
+        }
+
+        function prevSlide() {
+            if (!currentPreview) return;
+            currentSlideIdx = currentSlideIdx <= 1 ? currentPreview.total : currentSlideIdx - 1;
+            updateModalSlide();
+        }
+
+        // Keyboard Arrow Navigation
+        document.addEventListener('keydown', (e) => {
+            const modal = document.getElementById('previewModal');
+            if (!modal || !modal.classList.contains('active')) return;
+            if (e.key === 'ArrowRight') nextSlide();
+            if (e.key === 'ArrowLeft') prevSlide();
+            if (e.key === 'Escape') closePreviewModal();
+        });
     </script>
 </body>
 </html>
