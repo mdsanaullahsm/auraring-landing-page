@@ -115,20 +115,87 @@
         .nav-menu {
             display: flex;
             align-items: center;
-            gap: 28px;
+            gap: 6px;
             list-style: none;
         }
 
-        .nav-menu a {
+        .nav-item-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
             text-decoration: none;
             color: var(--text-secondary);
-            font-size: 13px;
-            font-weight: 600;
-            transition: color 0.2s;
+            font-size: 12.5px;
+            font-weight: 700;
+            padding: 5px 12px;
+            border-radius: 980px;
+            background: rgba(226, 220, 208, 0.5);
+            border: 1px solid var(--border-subtle);
+            transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+            position: relative;
         }
 
-        .nav-menu a:hover {
-            color: var(--text-primary);
+        .nav-brand-icon {
+            flex-shrink: 0;
+            transition: transform 0.2s ease;
+        }
+
+        .nav-item-link:hover .nav-brand-icon {
+            transform: scale(1.15);
+        }
+
+        /* Canva Suites Custom Glow & Color */
+        .nav-item-canva:hover {
+            background: rgba(0, 196, 204, 0.12) !important;
+            border-color: rgba(0, 196, 204, 0.45) !important;
+            color: #00767c !important;
+            box-shadow: 0 4px 14px rgba(0, 196, 204, 0.25) !important;
+            transform: translateY(-1px);
+        }
+
+        /* Web Themes Custom Glow */
+        .nav-item-web:hover {
+            background: rgba(59, 130, 246, 0.12) !important;
+            border-color: rgba(59, 130, 246, 0.45) !important;
+            color: #1d4ed8 !important;
+            box-shadow: 0 4px 14px rgba(59, 130, 246, 0.25) !important;
+            transform: translateY(-1px);
+        }
+
+        /* Spreadsheets Custom Glow */
+        .nav-item-sheets:hover {
+            background: rgba(16, 124, 65, 0.12) !important;
+            border-color: rgba(16, 124, 65, 0.45) !important;
+            color: #0e6334 !important;
+            box-shadow: 0 4px 14px rgba(16, 124, 65, 0.25) !important;
+            transform: translateY(-1px);
+        }
+
+        /* Pinterest Custom Glow & Red Accent */
+        .nav-item-pinterest:hover {
+            background: rgba(230, 0, 35, 0.12) !important;
+            border-color: rgba(230, 0, 35, 0.45) !important;
+            color: #b8001c !important;
+            box-shadow: 0 4px 14px rgba(230, 0, 35, 0.28) !important;
+            transform: translateY(-1px);
+        }
+
+        /* Twitter / X Custom Glow & Dark Accent */
+        .nav-item-twitter:hover {
+            background: rgba(18, 18, 16, 0.12) !important;
+            border-color: rgba(18, 18, 16, 0.45) !important;
+            color: #000000 !important;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2) !important;
+            transform: translateY(-1px);
+        }
+
+        /* LinkedIn Custom Glow & Blue Accent */
+        .nav-item-linkedin:hover {
+            background: rgba(10, 102, 194, 0.12) !important;
+            border-color: rgba(10, 102, 194, 0.45) !important;
+            color: #084e96 !important;
+            box-shadow: 0 4px 14px rgba(10, 102, 194, 0.28) !important;
+            transform: translateY(-1px);
         }
 
         .nav-store-btn {
@@ -904,13 +971,66 @@
             </a>
 
             <ul class="nav-menu">
-                <li><a href="#catalog" onclick="filterCatalog('all')">All Products</a></li>
-                <li><a href="#catalog" onclick="filterCatalog('canva')">Canva Suites</a></li>
-                <li><a href="#catalog" onclick="filterCatalog('web')">Web Themes</a></li>
-                <li><a href="#catalog" onclick="filterCatalog('spreadsheet')">Spreadsheets</a></li>
-                <li><a href="https://www.pinterest.com/usajobsignals/" target="_blank">Pinterest</a></li>
-                <li><a href="https://x.com/MondolSanaullah" target="_blank">Twitter</a></li>
-                <li><a href="https://www.linkedin.com/in/sanaullahmondol/" target="_blank">LinkedIn</a></li>
+                <li>
+                    <a href="#catalog" onclick="filterCatalog('canva')" class="nav-item-link nav-item-canva" title="Filter Canva Suites">
+                        <svg class="nav-brand-icon" width="16" height="16" viewBox="0 0 24 24" fill="none">
+                            <circle cx="12" cy="12" r="11" fill="url(#canvaNavGrad)"/>
+                            <path d="M14.5 15.2c-.8.6-1.8 1-2.9 1-2.6 0-4.6-1.8-4.6-4.4s2-4.4 4.6-4.4c1.1 0 2.1.4 2.9 1" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round"/>
+                            <defs>
+                                <linearGradient id="canvaNavGrad" x1="0" y1="0" x2="24" y2="24" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#00C4CC"/>
+                                    <stop offset="100%" stop-color="#7D2AE8"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <span>Canva Suites</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#catalog" onclick="filterCatalog('web')" class="nav-item-link nav-item-web" title="Filter Web Themes">
+                        <svg class="nav-brand-icon" width="16" height="16" viewBox="0 0 24 24" fill="none">
+                            <rect x="2" y="3" width="20" height="18" rx="4" fill="#3b82f6"/>
+                            <path d="M8 9l-3 3 3 3M16 9l3 3-3 3M13 8l-2 8" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Web Themes</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#catalog" onclick="filterCatalog('spreadsheet')" class="nav-item-link nav-item-sheets" title="Filter Spreadsheets">
+                        <svg class="nav-brand-icon" width="16" height="16" viewBox="0 0 24 24" fill="none">
+                            <rect x="2" y="3" width="20" height="18" rx="4" fill="#107C41"/>
+                            <path d="M6 8h12M6 12h12M6 16h12M11 8v8" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round"/>
+                        </svg>
+                        <span>Spreadsheets</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.pinterest.com/usajobsignals/" target="_blank" class="nav-item-link nav-item-pinterest" title="Visit Pinterest Profile">
+                        <svg class="nav-brand-icon" width="16" height="16" viewBox="0 0 24 24" fill="none">
+                            <circle cx="12" cy="12" r="11" fill="#E60023"/>
+                            <path d="M12 6.5c-3 0-5.5 2.2-5.5 5 0 2.1 1.3 3.9 3.2 4.6-.04-.4-.08-1 .02-1.4l.7-2.9s-.2-.4-.2-.9c0-.9.5-1.5 1.1-1.5.5 0 .8.4.8.9 0 .5-.3 1.3-.5 2-.1.6.3 1.1.9 1.1 1.1 0 1.9-1.2 1.9-2.9 0-1.5-1.1-2.6-2.7-2.6-1.9 0-3 1.4-3 2.9 0 .6.2 1.2.5 1.5.05.07.06.12.04.19l-.2.8c-.03.13-.1.17-.23.1-1-.5-1.6-1.9-1.6-3.1 0-2.5 1.8-4.8 5.3-4.8 2.8 0 5 2 5 4.7 0 2.8-1.7 5-4.2 5-.8 0-1.6-.4-1.9-.9l-.5 2c-.2.7-.7 1.6-1.1 2.2.8.2 1.7.4 2.5.4 4.1 0 7.5-3.4 7.5-7.5S16.1 6.5 12 6.5z" fill="#ffffff"/>
+                        </svg>
+                        <span>Pinterest</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://x.com/MondolSanaullah" target="_blank" class="nav-item-link nav-item-twitter" title="Follow on Twitter / X">
+                        <svg class="nav-brand-icon" width="16" height="16" viewBox="0 0 24 24" fill="none">
+                            <rect x="2" y="3" width="20" height="18" rx="4" fill="#000000"/>
+                            <path d="M16.5 6.5h2.3l-5 5.8 5.9 7.7h-4.6l-3.6-4.7-4.1 4.7H5.1l5.4-6.2L4.8 6.5h4.7l3.3 4.3zm-.8 12.2h1.3L8.7 7.7H7.3z" fill="#ffffff"/>
+                        </svg>
+                        <span>Twitter</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/sanaullahmondol/" target="_blank" class="nav-item-link nav-item-linkedin" title="Connect on LinkedIn">
+                        <svg class="nav-brand-icon" width="16" height="16" viewBox="0 0 24 24" fill="none">
+                            <rect x="2" y="3" width="20" height="18" rx="4" fill="#0A66C2"/>
+                            <path d="M7.5 18H5V10h2.5v8zM6.25 8.8a1.4 1.4 0 1 1 0-2.8 1.4 1.4 0 0 1 0 2.8zM19 18h-2.5v-4.4c0-1-.4-1.7-1.3-1.7-.7 0-1.1.5-1.3.9-.1.2-.1.4-.1.7V18h-2.5s.03-7.3 0-8h2.5v1.2c.3-.5 1-1.3 2.3-1.3 1.7 0 2.9 1.1 2.9 3.5V18z" fill="#ffffff"/>
+                        </svg>
+                        <span>LinkedIn</span>
+                    </a>
+                </li>
             </ul>
 
             <a href="https://mdsanaullahsm.gumroad.com" target="_blank" class="nav-store-btn">Official Store ↗</a>
