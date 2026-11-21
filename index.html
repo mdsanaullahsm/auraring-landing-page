@@ -16,22 +16,24 @@
 
     <style>
         :root {
-            /* Warm Alabaster & Editorial Stone Design System (Zero-Glare, High-Contrast) */
-            --bg-canvas: #f4f1ea;             /* Warm Architectural Alabaster / Linen Paper */
-            --bg-surface: #faf8f5;            /* Ethereal Ivory Card Surface */
-            --bg-surface-elevated: #ffffff;
-            --border-subtle: #dfdbd0;         /* Fine Hairline Stone Border */
-            --border-hover: #c8c3b5;
-            --text-primary: #1a1a18;          /* Deep Obsidian Ink (Ultra-High Contrast 14.5:1) */
-            --text-secondary: #48453e;        /* Rich Dark Charcoal Taupe */
-            --text-tertiary: #767167;         /* Editorial Category Muted Ink */
-            --btn-primary-bg: #1a1a18;        /* Obsidian Ink Pill Button */
-            --btn-primary-hover: #2e2d29;
-            --btn-primary-text: #faf8f5;
-            --btn-secondary-border: #d0ccc0;
-            --btn-secondary-hover: #ede8de;
-            --card-shadow: 0 4px 20px rgba(50, 45, 35, 0.05);
-            --card-shadow-hover: 0 16px 36px rgba(50, 45, 35, 0.09);
+            /* Warm Cashmere Stone & Architectural Paper Palette (Zero Glare, Maximum Readability) */
+            --bg-canvas: #eae6dd;             /* Deep Warm Architectural Stone / Cashmere Paper */
+            --bg-surface: #f7f4ed;            /* Soft Ethereal Ivory Card Surface */
+            --bg-surface-hover: #fcfbfa;
+            --border-subtle: #d6d0c2;         /* Fine Hairline Stone Border */
+            --border-hover: #b8b2a2;
+            --badge-bg: #e2dcd0;              /* Typographic Frame Pill */
+            --badge-text: #2c2a24;
+            --text-primary: #121210;          /* Deepest Obsidian Ink (14.8:1 Contrast Ratio) */
+            --text-secondary: #3e3c36;        /* High-Legibility Dark Charcoal Taupe */
+            --text-tertiary: #6e6a60;         /* Editorial Muted Taupe */
+            --btn-primary-bg: #141412;        /* Obsidian Ink Pill Button */
+            --btn-primary-hover: #292824;
+            --btn-primary-text: #f7f4ed;
+            --btn-secondary-border: #cdc7b8;
+            --btn-secondary-hover: #e8e3d6;
+            --card-shadow: 0 4px 20px rgba(40, 35, 25, 0.05);
+            --card-shadow-hover: 0 16px 36px rgba(40, 35, 25, 0.1);
             --font-stack: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Inter", "Helvetica Neue", Arial, sans-serif;
         }
 
@@ -58,20 +60,20 @@
             overflow-x: hidden;
         }
 
-        /* Apple Slim Global Navigation */
+        /* Slim Global Navigation */
         header {
             position: sticky;
             top: 0;
             z-index: 999;
             height: 48px;
-            background: rgba(244, 241, 234, 0.88);
+            background: rgba(234, 230, 221, 0.92);
             backdrop-filter: saturate(180%) blur(20px);
             -webkit-backdrop-filter: saturate(180%) blur(20px);
             border-bottom: 1px solid var(--border-subtle);
         }
 
         .nav-container {
-            max-width: 1024px;
+            max-width: 1200px;
             height: 100%;
             margin: 0 auto;
             padding: 0 20px;
@@ -87,7 +89,7 @@
             text-decoration: none;
             color: var(--text-primary);
             font-size: 15px;
-            font-weight: 700;
+            font-weight: 800;
             letter-spacing: -0.01em;
             transition: opacity 0.2s;
         }
@@ -121,7 +123,7 @@
             text-decoration: none;
             color: var(--text-secondary);
             font-size: 13px;
-            font-weight: 500;
+            font-weight: 600;
             transition: color 0.2s;
         }
 
@@ -135,7 +137,7 @@
             text-decoration: none;
             font-size: 12px;
             font-weight: 600;
-            padding: 6px 15px;
+            padding: 6px 16px;
             border-radius: 980px;
             transition: all 0.2s;
         }
@@ -147,37 +149,33 @@
 
         /* Announcement Ribbon */
         .ribbon-banner {
-            background: #ede8de;
+            background: #dfd9cb;
             border-bottom: 1px solid var(--border-subtle);
             text-align: center;
-            padding: 11px 20px;
+            padding: 10px 20px;
             font-size: 13px;
             color: var(--text-secondary);
-            font-weight: 500;
+            font-weight: 600;
         }
 
         .ribbon-banner a {
             color: var(--text-primary);
             text-decoration: none;
-            font-weight: 600;
+            font-weight: 700;
             margin-left: 4px;
             border-bottom: 1px solid currentColor;
         }
 
-        .ribbon-banner a:hover {
-            opacity: 0.75;
-        }
-
         /* Global Layout Container */
         .content-wrap {
-            max-width: 1240px;
+            max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
         }
 
         /* Category Filter Bar */
         .filter-section {
-            padding: 40px 0 20px;
+            padding: 44px 0 24px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -185,7 +183,7 @@
 
         .filter-pill-group {
             display: inline-flex;
-            background: #e8e3d8;
+            background: #dad3c4;
             padding: 4px;
             border-radius: 980px;
             border: 1px solid var(--border-subtle);
@@ -197,7 +195,7 @@
             color: var(--text-secondary);
             font-family: var(--font-stack);
             font-size: 13px;
-            font-weight: 500;
+            font-weight: 600;
             padding: 7px 18px;
             border-radius: 980px;
             cursor: pointer;
@@ -211,111 +209,112 @@
         .filter-pill.active {
             background: var(--bg-surface);
             color: var(--text-primary);
-            font-weight: 600;
+            font-weight: 700;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
         }
 
-        /* Product Section Common */
-        .apple-product-block {
-            margin-bottom: 24px;
-            border-radius: 24px;
-            overflow: hidden;
+        /* Hero Billboard (Flagship Spotlight) */
+        .hero-billboard {
             background-color: var(--bg-surface);
             border: 1px solid var(--border-subtle);
+            border-radius: 24px;
+            padding: 48px 36px 0 36px;
+            margin-bottom: 32px;
             box-shadow: var(--card-shadow);
+            text-align: center;
             transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
         }
 
-        .apple-product-block:hover {
+        .hero-billboard:hover {
             box-shadow: var(--card-shadow-hover);
             border-color: var(--border-hover);
         }
 
-        /* Billboard (Full Width Hero Product) */
-        .billboard {
-            text-align: center;
-            padding: 56px 24px 0 24px;
-            background-color: var(--bg-surface);
-        }
-
-        .billboard-eyebrow {
-            font-size: 13px;
-            font-weight: 600;
+        .hero-eyebrow-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: var(--badge-bg);
+            color: var(--badge-text);
+            font-size: 11.5px;
+            font-weight: 700;
             text-transform: uppercase;
-            letter-spacing: 0.08em;
-            color: var(--text-tertiary);
-            margin-bottom: 8px;
+            letter-spacing: 0.06em;
+            padding: 5px 12px;
+            border-radius: 6px;
+            margin-bottom: 12px;
         }
 
-        .billboard-title {
-            font-size: 52px;
+        .hero-billboard h1 {
+            font-size: 46px;
             font-weight: 800;
-            letter-spacing: -0.02em;
-            line-height: 1.07;
+            letter-spacing: -0.025em;
+            line-height: 1.1;
             color: var(--text-primary);
             margin-bottom: 12px;
         }
 
-        .billboard-tagline {
-            font-size: 20px;
-            font-weight: 400;
-            line-height: 1.45;
-            letter-spacing: 0.01em;
+        .hero-billboard p.hero-desc {
+            font-size: 18px;
             color: var(--text-secondary);
+            line-height: 1.5;
             max-width: 680px;
             margin: 0 auto 20px;
         }
 
-        .billboard-price {
+        .hero-billboard .price-tag {
             font-size: 15px;
             color: var(--text-secondary);
             margin-bottom: 24px;
-            font-weight: 500;
+            font-weight: 600;
         }
 
-        .billboard-price strong {
+        .hero-billboard .price-tag strong {
             color: var(--text-primary);
-            font-weight: 700;
+            font-weight: 800;
         }
 
-        /* Action Pills */
-        .cta-group {
+        /* Action Buttons */
+        .cta-row {
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 14px;
-            margin-bottom: 40px;
+            gap: 12px;
+            margin-bottom: 36px;
         }
 
-        .btn-apple-primary {
+        .btn-primary {
             background: var(--btn-primary-bg);
             color: var(--btn-primary-text);
             text-decoration: none;
-            font-size: 14.5px;
-            font-weight: 600;
-            padding: 11px 24px;
+            font-size: 14px;
+            font-weight: 700;
+            padding: 10px 22px;
             border-radius: 980px;
             display: inline-flex;
             align-items: center;
             gap: 6px;
+            border: 1px solid var(--btn-primary-bg);
+            cursor: pointer;
+            font-family: inherit;
             transition: all 0.2s ease;
-            box-shadow: 0 4px 14px rgba(26, 26, 24, 0.18);
+            box-shadow: 0 4px 12px rgba(20, 20, 18, 0.16);
         }
 
-        .btn-apple-primary:hover {
+        .btn-primary:hover {
             background: var(--btn-primary-hover);
-            transform: scale(1.02);
-            box-shadow: 0 6px 18px rgba(26, 26, 24, 0.25);
+            transform: translateY(-1px);
+            box-shadow: 0 6px 18px rgba(20, 20, 18, 0.22);
         }
 
-        .btn-apple-secondary {
+        .btn-secondary {
             background: var(--bg-surface);
             color: var(--text-primary);
             border: 1px solid var(--btn-secondary-border);
             text-decoration: none;
-            font-size: 14.5px;
+            font-size: 14px;
             font-weight: 600;
-            padding: 10px 22px;
+            padding: 10px 20px;
             border-radius: 980px;
             display: inline-flex;
             align-items: center;
@@ -325,127 +324,214 @@
             transition: all 0.2s ease;
         }
 
-        .btn-apple-secondary:hover {
+        .btn-secondary:hover {
             background: var(--btn-secondary-hover);
             border-color: var(--text-primary);
         }
 
-        /* Large Product Mockup Presentation */
-        .billboard-media {
-            display: block;
-            max-width: 1080px;
+        .hero-media {
+            max-width: 980px;
             margin: 0 auto;
             position: relative;
+            cursor: pointer;
         }
 
-        .billboard-media img {
+        .hero-media img {
             width: 100%;
             height: auto;
             display: block;
-            border-radius: 14px 14px 0 0;
-            box-shadow: 0 20px 45px -10px rgba(40, 35, 25, 0.16);
-            transition: transform 0.4s ease;
+            border-radius: 12px 12px 0 0;
+            box-shadow: 0 16px 36px -8px rgba(35, 30, 20, 0.15);
+            transition: transform 0.3s ease;
         }
 
-        .billboard:hover .billboard-media img {
-            transform: scale(1.015);
+        .hero-billboard:hover .hero-media img {
+            transform: scale(1.012);
         }
 
-        /* 2-Column Bento Grid */
-        .bento-grid {
+        /* Unified 2-Column Catalog Grid */
+        .catalog-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 24px;
-            margin-bottom: 24px;
+            margin-bottom: 36px;
         }
 
-        .bento-card {
+        /* Structured Product Card */
+        .product-card {
             background-color: var(--bg-surface);
             border: 1px solid var(--border-subtle);
-            border-radius: 24px;
-            padding: 44px 28px 0 28px;
-            text-align: center;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--card-shadow);
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            overflow: hidden;
-            box-shadow: var(--card-shadow);
             transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
         }
 
-        .bento-card:hover {
+        .product-card:hover {
+            transform: translateY(-3px);
             box-shadow: var(--card-shadow-hover);
             border-color: var(--border-hover);
+            background-color: var(--bg-surface-hover);
         }
 
-        .bento-card.span-full {
+        .product-card.span-2 {
             grid-column: span 2;
-            padding-top: 52px;
         }
 
-        .bento-eyebrow {
-            font-size: 12px;
-            font-weight: 600;
+        /* Card Header */
+        .card-header-bar {
+            padding: 18px 24px 14px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+        }
+
+        .card-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            background: var(--badge-bg);
+            color: var(--badge-text);
+            font-size: 11px;
+            font-weight: 700;
             text-transform: uppercase;
-            letter-spacing: 0.08em;
-            color: var(--text-tertiary);
-            margin-bottom: 6px;
+            letter-spacing: 0.06em;
+            padding: 4px 10px;
+            border-radius: 6px;
         }
 
-        .bento-title {
-            font-size: 36px;
+        .card-price-display {
+            font-size: 18px;
+            font-weight: 800;
+            color: var(--text-primary);
+        }
+
+        /* Preview Image Frame */
+        .card-media-stage {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 16 / 10;
+            background: #ede8df;
+            overflow: hidden;
+            cursor: pointer;
+            border-bottom: 1px solid var(--border-subtle);
+        }
+
+        .card-media-stage img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.4s ease;
+        }
+
+        .product-card:hover .card-media-stage img {
+            transform: scale(1.03);
+        }
+
+        .preview-hover-pill {
+            position: absolute;
+            bottom: 14px;
+            right: 14px;
+            background: rgba(247, 244, 237, 0.94);
+            backdrop-filter: blur(8px);
+            border: 1px solid var(--border-subtle);
+            color: var(--text-primary);
+            font-size: 11.5px;
+            font-weight: 700;
+            padding: 5px 12px;
+            border-radius: 980px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            pointer-events: none;
+            transition: opacity 0.2s ease, transform 0.2s ease;
+        }
+
+        /* Card Content Body */
+        .card-body {
+            padding: 22px 24px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .card-title {
+            font-size: 20px;
             font-weight: 800;
             letter-spacing: -0.015em;
-            line-height: 1.1;
             color: var(--text-primary);
-            margin-bottom: 10px;
+            margin-bottom: 8px;
+            line-height: 1.3;
         }
 
-        .bento-tagline {
-            font-size: 16px;
-            font-weight: 400;
+        .card-desc {
+            font-size: 14px;
             color: var(--text-secondary);
-            line-height: 1.5;
-            max-width: 440px;
-            margin: 0 auto 16px;
+            line-height: 1.55;
+            margin-bottom: 18px;
+            flex-grow: 1;
         }
 
-        .bento-price {
-            font-size: 14.5px;
+        /* Bullet Specs with checkmarks */
+        .card-specs {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 22px;
+        }
+
+        .card-specs li {
+            background: #eae5d9;
             color: var(--text-secondary);
-            margin-bottom: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            padding: 4px 10px;
+            border-radius: 6px;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
         }
 
-        .bento-price strong {
-            color: var(--text-primary);
-            font-weight: 700;
+        .card-specs li span.check {
+            color: #15803d;
+            font-weight: 800;
         }
 
-        .bento-media {
-            margin-top: 12px;
-            width: 100%;
-            overflow: hidden;
-            border-radius: 12px 12px 0 0;
+        /* Action Row in Card */
+        .card-action-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            padding-top: 16px;
+            border-top: 1px solid var(--border-subtle);
         }
 
-        .bento-media img {
-            width: 100%;
-            height: auto;
-            display: block;
-            border-radius: 12px 12px 0 0;
-            transition: transform 0.4s ease;
-            box-shadow: 0 15px 35px -8px rgba(40, 35, 25, 0.12);
+        .card-action-bar .btn-secondary {
+            flex: 1;
+            justify-content: center;
+            font-size: 13.5px;
+            padding: 8px 14px;
         }
 
-        .bento-card:hover .bento-media img {
-            transform: scale(1.02);
+        .card-action-bar .btn-primary {
+            flex: 1.2;
+            justify-content: center;
+            font-size: 13.5px;
+            padding: 9px 16px;
         }
 
         /* Trust Strip */
         .trust-strip {
-            padding: 50px 0;
+            padding: 44px 0;
             border-top: 1px solid var(--border-subtle);
-            margin-top: 40px;
+            margin-top: 20px;
         }
 
         .trust-strip-inner {
@@ -465,7 +551,7 @@
 
         .trust-title {
             font-size: 15px;
-            font-weight: 700;
+            font-weight: 800;
             color: var(--text-primary);
         }
 
@@ -476,16 +562,16 @@
 
         /* Minimal Footer */
         footer {
-            background-color: #ede8de;
+            background-color: #dfd9cb;
             border-top: 1px solid var(--border-subtle);
-            padding: 44px 0 36px;
+            padding: 40px 0 32px;
             color: var(--text-secondary);
             font-size: 12.5px;
             line-height: 1.6;
         }
 
         .footer-inner {
-            max-width: 1024px;
+            max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
         }
@@ -493,7 +579,7 @@
         .footer-note {
             padding-bottom: 16px;
             border-bottom: 1px solid var(--border-subtle);
-            margin-bottom: 20px;
+            margin-bottom: 18px;
             color: var(--text-secondary);
         }
 
@@ -514,7 +600,7 @@
         .footer-socials a {
             color: var(--text-secondary);
             text-decoration: none;
-            font-weight: 500;
+            font-weight: 600;
             transition: color 0.2s;
         }
 
@@ -522,24 +608,26 @@
             color: var(--text-primary);
         }
 
-        /* Apple-Style Interactive Slide Preview Modal */
+        /* ========================================================================= */
+        /* INTERACTIVE SLIDE PREVIEW MODAL (100% Laptop Fitted & Full Zoom System)   */
+        /* ========================================================================= */
         .preview-modal-backdrop {
             position: fixed;
             top: 0;
             left: 0;
             right: 0;
             bottom: 0;
-            background: rgba(26, 26, 24, 0.72);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
+            background: rgba(18, 18, 16, 0.78);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
             z-index: 10000;
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 20px;
+            padding: 10px;
             opacity: 0;
             visibility: hidden;
-            transition: opacity 0.25s ease, visibility 0.25s ease;
+            transition: opacity 0.2s ease, visibility 0.2s ease;
         }
 
         .preview-modal-backdrop.active {
@@ -550,24 +638,28 @@
         .preview-modal-card {
             background: var(--bg-surface);
             border: 1px solid var(--border-subtle);
-            border-radius: 20px;
+            border-radius: 18px;
             width: 100%;
-            max-width: 940px;
-            max-height: 94vh;
+            max-width: 980px;
+            height: 92vh;
+            max-height: 92vh;
             display: flex;
             flex-direction: column;
             overflow: hidden;
-            box-shadow: 0 30px 80px rgba(20, 20, 18, 0.35);
-            transform: scale(0.96);
-            transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.4);
+            transform: scale(0.97);
+            transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
         }
 
         .preview-modal-backdrop.active .preview-modal-card {
             transform: scale(1);
         }
 
+        /* Modal Header (Fixed height, never cuts off) */
         .preview-modal-header {
-            padding: 16px 24px;
+            flex-shrink: 0;
+            height: 54px;
+            padding: 0 20px;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -575,21 +667,26 @@
             background: var(--bg-surface);
         }
 
-        .preview-modal-title {
-            font-size: 17.5px;
+        .modal-title-wrap h3 {
+            font-size: 16px;
             font-weight: 800;
             color: var(--text-primary);
-            letter-spacing: -0.01em;
+            line-height: 1.2;
         }
 
-        .preview-modal-sub {
-            font-size: 13px;
+        .modal-title-wrap p {
+            font-size: 12px;
             color: var(--text-secondary);
-            margin-top: 2px;
         }
 
-        .preview-modal-close {
-            background: #eae5db;
+        .modal-header-actions {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .modal-close-btn {
+            background: #e2dcd0;
             border: none;
             color: var(--text-primary);
             width: 32px;
@@ -600,129 +697,205 @@
             align-items: center;
             justify-content: center;
             font-size: 16px;
+            font-weight: bold;
             transition: background-color 0.2s;
         }
 
-        .preview-modal-close:hover {
-            background: #dcd6cb;
+        .modal-close-btn:hover {
+            background: #d4cdbe;
         }
 
+        /* Modal Viewport (Flex child that adapts dynamically) */
         .preview-modal-viewport {
+            flex: 1 1 auto;
+            min-height: 0;
             position: relative;
-            background: #ede8df;
+            background: #e5e0d4;
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 24px;
-            min-height: 440px;
-            max-height: 62vh;
+            padding: 10px;
             overflow: hidden;
         }
 
-        .preview-slide-img-box {
+        .slide-container-stage {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             position: relative;
-            max-height: 58vh;
+            overflow: hidden;
+            cursor: default;
+        }
+
+        .slide-container-stage.can-pan {
+            cursor: grab;
+        }
+
+        .slide-container-stage.is-panning {
+            cursor: grabbing;
+        }
+
+        #modalSlideImg {
+            max-width: 100%;
+            max-height: 100%;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+            border-radius: 6px;
+            box-shadow: 0 12px 36px rgba(35, 30, 20, 0.25);
+            display: block;
+            user-select: none;
+            -webkit-user-drag: none;
+            transform-origin: center center;
+            transition: transform 0.1s ease-out;
+        }
+
+        /* Floating Zoom Controls */
+        .zoom-toolbar {
+            position: absolute;
+            top: 14px;
+            right: 14px;
+            display: inline-flex;
+            align-items: center;
+            background: rgba(247, 244, 237, 0.94);
+            backdrop-filter: blur(8px);
+            border: 1px solid var(--border-subtle);
+            border-radius: 980px;
+            padding: 3px;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+            z-index: 15;
+            gap: 2px;
+        }
+
+        .zoom-btn {
+            background: transparent;
+            border: none;
+            color: var(--text-primary);
+            font-family: var(--font-stack);
+            font-size: 13px;
+            font-weight: 700;
+            padding: 5px 10px;
+            border-radius: 980px;
+            cursor: pointer;
+            transition: background 0.15s ease;
             display: flex;
             align-items: center;
             justify-content: center;
         }
 
-        .preview-slide-img-box img {
-            max-width: 100%;
-            max-height: 56vh;
-            object-fit: contain;
-            border-radius: 8px;
-            box-shadow: 0 16px 40px rgba(40, 35, 25, 0.2);
-            display: block;
+        .zoom-btn:hover {
+            background: #e2dcd0;
         }
 
-        .preview-watermark-tag {
-            position: absolute;
-            bottom: 14px;
-            right: 14px;
-            background: rgba(250, 248, 245, 0.94);
-            backdrop-filter: blur(6px);
-            border: 1px solid var(--border-subtle);
-            color: var(--text-primary);
-            font-size: 11px;
+        .zoom-display {
+            font-size: 11.5px;
             font-weight: 700;
-            padding: 4px 10px;
-            border-radius: 6px;
-            letter-spacing: 0.5px;
-            text-transform: uppercase;
-            pointer-events: none;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+            color: var(--text-secondary);
+            padding: 0 6px;
+            min-width: 44px;
+            text-align: center;
+            cursor: pointer;
         }
 
-        .preview-nav-btn {
+        .zoom-display:hover {
+            color: var(--text-primary);
+        }
+
+        /* Prev / Next Slide Navigation Buttons */
+        .modal-nav-btn {
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
-            background: rgba(250, 248, 245, 0.94);
+            background: rgba(247, 244, 237, 0.94);
             backdrop-filter: blur(8px);
             border: 1px solid var(--border-subtle);
             color: var(--text-primary);
-            width: 44px;
-            height: 44px;
+            width: 42px;
+            height: 42px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             cursor: pointer;
-            font-size: 22px;
-            font-weight: 400;
+            font-size: 20px;
+            font-weight: 600;
             transition: all 0.2s;
-            z-index: 10;
+            z-index: 12;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
 
-        .preview-nav-btn:hover {
+        .modal-nav-btn:hover {
             background: #ffffff;
             transform: translateY(-50%) scale(1.06);
         }
 
-        .preview-nav-btn.prev { left: 16px; }
-        .preview-nav-btn.next { right: 16px; }
+        .modal-nav-btn.prev { left: 14px; }
+        .modal-nav-btn.next { right: 14px; }
 
+        .slide-watermark {
+            position: absolute;
+            bottom: 12px;
+            right: 14px;
+            background: rgba(247, 244, 237, 0.92);
+            backdrop-filter: blur(6px);
+            border: 1px solid var(--border-subtle);
+            color: var(--text-primary);
+            font-size: 10.5px;
+            font-weight: 700;
+            padding: 3px 8px;
+            border-radius: 4px;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            pointer-events: none;
+            z-index: 5;
+        }
+
+        /* Modal Footer (Anchored, NEVER cuts off on laptop screens) */
         .preview-modal-footer {
-            padding: 16px 24px;
+            flex-shrink: 0;
+            height: 62px;
+            padding: 0 20px;
             background: var(--bg-surface);
             border-top: 1px solid var(--border-subtle);
             display: flex;
             align-items: center;
             justify-content: space-between;
-            gap: 16px;
-            flex-wrap: wrap;
+            gap: 14px;
+            z-index: 20;
         }
 
-        .preview-modal-security {
+        .modal-security-hint {
             display: flex;
             align-items: center;
-            gap: 8px;
-            font-size: 13px;
+            gap: 7px;
+            font-size: 12.5px;
             color: var(--text-secondary);
+            font-weight: 500;
         }
 
-        .preview-modal-security svg {
+        .modal-security-hint svg {
             color: #b45309;
             flex-shrink: 0;
         }
 
-        @media (max-width: 768px) {
-            .billboard-title { font-size: 38px; }
-            .billboard-tagline { font-size: 17px; }
-            .bento-grid { grid-template-columns: 1fr; }
-            .bento-card.span-full { grid-column: span 1; }
-            .bento-title { font-size: 28px; }
+        @media (max-width: 860px) {
+            .hero-billboard h1 { font-size: 34px; }
+            .hero-billboard p.hero-desc { font-size: 16px; }
+            .catalog-grid { grid-template-columns: 1fr; }
+            .product-card.span-2 { grid-column: span 1; }
             .nav-menu { display: none; }
-            .cta-group { flex-direction: column; width: 100%; gap: 10px; }
-            .btn-apple-primary, .btn-apple-secondary { width: 100%; justify-content: center; }
+            .preview-modal-card { height: 96vh; max-height: 96vh; }
+            .modal-security-hint { display: none; }
+            .preview-modal-footer { justify-content: center; }
+            .preview-modal-footer a { width: 100%; justify-content: center; }
         }
     </style>
 </head>
 <body>
 
-    <!-- Apple Slim Navigation -->
+    <!-- Slim Global Navigation -->
     <header>
         <div class="nav-container">
             <a href="#" class="brand-logo">
@@ -731,10 +904,10 @@
             </a>
 
             <ul class="nav-menu">
-                <li><a href="#products" onclick="filterCatalog('all')">All Products</a></li>
-                <li><a href="#products" onclick="filterCatalog('canva')">Canva Suites</a></li>
-                <li><a href="#products" onclick="filterCatalog('web')">Web Themes</a></li>
-                <li><a href="#products" onclick="filterCatalog('spreadsheet')">Spreadsheets</a></li>
+                <li><a href="#catalog" onclick="filterCatalog('all')">All Products</a></li>
+                <li><a href="#catalog" onclick="filterCatalog('canva')">Canva Suites</a></li>
+                <li><a href="#catalog" onclick="filterCatalog('web')">Web Themes</a></li>
+                <li><a href="#catalog" onclick="filterCatalog('spreadsheet')">Spreadsheets</a></li>
                 <li><a href="https://www.pinterest.com/usajobsignals/" target="_blank">Pinterest</a></li>
                 <li><a href="https://x.com/MondolSanaullah" target="_blank">Twitter</a></li>
                 <li><a href="https://www.linkedin.com/in/sanaullahmondol/" target="_blank">LinkedIn</a></li>
@@ -744,19 +917,42 @@
         </div>
     </header>
 
-    <!-- Apple Ribbon Banner -->
+    <!-- Announcement Ribbon -->
     <div class="ribbon-banner">
-        <span>Instant 1-click digital delivery with unrestricted commercial resale rights.</span>
-        <a href="#products">Explore all 10 products ↓</a>
+        <span>Instant 1-click digital delivery with unrestricted commercial client rights.</span>
+        <a href="#catalog">Browse All 10 Digital Systems ↓</a>
     </div>
 
     <!-- Main Content Container -->
-    <main class="content-wrap" id="products">
+    <main class="content-wrap" id="catalog">
+
+        <!-- ========================================================================= -->
+        <!-- FLAGSHIP HERO BILLBOARD: The Estate Real Estate Kit                       -->
+        <!-- ========================================================================= -->
+        <section class="hero-billboard" data-cat="canva">
+            <div class="hero-eyebrow-badge">★ Flagship Canva Suite · 10 Architectural Layouts</div>
+            <h1>The Estate.</h1>
+            <p class="hero-desc">Luxury Real Estate Marketing Kit. 10 architectural layouts engineered for elite realtors and agencies to sell multi-million dollar listings with zero design lag.</p>
+            <div class="price-tag">One-time payment: <strong>$29.00</strong> · Free Canva Compatible</div>
+
+            <div class="cta-row">
+                <button type="button" onclick="openSlidePreview('the-estate')" class="btn-secondary">
+                    <span>Interactive Preview ↗</span>
+                </button>
+                <a href="https://mdsanaullahsm.gumroad.com/l/ynnwrn" class="btn-primary gumroad-button">
+                    <span>Buy Now — $29</span>
+                </a>
+            </div>
+
+            <div class="hero-media" onclick="openSlidePreview('the-estate')">
+                <img src="products/real-estate-marketing-kit/gumroad-cover.png" alt="The Estate — Luxury Real Estate Marketing Kit" loading="eager">
+            </div>
+        </section>
 
         <!-- Category Selector -->
         <div class="filter-section">
             <div class="filter-pill-group">
-                <button class="filter-pill active" onclick="filterCatalog('all', this)">All (10)</button>
+                <button class="filter-pill active" onclick="filterCatalog('all', this)">All Products (10)</button>
                 <button class="filter-pill" onclick="filterCatalog('canva', this)">Canva Suites (6)</button>
                 <button class="filter-pill" onclick="filterCatalog('web', this)">Web Themes (3)</button>
                 <button class="filter-pill" onclick="filterCatalog('spreadsheet', this)">Spreadsheets (1)</button>
@@ -764,183 +960,232 @@
         </div>
 
         <!-- ========================================================================= -->
-        <!-- BILLBOARD 1: The Estate Real Estate Kit (Flagship Hero) -->
+        <!-- UNIFIED 2-COLUMN CATALOG GRID (Organized, Intuitive & Uniform Layout)       -->
         <!-- ========================================================================= -->
-        <section class="apple-product-block billboard" data-cat="canva">
-            <div class="billboard-eyebrow">Flagship Canva Suite</div>
-            <h1 class="billboard-title">The Estate.</h1>
-            <p class="billboard-tagline">Luxury Real Estate Marketing Kit. 10 architectural layouts designed for elite realtors and agencies to sell multi-million dollar properties.</p>
-            <div class="billboard-price">From <strong>$29</strong> · 100% Free Canva Compatible</div>
+        <div class="catalog-grid">
 
-            <div class="cta-group">
-                <a href="https://mdsanaullahsm.gumroad.com/l/ynnwrn" class="btn-apple-primary gumroad-button">Buy Now — $29</a>
-                <button type="button" onclick="openSlidePreview('the-estate')" class="btn-apple-secondary">Interactive Preview ↗</button>
-            </div>
-
-            <div class="billboard-media">
-                <img src="products/real-estate-marketing-kit/gumroad-cover.png" alt="The Estate — Luxury Real Estate Marketing Kit" loading="eager">
-            </div>
-        </section>
-
-        <!-- ========================================================================= -->
-        <!-- BILLBOARD 2: AuraRing DTC E-Commerce Theme (Flagship Web Hero) -->
-        <!-- ========================================================================= -->
-        <section class="apple-product-block billboard" data-cat="web">
-            <div class="billboard-eyebrow">DTC Hardware & Wearables</div>
-            <h2 class="billboard-title">AuraRing.</h2>
-            <p class="billboard-tagline">Single-Product Luxury E-Commerce Landing Page. Engineered with 4 interactive Titanium finish switchers and zero build dependencies.</p>
-            <div class="billboard-price">From <strong>$29</strong> · Pure Semantic HTML5 & CSS</div>
-
-            <div class="cta-group">
-                <a href="https://mdsanaullahsm.gumroad.com/l/mcxejd" class="btn-apple-primary gumroad-button">Buy Now — $29</a>
-                <a href="auraring-demo.html" target="_blank" class="btn-apple-secondary">Interactive Web Demo ↗</a>
-            </div>
-
-            <div class="billboard-media">
-                <img src="preview-cover.png" alt="AuraRing — Luxury DTC Landing Page Theme" loading="lazy">
-            </div>
-        </section>
-
-        <!-- ========================================================================= -->
-        <!-- BILLBOARD 3: The Pitch Startup Deck (Flagship Founder Hero) -->
-        <!-- ========================================================================= -->
-        <section class="apple-product-block billboard" data-cat="canva">
-            <div class="billboard-eyebrow">Investor Pitch Suite</div>
-            <h2 class="billboard-title">The Pitch.</h2>
-            <p class="billboard-tagline">Modern Tech Startup Pitch Deck. 15 institutional-grade slides crafted for founders raising Seed and Series A venture capital.</p>
-            <div class="billboard-price">From <strong>$29</strong> · Free Canva, PDF Standard & PPTX Export</div>
-
-            <div class="cta-group">
-                <a href="https://mdsanaullahsm.gumroad.com/l/fsjsd" class="btn-apple-primary gumroad-button">Buy Now — $29</a>
-                <button type="button" onclick="openSlidePreview('the-pitch')" class="btn-apple-secondary">Interactive Preview ↗</button>
-            </div>
-
-            <div class="billboard-media">
-                <img src="products/startup-pitch-deck/gumroad-cover.png" alt="The Pitch — Tech Startup Investor Deck" loading="lazy">
-            </div>
-        </section>
-
-        <!-- ========================================================================= -->
-        <!-- APPLE BENTO GRID (2-Column Showcase for Products 4-10) -->
-        <!-- ========================================================================= -->
-        <div class="bento-grid">
-
-            <!-- Card 4: The Close Client Proposal -->
-            <div class="apple-product-block bento-card" data-cat="canva">
-                <div>
-                    <div class="bento-eyebrow">Agency & Freelance</div>
-                    <h3 class="bento-title">The Close.</h3>
-                    <p class="bento-tagline">Client Proposal & Legal Contract Suite. 8 pages structured to close high-ticket retainers.</p>
-                    <div class="bento-price">From <strong>$24</strong> · Free Canva Ready</div>
-                    <div class="cta-group">
-                        <a href="https://mdsanaullahsm.gumroad.com/l/fbhqi" class="btn-apple-primary gumroad-button">Buy — $24</a>
-                        <button type="button" onclick="openSlidePreview('the-close')" class="btn-apple-secondary">Preview ↗</button>
+            <!-- Card 2: AuraRing DTC E-Commerce Theme -->
+            <div class="product-card" data-cat="web">
+                <div class="card-header-bar">
+                    <span class="card-badge">Web Theme · HTML5 & CSS</span>
+                    <span class="card-price-display">$29</span>
+                </div>
+                <div class="card-media-stage" onclick="window.open('auraring-demo.html', '_blank')">
+                    <img src="preview-cover.png" alt="AuraRing Luxury Landing Page" loading="lazy">
+                    <span class="preview-hover-pill">Live Web Demo ↗</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">AuraRing — Luxury Single Product E-Commerce</h3>
+                    <p class="card-desc">High-converting showcase for DTC wearables and smart jewelry. Features 4 interactive Titanium finish switchers and zero npm build dependencies.</p>
+                    <ul class="card-specs">
+                        <li><span class="check">✓</span> 4 Titanium Color Switchers</li>
+                        <li><span class="check">✓</span> 100/100 Lighthouse Score</li>
+                        <li><span class="check">✓</span> Commercial Client Rights</li>
+                    </ul>
+                    <div class="card-action-bar">
+                        <a href="auraring-demo.html" target="_blank" class="btn-secondary">Live Demo ↗</a>
+                        <a href="https://mdsanaullahsm.gumroad.com/l/mcxejd" class="btn-primary gumroad-button">Buy Now — $29</a>
                     </div>
                 </div>
-                <div class="bento-media">
-                    <img src="products/freelance-client-proposal/gumroad-cover.png" alt="The Close Client Proposal" loading="lazy">
+            </div>
+
+            <!-- Card 3: The Pitch Startup Deck -->
+            <div class="product-card" data-cat="canva">
+                <div class="card-header-bar">
+                    <span class="card-badge">Canva Suite · 15 Slides</span>
+                    <span class="card-price-display">$29</span>
+                </div>
+                <div class="card-media-stage" onclick="openSlidePreview('the-pitch')">
+                    <img src="products/startup-pitch-deck/gumroad-cover.png" alt="Tech Startup Investor Pitch Deck" loading="lazy">
+                    <span class="preview-hover-pill">Interactive Preview ↗</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">The Pitch — Modern Tech Startup Investor Deck</h3>
+                    <p class="card-desc">15 institutional-grade slides crafted for founders raising Seed & Series A venture capital. Pre-filled with financial models and unit economics formulas.</p>
+                    <ul class="card-specs">
+                        <li><span class="check">✓</span> 15 Complete Slide Frameworks</li>
+                        <li><span class="check">✓</span> Free Canva, PDF & PPTX</li>
+                        <li><span class="check">✓</span> TAM/SAM & Ask Structure</li>
+                    </ul>
+                    <div class="card-action-bar">
+                        <button type="button" onclick="openSlidePreview('the-pitch')" class="btn-secondary">Preview ↗</button>
+                        <a href="https://mdsanaullahsm.gumroad.com/l/fsjsd" class="btn-primary gumroad-button">Buy Now — $29</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4: The Close Client Proposal -->
+            <div class="product-card" data-cat="canva">
+                <div class="card-header-bar">
+                    <span class="card-badge">Canva Suite · 8 Pages</span>
+                    <span class="card-price-display">$24</span>
+                </div>
+                <div class="card-media-stage" onclick="openSlidePreview('the-close')">
+                    <img src="products/freelance-client-proposal/gumroad-cover.png" alt="Freelance Client Proposal & Contract Suite" loading="lazy">
+                    <span class="preview-hover-pill">Interactive Preview ↗</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">The Close — Client Proposal & Legal Contract</h3>
+                    <p class="card-desc">Close high-ticket agency & freelance retainers with an 8-page structured scope of work, tiered pricing table, and legally vetted sign-off page.</p>
+                    <ul class="card-specs">
+                        <li><span class="check">✓</span> 8-Page Executive Contract</li>
+                        <li><span class="check">✓</span> Scope, Timeline & Tiered Pricing</li>
+                        <li><span class="check">✓</span> 1-Click Free Canva Import</li>
+                    </ul>
+                    <div class="card-action-bar">
+                        <button type="button" onclick="openSlidePreview('the-close')" class="btn-secondary">Preview ↗</button>
+                        <a href="https://mdsanaullahsm.gumroad.com/l/fbhqi" class="btn-primary gumroad-button">Buy Now — $24</a>
+                    </div>
                 </div>
             </div>
 
             <!-- Card 5: The Creator Instagram Carousel -->
-            <div class="apple-product-block bento-card" data-cat="canva">
-                <div>
-                    <div class="bento-eyebrow">Social Media Growth</div>
-                    <h3 class="bento-title">The Creator.</h3>
-                    <p class="bento-tagline">Viral Instagram Carousel & Story Kit. 10 retention-tested frameworks that double saves and shares.</p>
-                    <div class="bento-price">From <strong>$19</strong> · Carousel + 9:16 Stories</div>
-                    <div class="cta-group">
-                        <a href="https://mdsanaullahsm.gumroad.com/l/stnsoe" class="btn-apple-primary gumroad-button">Buy — $19</a>
-                        <button type="button" onclick="openSlidePreview('the-creator')" class="btn-apple-secondary">Preview ↗</button>
-                    </div>
+            <div class="product-card" data-cat="canva">
+                <div class="card-header-bar">
+                    <span class="card-badge">Canva Suite · 12 Assets</span>
+                    <span class="card-price-display">$19</span>
                 </div>
-                <div class="bento-media">
-                    <img src="products/social-media-carousel-kit/gumroad-cover.png" alt="The Creator Carousel Kit" loading="lazy">
+                <div class="card-media-stage" onclick="openSlidePreview('the-creator')">
+                    <img src="products/social-media-carousel-kit/gumroad-cover.png" alt="Viral Instagram Carousel Kit" loading="lazy">
+                    <span class="preview-hover-pill">Interactive Preview ↗</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">The Creator — Viral Instagram Carousel & Story Kit</h3>
+                    <p class="card-desc">Double saves and shares with 10 high-retention carousel frameworks designed for educators, coaches, and consultants. Includes matching 9:16 vertical stories.</p>
+                    <ul class="card-specs">
+                        <li><span class="check">✓</span> 10 Retention Carousel Slides</li>
+                        <li><span class="check">✓</span> Matching 9:16 Vertical Stories</li>
+                        <li><span class="check">✓</span> High-Converting CTA Slides</li>
+                    </ul>
+                    <div class="card-action-bar">
+                        <button type="button" onclick="openSlidePreview('the-creator')" class="btn-secondary">Preview ↗</button>
+                        <a href="https://mdsanaullahsm.gumroad.com/l/stnsoe" class="btn-primary gumroad-button">Buy Now — $19</a>
+                    </div>
                 </div>
             </div>
 
             <!-- Card 6: Nova SaaS Web Theme -->
-            <div class="apple-product-block bento-card" data-cat="web">
-                <div>
-                    <div class="bento-eyebrow">B2B SaaS & Tech</div>
-                    <h3 class="bento-title">Nova.</h3>
-                    <p class="bento-tagline">Modern Dark & Light SaaS Landing Page. Seamless theme toggle, pricing matrix, and responsive layout.</p>
-                    <div class="bento-price">From <strong>$19</strong> · HTML5, CSS & JS</div>
-                    <div class="cta-group">
-                        <a href="https://mdsanaullahsm.gumroad.com/l/nova-landing" class="btn-apple-primary gumroad-button">Buy — $19</a>
-                        <a href="nova-demo.html" target="_blank" class="btn-apple-secondary">Demo ↗</a>
-                    </div>
+            <div class="product-card" data-cat="web">
+                <div class="card-header-bar">
+                    <span class="card-badge">Web Theme · Dark/Light Mode</span>
+                    <span class="card-price-display">$19</span>
                 </div>
-                <div class="bento-media">
+                <div class="card-media-stage" onclick="window.open('nova-demo.html', '_blank')">
                     <img src="products/extra-pins/nova_cover.png" alt="Nova SaaS Landing Page" loading="lazy">
+                    <span class="preview-hover-pill">Interactive Demo ↗</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Nova — Premium SaaS & Tech Startup Landing Page</h3>
+                    <p class="card-desc">Modern dark & light mode template engineered for web applications, dev tools, and B2B software products. Modular pricing matrix and interactive FAQ included.</p>
+                    <ul class="card-specs">
+                        <li><span class="check">✓</span> 1-Click Dark/Light Mode Toggle</li>
+                        <li><span class="check">✓</span> Annual/Monthly Pricing Switch</li>
+                        <li><span class="check">✓</span> Clean Semantic Codebase</li>
+                    </ul>
+                    <div class="card-action-bar">
+                        <a href="nova-demo.html" target="_blank" class="btn-secondary">Live Demo ↗</a>
+                        <a href="https://mdsanaullahsm.gumroad.com/l/nova-landing" class="btn-primary gumroad-button">Buy Now — $19</a>
+                    </div>
                 </div>
             </div>
 
             <!-- Card 7: Minimalist Habit Tracker -->
-            <div class="apple-product-block bento-card" data-cat="spreadsheet">
-                <div>
-                    <div class="bento-eyebrow">Daily Productivity</div>
-                    <h3 class="bento-title">Habit Tracker 2026.</h3>
-                    <p class="bento-tagline">Scandinavian Distraction-Free Daily Goal Sheet. Printable A4 PDF + iPad / GoodNotes digital planner.</p>
-                    <div class="bento-price">From <strong>$15</strong> · GoodNotes & Canva Ready</div>
-                    <div class="cta-group">
-                        <a href="https://mdsanaullahsm.gumroad.com/l/rbqxni" class="btn-apple-primary gumroad-button">Buy — $15</a>
-                        <button type="button" onclick="openSlidePreview('habit-tracker')" class="btn-apple-secondary">Preview ↗</button>
-                    </div>
+            <div class="product-card" data-cat="spreadsheet">
+                <div class="card-header-bar">
+                    <span class="card-badge">Productivity · PDF & Canva</span>
+                    <span class="card-price-display">$15</span>
                 </div>
-                <div class="bento-media">
-                    <img src="products/minimalist-habit-tracker/gumroad-cover.png" alt="Minimalist Habit Tracker" loading="lazy">
+                <div class="card-media-stage" onclick="openSlidePreview('habit-tracker')">
+                    <img src="products/minimalist-habit-tracker/gumroad-cover.png" alt="Minimalist Daily Habit Tracker" loading="lazy">
+                    <span class="preview-hover-pill">Interactive Preview ↗</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Minimalist Daily Habit & Goal Tracker 2026</h3>
+                    <p class="card-desc">Scandinavian distraction-free productivity planner sheet. Features 7-day habit matrices, routine architecture, and monthly energy tracker for iPad & print.</p>
+                    <ul class="card-specs">
+                        <li><span class="check">✓</span> Printable A4 + Digital GoodNotes</li>
+                        <li><span class="check">✓</span> 1-Click Free Canva Import</li>
+                        <li><span class="check">✓</span> Scandinavian Clean Layout</li>
+                    </ul>
+                    <div class="card-action-bar">
+                        <button type="button" onclick="openSlidePreview('habit-tracker')" class="btn-secondary">Preview ↗</button>
+                        <a href="https://mdsanaullahsm.gumroad.com/l/rbqxni" class="btn-primary gumroad-button">Buy Now — $15</a>
+                    </div>
                 </div>
             </div>
 
-            <!-- Card 8: Small Business Landing Kit -->
-            <div class="apple-product-block bento-card" data-cat="web">
-                <div>
-                    <div class="bento-eyebrow">5-in-1 Website Bundle</div>
-                    <h3 class="bento-title">Small Business Kit.</h3>
-                    <p class="bento-tagline">5 Complete Responsive HTML Themes: Creative Agency, Consulting, Local Bistro, Law Firm & Portfolio.</p>
-                    <div class="bento-price">From <strong>$19</strong> · Full Commercial License</div>
-                    <div class="cta-group">
-                        <a href="https://mdsanaullahsm.gumroad.com/l/landingpages" class="btn-apple-primary gumroad-button">Buy — $19</a>
-                        <a href="smallbiz-demo.html" target="_blank" class="btn-apple-secondary">Demo ↗</a>
-                    </div>
+            <!-- Card 8: Small Business 5-in-1 Web Kit -->
+            <div class="product-card" data-cat="web">
+                <div class="card-header-bar">
+                    <span class="card-badge">Web Bundle · 5 HTML Themes</span>
+                    <span class="card-price-display">$19</span>
                 </div>
-                <div class="bento-media">
-                    <img src="products/extra-pins/biz_cover.png" alt="Small Business Landing Kit" loading="lazy">
+                <div class="card-media-stage" onclick="window.open('smallbiz-demo.html', '_blank')">
+                    <img src="products/extra-pins/biz_cover.png" alt="Small Business Landing Page Kit" loading="lazy">
+                    <span class="preview-hover-pill">Interactive Demo ↗</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Small Business Kit — 5 Responsive HTML Themes</h3>
+                    <p class="card-desc">All-in-one website toolkit for creative agencies, local service providers, consultants, law firms, and personal portfolio showcases. 100% production ready.</p>
+                    <ul class="card-specs">
+                        <li><span class="check">✓</span> 5 Complete Production Themes</li>
+                        <li><span class="check">✓</span> Agency, Law, Bistro & Portfolio</li>
+                        <li><span class="check">✓</span> Full Commercial Client Rights</li>
+                    </ul>
+                    <div class="card-action-bar">
+                        <a href="smallbiz-demo.html" target="_blank" class="btn-secondary">5 Demos ↗</a>
+                        <a href="https://mdsanaullahsm.gumroad.com/l/landingpages" class="btn-primary gumroad-button">Buy Now — $19</a>
+                    </div>
                 </div>
             </div>
 
             <!-- Card 9: The Executive ATS Resume -->
-            <div class="apple-product-block bento-card" data-cat="canva">
-                <div>
-                    <div class="bento-eyebrow">Career & Executive</div>
-                    <h3 class="bento-title">The Executive.</h3>
-                    <p class="bento-tagline">Modern ATS-Friendly Resume Suite. 1-page & 2-page formats engineered to pass Applicant Tracking Systems.</p>
-                    <div class="bento-price">From <strong>$19</strong> · Resume + Cover Letter</div>
-                    <div class="cta-group">
-                        <a href="https://mdsanaullahsm.gumroad.com/l/jghcvo" class="btn-apple-primary gumroad-button">Buy — $19</a>
-                        <button type="button" onclick="openSlidePreview('executive-resume')" class="btn-apple-secondary">Preview ↗</button>
-                    </div>
+            <div class="product-card" data-cat="canva">
+                <div class="card-header-bar">
+                    <span class="card-badge">Career Suite · 2 Pages</span>
+                    <span class="card-price-display">$19</span>
                 </div>
-                <div class="bento-media">
+                <div class="card-media-stage" onclick="openSlidePreview('executive-resume')">
                     <img src="products/executive-ats-resume/gumroad-cover.png" alt="The Executive ATS Resume Suite" loading="lazy">
+                    <span class="preview-hover-pill">Interactive Preview ↗</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">The Executive — Modern ATS-Friendly Resume Suite</h3>
+                    <p class="card-desc">Engineered to pass Applicant Tracking Systems with 100% parsing compliance while maintaining an executive editorial aesthetic. 1-page & 2-page formats.</p>
+                    <ul class="card-specs">
+                        <li><span class="check">✓</span> 1-Page & 2-Page Formats</li>
+                        <li><span class="check">✓</span> Matching Cover Letter Included</li>
+                        <li><span class="check">✓</span> High-Impact Action Verb Formulas</li>
+                    </ul>
+                    <div class="card-action-bar">
+                        <button type="button" onclick="openSlidePreview('executive-resume')" class="btn-secondary">Preview ↗</button>
+                        <a href="https://mdsanaullahsm.gumroad.com/l/jghcvo" class="btn-primary gumroad-button">Buy Now — $19</a>
+                    </div>
                 </div>
             </div>
 
-            <!-- Card 10: Wedding Budget & Event Planner (Spans across both columns) -->
-            <div class="apple-product-block bento-card span-full" data-cat="spreadsheet">
-                <div>
-                    <div class="bento-eyebrow">Event Planning & Finance</div>
-                    <h3 class="bento-title">Wedding Budget Simulator.</h3>
-                    <p class="bento-tagline">Automated Expense Calculator, Vendor Tracker, Payment Schedule & Seating Plan Simulator for Google Sheets and Excel.</p>
-                    <div class="bento-price">From <strong>$12</strong> · Google Sheets & Excel Ready</div>
-                    <div class="cta-group">
-                        <a href="https://mdsanaullahsm.gumroad.com/l/weddingbudget" class="btn-apple-primary gumroad-button">Buy Now — $12</a>
-                        <a href="wedding-demo.html" target="_blank" class="btn-apple-secondary">Try Interactive Simulator ↗</a>
-                    </div>
+            <!-- Card 10: Wedding Budget & Event Planner (Span 2) -->
+            <div class="product-card span-2" data-cat="spreadsheet">
+                <div class="card-header-bar">
+                    <span class="card-badge">Finance & Event · Spreadsheet Simulator</span>
+                    <span class="card-price-display">$12</span>
                 </div>
-                <div class="bento-media" style="max-width: 880px; margin: 0 auto;">
+                <div class="card-media-stage" onclick="window.open('wedding-demo.html', '_blank')">
                     <img src="products/extra-pins/wed_cover.png" alt="Wedding Budget Spreadsheet Simulator" loading="lazy">
+                    <span class="preview-hover-pill">Interactive Simulator ↗</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Wedding Budget & Event Planning Spreadsheet</h3>
+                    <p class="card-desc">Automated expense calculator, vendor payment schedule, milestone tracking, and seating arrangement simulator for stress-free luxury events.</p>
+                    <ul class="card-specs">
+                        <li><span class="check">✓</span> Automated Budget Formulas</li>
+                        <li><span class="check">✓</span> Google Sheets & Excel Compatible</li>
+                        <li><span class="check">✓</span> Live Interactive Simulator Included</li>
+                    </ul>
+                    <div class="card-action-bar">
+                        <a href="wedding-demo.html" target="_blank" class="btn-secondary">Try Simulator ↗</a>
+                        <a href="https://mdsanaullahsm.gumroad.com/l/weddingbudget" class="btn-primary gumroad-button">Buy Now — $12</a>
+                    </div>
                 </div>
             </div>
 
@@ -954,11 +1199,11 @@
                     <div class="trust-sub">No paid Canva Pro subscription required.</div>
                 </div>
                 <div class="trust-item">
-                    <div class="trust-title">Live Demos on Every Product</div>
-                    <div class="trust-sub">Experience every template before buying.</div>
+                    <div class="trust-title">Full Live Previews on Every Asset</div>
+                    <div class="trust-sub">Inspect every page & feature before buying.</div>
                 </div>
                 <div class="trust-item">
-                    <div class="trust-title">Commercial License Included</div>
+                    <div class="trust-title">Unrestricted Commercial License</div>
                     <div class="trust-sub">Use for unlimited personal and client projects.</div>
                 </div>
                 <div class="trust-item">
@@ -970,37 +1215,7 @@
 
     </main>
 
-    <!-- Apple-Style Interactive Slide Preview Modal -->
-    <div id="previewModal" class="preview-modal-backdrop" onclick="handleModalBackdropClick(event)">
-        <div class="preview-modal-card">
-            <div class="preview-modal-header">
-                <div>
-                    <h3 id="modalTitle" class="preview-modal-title">Product Preview</h3>
-                    <p id="modalSubtitle" class="preview-modal-sub">Slide 1 of 10 · Interactive Template Preview</p>
-                </div>
-                <button type="button" class="preview-modal-close" onclick="closePreviewModal()" aria-label="Close Preview">✕</button>
-            </div>
-
-            <div class="preview-modal-viewport">
-                <button type="button" class="preview-nav-btn prev" onclick="prevSlide()" aria-label="Previous Slide">‹</button>
-                <div class="preview-slide-img-box">
-                    <img id="modalSlideImg" src="" alt="Template Slide Preview">
-                    <div class="preview-watermark-tag">SM Studio Preview</div>
-                </div>
-                <button type="button" class="preview-nav-btn next" onclick="nextSlide()" aria-label="Next Slide">›</button>
-            </div>
-
-            <div class="preview-modal-footer">
-                <div class="preview-modal-security">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
-                    <span>Master Canva Template is locked. Purchase to customize text, colors & photos.</span>
-                </div>
-                <a id="modalBuyBtn" href="#" class="btn-apple-primary gumroad-button">Buy Now to Edit in Canva — $29</a>
-            </div>
-        </div>
-    </div>
-
-    <!-- Apple Minimal Footer -->
+    <!-- Minimal Footer -->
     <footer>
         <div class="footer-inner">
             <div class="footer-note">
@@ -1019,8 +1234,57 @@
         </div>
     </footer>
 
-    <!-- Interactive Filtering Script -->
+    <!-- ========================================================================= -->
+    <!-- INTERACTIVE SLIDE PREVIEW MODAL (Fully Responsive with Zoom Controls)      -->
+    <!-- ========================================================================= -->
+    <div id="previewModal" class="preview-modal-backdrop" onclick="handleModalBackdropClick(event)">
+        <div class="preview-modal-card">
+            <!-- Modal Header -->
+            <div class="preview-modal-header">
+                <div class="modal-title-wrap">
+                    <h3 id="modalTitle">Product Preview</h3>
+                    <p id="modalSubtitle">Slide 1 of 10 · Interactive Template Preview</p>
+                </div>
+                <div class="modal-header-actions">
+                    <button type="button" class="modal-close-btn" onclick="closePreviewModal()" aria-label="Close Preview">✕</button>
+                </div>
+            </div>
+
+            <!-- Modal Viewport -->
+            <div class="preview-modal-viewport">
+                <!-- Floating Zoom Toolbar -->
+                <div class="zoom-toolbar">
+                    <button type="button" class="zoom-btn" onclick="zoomOut()" title="Zoom Out (-)">−</button>
+                    <span class="zoom-display" id="zoomLevelDisplay" onclick="resetZoom()" title="Click to Reset Zoom">100%</span>
+                    <button type="button" class="zoom-btn" onclick="zoomIn()" title="Zoom In (+)">+</button>
+                </div>
+
+                <!-- Slide Navigation Arrows -->
+                <button type="button" class="modal-nav-btn prev" onclick="prevSlide()" aria-label="Previous Slide">‹</button>
+                
+                <!-- Zoomable Slide Container -->
+                <div class="slide-container-stage" id="slideStage" ondblclick="toggleZoom(event)">
+                    <img id="modalSlideImg" src="" alt="Template Slide Preview">
+                    <div class="slide-watermark">SM Studio Preview</div>
+                </div>
+
+                <button type="button" class="modal-nav-btn next" onclick="nextSlide()" aria-label="Next Slide">›</button>
+            </div>
+
+            <!-- Modal Footer (Anchored, NEVER cuts off on laptop screens) -->
+            <div class="preview-modal-footer">
+                <div class="modal-security-hint">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                    <span>Master Canva Template is locked. Purchase to customize all text, colors & photos.</span>
+                </div>
+                <a id="modalBuyBtn" href="#" class="btn-primary gumroad-button">Buy Now to Edit in Canva — $29</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
     <script>
+        // Category Filter
         function filterCatalog(category, buttonEl) {
             if (buttonEl) {
                 document.querySelectorAll('.filter-pill').forEach(btn => btn.classList.remove('active'));
@@ -1039,13 +1303,20 @@
                 });
             }
 
-            const blocks = document.querySelectorAll('.apple-product-block');
-            blocks.forEach(block => {
-                const blockCat = block.getAttribute('data-cat');
-                if (category === 'all' || blockCat === category) {
-                    block.style.display = '';
+            // Billboard & Product cards filtering
+            const billboard = document.querySelector('.hero-billboard');
+            if (billboard) {
+                const billCat = billboard.getAttribute('data-cat');
+                billboard.style.display = (category === 'all' || billCat === category) ? '' : 'none';
+            }
+
+            const cards = document.querySelectorAll('.product-card');
+            cards.forEach(card => {
+                const cardCat = card.getAttribute('data-cat');
+                if (category === 'all' || cardCat === category) {
+                    card.style.display = 'flex';
                 } else {
-                    block.style.display = 'none';
+                    card.style.display = 'none';
                 }
             });
         }
@@ -1099,11 +1370,99 @@
         let currentPreview = null;
         let currentSlideIdx = 1;
 
+        // Zoom & Pan State
+        let zoomScale = 1;
+        let panX = 0, panY = 0;
+        let isDragging = false, startMouseX = 0, startMouseY = 0;
+
+        function applyZoomTransform() {
+            const img = document.getElementById('modalSlideImg');
+            const display = document.getElementById('zoomLevelDisplay');
+            const stage = document.getElementById('slideStage');
+
+            if (!img) return;
+
+            if (zoomScale <= 1) {
+                zoomScale = 1;
+                panX = 0;
+                panY = 0;
+                stage.classList.remove('can-pan');
+            } else {
+                stage.classList.add('can-pan');
+            }
+
+            img.style.transform = `translate(${panX}px, ${panY}px) scale(${zoomScale})`;
+            if (display) display.textContent = `${Math.round(zoomScale * 100)}%`;
+        }
+
+        function zoomIn() {
+            zoomScale = Math.min(3.0, zoomScale + 0.25);
+            applyZoomTransform();
+        }
+
+        function zoomOut() {
+            zoomScale = Math.max(1.0, zoomScale - 0.25);
+            if (zoomScale === 1) { panX = 0; panY = 0; }
+            applyZoomTransform();
+        }
+
+        function resetZoom() {
+            zoomScale = 1;
+            panX = 0;
+            panY = 0;
+            applyZoomTransform();
+        }
+
+        function toggleZoom(e) {
+            if (zoomScale > 1) {
+                resetZoom();
+            } else {
+                zoomScale = 1.8;
+                applyZoomTransform();
+            }
+        }
+
+        // Drag-to-Pan Event Listeners
+        const slideStage = document.getElementById('slideStage');
+        slideStage.addEventListener('mousedown', (e) => {
+            if (zoomScale <= 1) return;
+            isDragging = true;
+            startMouseX = e.clientX - panX;
+            startMouseY = e.clientY - panY;
+            slideStage.classList.add('is-panning');
+            e.preventDefault();
+        });
+
+        window.addEventListener('mousemove', (e) => {
+            if (!isDragging) return;
+            panX = e.clientX - startMouseX;
+            panY = e.clientY - startMouseY;
+            applyZoomTransform();
+        });
+
+        window.addEventListener('mouseup', () => {
+            if (isDragging) {
+                isDragging = false;
+                slideStage.classList.remove('is-panning');
+            }
+        });
+
+        // Mouse Wheel Zoom
+        slideStage.addEventListener('wheel', (e) => {
+            e.preventDefault();
+            if (e.deltaY < 0) {
+                zoomIn();
+            } else {
+                zoomOut();
+            }
+        }, { passive: false });
+
         function openSlidePreview(productId) {
             const data = CANVA_PREVIEWS[productId];
             if (!data) return;
             currentPreview = data;
             currentSlideIdx = 1;
+            resetZoom();
 
             document.getElementById('modalTitle').textContent = data.title;
             const buyBtn = document.getElementById('modalBuyBtn');
@@ -1120,6 +1479,7 @@
             const modal = document.getElementById('previewModal');
             modal.classList.remove('active');
             document.body.style.overflow = '';
+            resetZoom();
         }
 
         function handleModalBackdropClick(e) {
@@ -1130,12 +1490,13 @@
 
         function updateModalSlide() {
             if (!currentPreview) return;
+            resetZoom();
             const img = document.getElementById('modalSlideImg');
             img.src = `${currentPreview.basePath}${currentSlideIdx}.jpg`;
             document.getElementById('modalSubtitle').textContent = `Slide ${currentSlideIdx} of ${currentPreview.total} · Interactive Template Preview (Locked)`;
             
-            const prevBtn = document.querySelector('.preview-nav-btn.prev');
-            const nextBtn = document.querySelector('.preview-nav-btn.next');
+            const prevBtn = document.querySelector('.modal-nav-btn.prev');
+            const nextBtn = document.querySelector('.modal-nav-btn.next');
             if (currentPreview.total <= 1) {
                 prevBtn.style.display = 'none';
                 nextBtn.style.display = 'none';
@@ -1157,13 +1518,16 @@
             updateModalSlide();
         }
 
-        // Keyboard Arrow Navigation
+        // Keyboard Arrow & Zoom Navigation
         document.addEventListener('keydown', (e) => {
             const modal = document.getElementById('previewModal');
             if (!modal || !modal.classList.contains('active')) return;
             if (e.key === 'ArrowRight') nextSlide();
             if (e.key === 'ArrowLeft') prevSlide();
             if (e.key === 'Escape') closePreviewModal();
+            if (e.key === '+' || e.key === '=') zoomIn();
+            if (e.key === '-' || e.key === '_') zoomOut();
+            if (e.key === '0') resetZoom();
         });
     </script>
 </body>
