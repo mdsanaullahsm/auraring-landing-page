@@ -13,3 +13,13 @@
 - Upon starting a session or when scheduled to run, immediately verify the current day's product count.
 - If today's 10-product quota has not been fulfilled yet, immediately start generating, listing, and promoting the remaining products automatically.
 - Always rotate across high-converting, high-demand niches: Finance & Wealth Trackers, Coaching & Course Creator Kits, Wedding & Luxury Event Suites, Fitness Journals, and High-Ticket B2B Web Templates.
+
+## 4. Multi-Channel Social Distribution (Twitter/X & LinkedIn)
+- Accounts are permanently logged in:
+  - **Twitter / X:** `@MondolSanaullah` (MD Sanaullah Mondol)
+  - **LinkedIn:** `MD Sanaullah Mondol` (`https://www.linkedin.com/in/sanaullahmondol/`)
+- During the daily product release cycle, automatically cross-publish promotional posts across all active channels:
+  - **Pinterest:** Niche board pins with keyword-rich visual graphics.
+  - **Twitter / X:** High-engagement threads and viral hooks with Gumroad & GitHub Pages links.
+  - **LinkedIn:** B2B career and productivity value posts targeting professional digital kits (Resume suites, Pitch decks, Client proposals).
+- Execute without manual prompts using the browser subagent session.
