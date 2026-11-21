@@ -23,3 +23,17 @@
   - **Twitter / X:** High-engagement threads and viral hooks with Gumroad & GitHub Pages links.
   - **LinkedIn:** B2B career and productivity value posts targeting professional digital kits (Resume suites, Pitch decks, Client proposals).
 - Execute without manual prompts using the browser subagent session.
+
+## 5. Strict Anti-Vanilla Canva Rule & Proprietary Value-Add Standard
+- **NEVER export raw Canva stock templates as products.** Anyone with a basic Canva account can access stock templates; customers will NOT pay $19–$29 for something readily available for free.
+- **Mandatory Customization & Value Injection:**
+  1. **Proprietary Copywriting & Frameworks:** Replace all placeholder/Lorem Ipsum text with real, high-converting copywriting, fill-in-the-blank prompt frameworks, and battle-tested industry copy.
+  2. **Custom Visual Redesign:** Heavily modify color grading, typographic hierarchy, alignment, badges, and layout compositions. Inject unique graphical elements, dark-mode/luxury aesthetics, and custom frames.
+  3. **Multi-Asset Bundling:** Bundle multiple assets together (e.g. Carousel slides + matching vertical Stories + highlight covers + step-by-step PDF implementation guide).
+  4. **Commercial Reason to Buy:** Every product must solve a specific expensive problem (saving 20+ hours of design work, landing clients, or raising venture capital) so the value proposition is unmistakable.
+
+## 6. Storefront Design & High-Conversion UX Principles
+- **Avoid "Generic AI" Aesthetics:** Avoid excessive rainbow neon glows, messy purple radial blobs, and buzzword-heavy AI fluff.
+- **Clean, Minimalist & Human-Centric:** Use modern graphite/charcoal surfaces, crisp high-contrast typography (Space Grotesk & Inter/Plus Jakarta Sans), clean 1px borders, and generous whitespace.
+- **Visual-First Product Cards:** Make product cover mockups large, crisp, and instantly eye-catching. Focus 80% of visual weight on the product preview so customers immediately see what they get.
+- **Conversion Optimization:** Prominent, high-contrast "Buy Now — $XX" buttons with Gumroad 1-click in-page checkout, clear price tags, commercial license trust badges, and instant download guarantees.
