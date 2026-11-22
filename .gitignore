@@ -1,6 +1,10 @@
-# Ignore zip distribution files
+# Ignore zip distribution files & paid commercial deliverables
 auraring-commercial-package.zip
 *.zip
+*.xlsx
+*.xls
+*Package/
+*Deliverable/
 
 # Sensitive configs & secrets
 automation_config.py
