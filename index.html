@@ -2466,7 +2466,15 @@
             if (!currentPreview) return;
             resetZoom();
             const img = document.getElementById('modalSlideImg');
-            img.src = `${currentPreview.basePath}${currentSlideIdx}.jpg`;
+            const pathJpg = `${currentPreview.basePath}${currentSlideIdx}.jpg`;
+            img.onerror = function() {
+                if (this.src.endsWith('.jpg')) {
+                    this.src = this.src.replace(/\.jpg$/, '.png');
+                } else if (!this.src.includes('_0')) {
+                    this.src = this.src.replace(/_(\d+)\.png$/, '_0$1.png');
+                }
+            };
+            img.src = pathJpg;
             document.getElementById('modalSubtitle').textContent = `Slide ${currentSlideIdx} of ${currentPreview.total} · Interactive Template Preview (Locked)`;
             
             const prevBtn = document.querySelector('.modal-nav-btn.prev');
