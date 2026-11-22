@@ -9,7 +9,16 @@ Commercial-License.txt
 *Package/
 *Deliverable/
 
-# Sensitive configs & secrets
+# Sensitive configs, blueprints & internal scripts
+GEMINI.md
+*.py
+*-demo.html
+documentation/
+marketplace-listing-guide.md
+licensing.txt
+*.json
+.gemini/
+scratch/
 automation_config.py
 *.env
 __pycache__/
