@@ -1496,7 +1496,63 @@
             .preview-modal-footer { justify-content: center; }
             .preview-modal-footer a { width: 100%; justify-content: center; }
         }
-    </style>
+    
+        /* Strike-through discount pricing */
+        .card-price-container {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: #F3EFE8;
+            padding: 4px 10px;
+            border-radius: 9999px;
+            border: 1px solid #DFD9CE;
+        }
+
+        .card-regular-strike {
+            font-size: 13px;
+            font-weight: 600;
+            color: #8C827A;
+            text-decoration: line-through;
+            text-decoration-color: #DC2626; /* Real-life crimson strike line */
+            text-decoration-thickness: 2px;
+        }
+
+        .card-price-display {
+            font-size: 16px;
+            font-weight: 800;
+            color: var(--text-primary);
+        }
+
+        .card-save-pill {
+            background: #DC2626;
+            color: #FFFFFF;
+            font-size: 9.5px;
+            font-weight: 800;
+            padding: 2px 6px;
+            border-radius: 9999px;
+            letter-spacing: 0.04em;
+            line-height: 1.2;
+        }
+
+        .btn-regular-strike {
+            font-size: 12px;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: line-through;
+            text-decoration-color: #FCA5A5;
+            text-decoration-thickness: 1.5px;
+            margin-left: 6px;
+        }
+
+        .hero-regular-strike {
+            font-size: 16px;
+            color: #8C827A;
+            text-decoration: line-through;
+            text-decoration-color: #DC2626;
+            text-decoration-thickness: 2px;
+            margin: 0 4px;
+        }
+</style>
 </head>
 <body>
 
@@ -1591,14 +1647,14 @@
             <div class="hero-eyebrow-badge">★ Flagship Canva Suite · 10 Architectural Layouts</div>
             <h1>The Estate.</h1>
             <p class="hero-desc">Luxury Real Estate Marketing Kit. 10 architectural layouts engineered for elite realtors and agencies to sell multi-million dollar listings with zero design lag.</p>
-            <div class="price-tag">One-time payment: <strong>$29.00</strong> · Free Canva Compatible</div>
+            <div class="price-tag">Launch Deal: <del class="hero-regular-strike">$99.00</del> <strong>$29.00</strong> <span class="card-save-pill" style="margin-left: 6px;">70% OFF</span> · Free Canva Compatible</div>
 
             <div class="cta-row">
                 <button type="button" onclick="openSlidePreview('the-estate')" class="btn-secondary">
                     <span>Interactive Preview ↗</span>
                 </button>
                 <a href="https://mdsanaullahsm.gumroad.com/l/ynnwrn" class="btn-primary gumroad-button">
-                    <span>Buy Now — $29</span>
+                    <span>Buy Now — $29 <del class="btn-regular-strike">$99</del></span>
                 </a>
             </div>
 
@@ -1626,7 +1682,11 @@
             <div class="product-card" data-cat="web">
                 <div class="card-header-bar">
                     <span class="card-badge">Web Theme · HTML5 & CSS</span>
+                    <div class="card-price-container">
+                    <span class="card-regular-strike">$99</span>
                     <span class="card-price-display">$29</span>
+                    <span class="card-save-pill">70% OFF</span>
+                </div>
                 </div>
                 <div class="card-media-stage" onclick="openSlidePreview('auraring-landing-page')">
                     <img src="preview-cover.png" alt="AuraRing Luxury Landing Page" loading="lazy">
@@ -1642,7 +1702,7 @@
                     </ul>
                     <div class="card-action-bar">
                         <button type="button" onclick="openSlidePreview('auraring-landing-page')" class="btn-secondary">Interactive Preview ↗</button>
-                        <a href="https://mdsanaullahsm.gumroad.com/l/mcxejd" class="btn-primary gumroad-button">Buy Now — $29</a>
+                        <a href="https://mdsanaullahsm.gumroad.com/l/mcxejd" class="btn-primary gumroad-button">Buy Now — $29 <del class="btn-regular-strike">$99</del></a>
                     </div>
                 </div>
             </div>
@@ -1651,7 +1711,11 @@
             <div class="product-card" data-cat="canva">
                 <div class="card-header-bar">
                     <span class="card-badge">Canva Suite · 15 Slides</span>
+                    <div class="card-price-container">
+                    <span class="card-regular-strike">$99</span>
                     <span class="card-price-display">$29</span>
+                    <span class="card-save-pill">70% OFF</span>
+                </div>
                 </div>
                 <div class="card-media-stage" onclick="openSlidePreview('the-pitch')">
                     <img src="products/startup-pitch-deck/gumroad-cover.png" alt="Tech Startup Investor Pitch Deck" loading="lazy">
@@ -1667,7 +1731,7 @@
                     </ul>
                     <div class="card-action-bar">
                         <button type="button" onclick="openSlidePreview('the-pitch')" class="btn-secondary">Preview ↗</button>
-                        <a href="https://mdsanaullahsm.gumroad.com/l/fsjsd" class="btn-primary gumroad-button">Buy Now — $29</a>
+                        <a href="https://mdsanaullahsm.gumroad.com/l/fsjsd" class="btn-primary gumroad-button">Buy Now — $29 <del class="btn-regular-strike">$99</del></a>
                     </div>
                 </div>
             </div>
@@ -1676,7 +1740,11 @@
             <div class="product-card" data-cat="canva">
                 <div class="card-header-bar">
                     <span class="card-badge">Canva Suite · 8 Pages</span>
+                    <div class="card-price-container">
+                    <span class="card-regular-strike">$79</span>
                     <span class="card-price-display">$24</span>
+                    <span class="card-save-pill">70% OFF</span>
+                </div>
                 </div>
                 <div class="card-media-stage" onclick="openSlidePreview('the-close')">
                     <img src="products/freelance-client-proposal/gumroad-cover.png" alt="Freelance Client Proposal & Contract Suite" loading="lazy">
@@ -1692,7 +1760,7 @@
                     </ul>
                     <div class="card-action-bar">
                         <button type="button" onclick="openSlidePreview('the-close')" class="btn-secondary">Preview ↗</button>
-                        <a href="https://mdsanaullahsm.gumroad.com/l/fbhqi" class="btn-primary gumroad-button">Buy Now — $24</a>
+                        <a href="https://mdsanaullahsm.gumroad.com/l/fbhqi" class="btn-primary gumroad-button">Buy Now — $24 <del class="btn-regular-strike">$79</del></a>
                     </div>
                 </div>
             </div>
@@ -1701,7 +1769,11 @@
             <div class="product-card" data-cat="canva">
                 <div class="card-header-bar">
                     <span class="card-badge">Canva Suite · 12 Assets</span>
+                    <div class="card-price-container">
+                    <span class="card-regular-strike">$79</span>
                     <span class="card-price-display">$19</span>
+                    <span class="card-save-pill">75% OFF</span>
+                </div>
                 </div>
                 <div class="card-media-stage" onclick="openSlidePreview('the-creator')">
                     <img src="products/social-media-carousel-kit/gumroad-cover.png" alt="Viral Instagram Carousel Kit" loading="lazy">
@@ -1717,7 +1789,7 @@
                     </ul>
                     <div class="card-action-bar">
                         <button type="button" onclick="openSlidePreview('the-creator')" class="btn-secondary">Preview ↗</button>
-                        <a href="https://mdsanaullahsm.gumroad.com/l/stnsoe" class="btn-primary gumroad-button">Buy Now — $19</a>
+                        <a href="https://mdsanaullahsm.gumroad.com/l/stnsoe" class="btn-primary gumroad-button">Buy Now — $19 <del class="btn-regular-strike">$79</del></a>
                     </div>
                 </div>
             </div>
@@ -1726,7 +1798,11 @@
             <div class="product-card" data-cat="web">
                 <div class="card-header-bar">
                     <span class="card-badge">Web Theme · Dark/Light Mode</span>
+                    <div class="card-price-container">
+                    <span class="card-regular-strike">$79</span>
                     <span class="card-price-display">$19</span>
+                    <span class="card-save-pill">75% OFF</span>
+                </div>
                 </div>
                 <div class="card-media-stage" onclick="openSlidePreview('nova-saas-theme')">
                     <img src="products/extra-pins/nova_cover.png" alt="Nova SaaS Landing Page" loading="lazy">
@@ -1742,7 +1818,7 @@
                     </ul>
                     <div class="card-action-bar">
                         <button type="button" onclick="openSlidePreview('nova-saas-theme')" class="btn-secondary">Interactive Preview ↗</button>
-                        <a href="https://mdsanaullahsm.gumroad.com/l/nova-landing" class="btn-primary gumroad-button">Buy Now — $19</a>
+                        <a href="https://mdsanaullahsm.gumroad.com/l/nova-landing" class="btn-primary gumroad-button">Buy Now — $19 <del class="btn-regular-strike">$79</del></a>
                     </div>
                 </div>
             </div>
@@ -1751,7 +1827,11 @@
             <div class="product-card" data-cat="spreadsheet">
                 <div class="card-header-bar">
                     <span class="card-badge">Productivity · PDF & Canva</span>
+                    <div class="card-price-container">
+                    <span class="card-regular-strike">$59</span>
                     <span class="card-price-display">$15</span>
+                    <span class="card-save-pill">75% OFF</span>
+                </div>
                 </div>
                 <div class="card-media-stage" onclick="openSlidePreview('habit-tracker')">
                     <img src="products/minimalist-habit-tracker/gumroad-cover.png" alt="Minimalist Daily Habit Tracker" loading="lazy">
@@ -1767,7 +1847,7 @@
                     </ul>
                     <div class="card-action-bar">
                         <button type="button" onclick="openSlidePreview('habit-tracker')" class="btn-secondary">Preview ↗</button>
-                        <a href="https://mdsanaullahsm.gumroad.com/l/rbqxni" class="btn-primary gumroad-button">Buy Now — $15</a>
+                        <a href="https://mdsanaullahsm.gumroad.com/l/rbqxni" class="btn-primary gumroad-button">Buy Now — $15 <del class="btn-regular-strike">$59</del></a>
                     </div>
                 </div>
             </div>
@@ -1776,7 +1856,11 @@
             <div class="product-card" data-cat="web">
                 <div class="card-header-bar">
                     <span class="card-badge">Web Bundle · 5 HTML Themes</span>
+                    <div class="card-price-container">
+                    <span class="card-regular-strike">$79</span>
                     <span class="card-price-display">$19</span>
+                    <span class="card-save-pill">75% OFF</span>
+                </div>
                 </div>
                 <div class="card-media-stage" onclick="openSlidePreview('smallbiz-landing-kit')">
                     <img src="products/extra-pins/biz_cover.png" alt="Small Business Landing Page Kit" loading="lazy">
@@ -1792,7 +1876,7 @@
                     </ul>
                     <div class="card-action-bar">
                         <button type="button" onclick="openSlidePreview('smallbiz-landing-kit')" class="btn-secondary">Interactive Preview ↗</button>
-                        <a href="https://mdsanaullahsm.gumroad.com/l/landingpages" class="btn-primary gumroad-button">Buy Now — $19</a>
+                        <a href="https://mdsanaullahsm.gumroad.com/l/landingpages" class="btn-primary gumroad-button">Buy Now — $19 <del class="btn-regular-strike">$79</del></a>
                     </div>
                 </div>
             </div>
@@ -1801,7 +1885,11 @@
             <div class="product-card" data-cat="canva">
                 <div class="card-header-bar">
                     <span class="card-badge">Career Suite · 2 Pages</span>
+                    <div class="card-price-container">
+                    <span class="card-regular-strike">$79</span>
                     <span class="card-price-display">$19</span>
+                    <span class="card-save-pill">75% OFF</span>
+                </div>
                 </div>
                 <div class="card-media-stage" onclick="openSlidePreview('executive-resume')">
                     <img src="products/executive-ats-resume/gumroad-cover.png" alt="The Executive ATS Resume Suite" loading="lazy">
@@ -1817,7 +1905,7 @@
                     </ul>
                     <div class="card-action-bar">
                         <button type="button" onclick="openSlidePreview('executive-resume')" class="btn-secondary">Preview ↗</button>
-                        <a href="https://mdsanaullahsm.gumroad.com/l/jghcvo" class="btn-primary gumroad-button">Buy Now — $19</a>
+                        <a href="https://mdsanaullahsm.gumroad.com/l/jghcvo" class="btn-primary gumroad-button">Buy Now — $19 <del class="btn-regular-strike">$79</del></a>
                     </div>
                 </div>
             </div>
@@ -1826,7 +1914,11 @@
             <div class="product-card span-2" data-cat="spreadsheet">
                 <div class="card-header-bar">
                     <span class="card-badge">Finance & Event · Spreadsheet Simulator</span>
+                    <div class="card-price-container">
+                    <span class="card-regular-strike">$89</span>
                     <span class="card-price-display">$12</span>
+                    <span class="card-save-pill">70% OFF</span>
+                </div>
                 </div>
                 <div class="card-media-stage" onclick="openSlidePreview('wedding-budget-simulator')">
                     <img src="products/extra-pins/wed_cover.png" alt="Wedding Budget Spreadsheet Simulator" loading="lazy">
@@ -1842,7 +1934,7 @@
                     </ul>
                     <div class="card-action-bar">
                         <button type="button" onclick="openSlidePreview('wedding-budget-simulator')" class="btn-secondary">Interactive Preview ↗</button>
-                        <a href="https://mdsanaullahsm.gumroad.com/l/weddingbudget" class="btn-primary gumroad-button">Buy Now — $12</a>
+                        <a href="https://mdsanaullahsm.gumroad.com/l/weddingbudget" class="btn-primary gumroad-button">Buy Now — $12 <del class="btn-regular-strike">$89</del></a>
                     </div>
                 </div>
             </div>
@@ -1851,7 +1943,11 @@
             <div class="product-card" data-cat="spreadsheet">
                 <div class="card-header-bar">
                     <span class="card-badge">Finance & Wealth · Spreadsheet System</span>
+                    <div class="card-price-container">
+                    <span class="card-regular-strike">$79</span>
                     <span class="card-price-display">$19</span>
+                    <span class="card-save-pill">75% OFF</span>
+                </div>
                 </div>
                 <div class="card-media-stage" onclick="openSlidePreview('wealth-matrix-finance-tracker')">
                     <img src="products/wealth-matrix-finance-tracker/cover-v2.png?v=2" alt="The Wealth Matrix — 2026 Personal Finance & Net Worth OS" loading="lazy">
@@ -1868,7 +1964,7 @@
                     </ul>
                     <div class="card-action-bar">
                         <button type="button" onclick="openSlidePreview('wealth-matrix-finance-tracker')" class="btn-secondary">Interactive Preview ↗</button>
-                        <a href="https://mdsanaullahsm.gumroad.com/l/pjhnea" class="btn-primary gumroad-button">Buy Now — $19</a>
+                        <a href="https://mdsanaullahsm.gumroad.com/l/pjhnea" class="btn-primary gumroad-button">Buy Now — $19 <del class="btn-regular-strike">$79</del></a>
                     </div>
                 </div>
             </div>
@@ -1877,7 +1973,11 @@
             <div class="product-card" data-cat="canva">
                 <div class="card-header-bar">
                     <span class="card-badge">Coaching & Course Creation · Canva Suite</span>
+                    <div class="card-price-container">
+                    <span class="card-regular-strike">$99</span>
                     <span class="card-price-display">$29</span>
+                    <span class="card-save-pill">70% OFF</span>
+                </div>
                 </div>
                 <div class="card-media-stage" onclick="openSlidePreview('course-master-presentation-deck')">
                     <img src="products/course-master-presentation-deck/cover-v2.png?v=2" alt="The Course Master — 25-Slide Webinar & Masterclass Deck" loading="lazy">
@@ -1894,7 +1994,7 @@
                     </ul>
                     <div class="card-action-bar">
                         <button type="button" onclick="openSlidePreview('course-master-presentation-deck')" class="btn-secondary">Interactive Preview ↗</button>
-                        <a href="https://mdsanaullahsm.gumroad.com/l/dqdbcw" class="btn-primary gumroad-button">Buy Now — $29</a>
+                        <a href="https://mdsanaullahsm.gumroad.com/l/dqdbcw" class="btn-primary gumroad-button">Buy Now — $29 <del class="btn-regular-strike">$99</del></a>
                     </div>
                 </div>
             </div>
@@ -1903,7 +2003,11 @@
             <div class="product-card" data-cat="canva">
                 <div class="card-header-bar">
                     <span class="card-badge">Luxury Events & Wedding · Canva Suite</span>
+                    <div class="card-price-container">
+                    <span class="card-regular-strike">$79</span>
                     <span class="card-price-display">$19</span>
+                    <span class="card-save-pill">75% OFF</span>
+                </div>
                 </div>
                 <div class="card-media-stage" onclick="openSlidePreview('monogram-wedding-stationery-suite')">
                     <img src="products/monogram-wedding-stationery-suite/cover-v2.png?v=2" alt="The Monogram — Luxury Wedding Invitation & Event Suite" loading="lazy">
@@ -1920,7 +2024,7 @@
                     </ul>
                     <div class="card-action-bar">
                         <button type="button" onclick="openSlidePreview('monogram-wedding-stationery-suite')" class="btn-secondary">Interactive Preview ↗</button>
-                        <a href="https://mdsanaullahsm.gumroad.com/l/qqpsbe" class="btn-primary gumroad-button">Buy Now — $19</a>
+                        <a href="https://mdsanaullahsm.gumroad.com/l/qqpsbe" class="btn-primary gumroad-button">Buy Now — $19 <del class="btn-regular-strike">$79</del></a>
                     </div>
                 </div>
             </div>
@@ -1929,7 +2033,11 @@
             <div class="product-card" data-cat="canva">
                 <div class="card-header-bar">
                     <span class="card-badge">Fitness & Wellness · Fitness Journal</span>
+                    <div class="card-price-container">
+                    <span class="card-regular-strike">$59</span>
                     <span class="card-price-display">$15</span>
+                    <span class="card-save-pill">75% OFF</span>
+                </div>
                 </div>
                 <div class="card-media-stage" onclick="openSlidePreview('75-day-transformation-blueprint')">
                     <img src="products/75-day-transformation-blueprint/cover-v2.png?v=2" alt="The 75-Day Blueprint — Transformation & Fitness Journal" loading="lazy">
@@ -1946,7 +2054,7 @@
                     </ul>
                     <div class="card-action-bar">
                         <button type="button" onclick="openSlidePreview('75-day-transformation-blueprint')" class="btn-secondary">Interactive Preview ↗</button>
-                        <a href="https://mdsanaullahsm.gumroad.com/l/wqnart" class="btn-primary gumroad-button">Buy Now — $15</a>
+                        <a href="https://mdsanaullahsm.gumroad.com/l/wqnart" class="btn-primary gumroad-button">Buy Now — $15 <del class="btn-regular-strike">$59</del></a>
                     </div>
                 </div>
             </div>
@@ -1955,7 +2063,11 @@
             <div class="product-card" data-cat="web">
                 <div class="card-header-bar">
                     <span class="card-badge">High-Ticket B2B Web · Web Theme</span>
+                    <div class="card-price-container">
+                    <span class="card-regular-strike">$99</span>
                     <span class="card-price-display">$29</span>
+                    <span class="card-save-pill">70% OFF</span>
+                </div>
                 </div>
                 <div class="card-media-stage" onclick="openSlidePreview('apex-wealth-landing-theme')">
                     <img src="products/apex-wealth-landing-theme/cover-v2.png?v=2" alt="Apex Wealth — Luxury FinTech & Private Banking Web Theme" loading="lazy">
@@ -1972,7 +2084,7 @@
                     </ul>
                     <div class="card-action-bar">
                         <button type="button" onclick="openSlidePreview('apex-wealth-landing-theme')" class="btn-secondary">Interactive Preview ↗</button>
-                        <a href="https://mdsanaullahsm.gumroad.com/l/xoazsn" class="btn-primary gumroad-button">Buy Now — $29</a>
+                        <a href="https://mdsanaullahsm.gumroad.com/l/xoazsn" class="btn-primary gumroad-button">Buy Now — $29 <del class="btn-regular-strike">$99</del></a>
                     </div>
                 </div>
             </div>
@@ -1981,7 +2093,11 @@
             <div class="product-card" data-cat="canva">
                 <div class="card-header-bar">
                     <span class="card-badge">Agency & Design · Canva Suite</span>
+                    <div class="card-price-container">
+                    <span class="card-regular-strike">$79</span>
                     <span class="card-price-display">$24</span>
+                    <span class="card-save-pill">70% OFF</span>
+                </div>
                 </div>
                 <div class="card-media-stage" onclick="openSlidePreview('brand-bible-guidelines-deck')">
                     <img src="products/brand-bible-guidelines-deck/cover-v2.png?v=2" alt="The Brand Bible — Minimalist Brand Identity & Guidelines Suite" loading="lazy">
@@ -1998,7 +2114,7 @@
                     </ul>
                     <div class="card-action-bar">
                         <button type="button" onclick="openSlidePreview('brand-bible-guidelines-deck')" class="btn-secondary">Interactive Preview ↗</button>
-                        <a href="https://mdsanaullahsm.gumroad.com/l/ekdism" class="btn-primary gumroad-button">Buy Now — $24</a>
+                        <a href="https://mdsanaullahsm.gumroad.com/l/ekdism" class="btn-primary gumroad-button">Buy Now — $24 <del class="btn-regular-strike">$79</del></a>
                     </div>
                 </div>
             </div>
@@ -2007,7 +2123,11 @@
             <div class="product-card" data-cat="canva">
                 <div class="card-header-bar">
                     <span class="card-badge">Creator Economy · Canva Suite</span>
+                    <div class="card-price-container">
+                    <span class="card-regular-strike">$79</span>
                     <span class="card-price-display">$19</span>
+                    <span class="card-save-pill">75% OFF</span>
+                </div>
                 </div>
                 <div class="card-media-stage" onclick="openSlidePreview('creator-sponsorship-media-kit')">
                     <img src="products/creator-sponsorship-media-kit/cover-v2.png?v=2" alt="Creator Sponsorship & Brand Deal Media Kit (2 & 4 Pages)" loading="lazy">
@@ -2024,7 +2144,7 @@
                     </ul>
                     <div class="card-action-bar">
                         <button type="button" onclick="openSlidePreview('creator-sponsorship-media-kit')" class="btn-secondary">Interactive Preview ↗</button>
-                        <a href="https://mdsanaullahsm.gumroad.com/l/bfdof" class="btn-primary gumroad-button">Buy Now — $19</a>
+                        <a href="https://mdsanaullahsm.gumroad.com/l/bfdof" class="btn-primary gumroad-button">Buy Now — $19 <del class="btn-regular-strike">$79</del></a>
                     </div>
                 </div>
             </div>
@@ -2033,7 +2153,11 @@
             <div class="product-card" data-cat="spreadsheet">
                 <div class="card-header-bar">
                     <span class="card-badge">Business Systems · Spreadsheet System</span>
+                    <div class="card-price-container">
+                    <span class="card-regular-strike">$69</span>
                     <span class="card-price-display">$17</span>
+                    <span class="card-save-pill">75% OFF</span>
+                </div>
                 </div>
                 <div class="card-media-stage" onclick="openSlidePreview('solopreneur-crm-pipeline')">
                     <img src="products/solopreneur-crm-pipeline/cover-v2.png?v=2" alt="Solopreneur CRM & Client Deal Flow Pipeline System" loading="lazy">
@@ -2050,7 +2174,7 @@
                     </ul>
                     <div class="card-action-bar">
                         <button type="button" onclick="openSlidePreview('solopreneur-crm-pipeline')" class="btn-secondary">Interactive Preview ↗</button>
-                        <a href="https://mdsanaullahsm.gumroad.com/l/jzlfb" class="btn-primary gumroad-button">Buy Now — $17</a>
+                        <a href="https://mdsanaullahsm.gumroad.com/l/jzlfb" class="btn-primary gumroad-button">Buy Now — $17 <del class="btn-regular-strike">$69</del></a>
                     </div>
                 </div>
             </div>
@@ -2059,7 +2183,11 @@
             <div class="product-card" data-cat="canva">
                 <div class="card-header-bar">
                     <span class="card-badge">Audio & Media · Media Planner</span>
+                    <div class="card-price-container">
+                    <span class="card-regular-strike">$49</span>
                     <span class="card-price-display">$14</span>
+                    <span class="card-save-pill">70% OFF</span>
+                </div>
                 </div>
                 <div class="card-media-stage" onclick="openSlidePreview('podcast-launch-production-planner')">
                     <img src="products/podcast-launch-production-planner/cover-v2.png?v=2" alt="The Broadcaster — Podcast Launch & Production Planner" loading="lazy">
@@ -2076,7 +2204,7 @@
                     </ul>
                     <div class="card-action-bar">
                         <button type="button" onclick="openSlidePreview('podcast-launch-production-planner')" class="btn-secondary">Interactive Preview ↗</button>
-                        <a href="https://mdsanaullahsm.gumroad.com/l/ilxhqo" class="btn-primary gumroad-button">Buy Now — $14</a>
+                        <a href="https://mdsanaullahsm.gumroad.com/l/ilxhqo" class="btn-primary gumroad-button">Buy Now — $14 <del class="btn-regular-strike">$49</del></a>
                     </div>
                 </div>
             </div>
@@ -2085,7 +2213,11 @@
             <div class="product-card" data-cat="web">
                 <div class="card-header-bar">
                     <span class="card-badge">High-Ticket B2B Web · Web Theme</span>
+                    <div class="card-price-container">
+                    <span class="card-regular-strike">$79</span>
                     <span class="card-price-display">$24</span>
+                    <span class="card-save-pill">70% OFF</span>
+                </div>
                 </div>
                 <div class="card-media-stage" onclick="openSlidePreview('chrono-developer-portfolio-theme')">
                     <img src="products/chrono-developer-portfolio-theme/cover-v2.png?v=2" alt="Chrono — Ultra-Minimalist Developer & Consultant Portfolio" loading="lazy">
@@ -2102,7 +2234,7 @@
                     </ul>
                     <div class="card-action-bar">
                         <button type="button" onclick="openSlidePreview('chrono-developer-portfolio-theme')" class="btn-secondary">Interactive Preview ↗</button>
-                        <a href="https://mdsanaullahsm.gumroad.com/l/mznydp" class="btn-primary gumroad-button">Buy Now — $24</a>
+                        <a href="https://mdsanaullahsm.gumroad.com/l/mznydp" class="btn-primary gumroad-button">Buy Now — $24 <del class="btn-regular-strike">$79</del></a>
                     </div>
                 </div>
             </div>
@@ -2115,7 +2247,11 @@
             <div class="product-card" data-cat="web">
                 <div class="card-header-bar">
                     <span class="card-badge">Web Theme · Luxury DTC Storefront</span>
+                    <div class="card-price-container">
+                    <span class="card-regular-strike">$99</span>
                     <span class="card-price-display">$29</span>
+                    <span class="card-save-pill">70% OFF</span>
+                </div>
                 </div>
                 <div class="card-media-stage" onclick="openSlidePreview('lumina-dtc-ecommerce')">
                     <img src="products/lumina-dtc-ecommerce/cover-v2.png" alt="Lumina DTC E-Commerce Theme" loading="lazy">
@@ -2131,7 +2267,7 @@
                     </ul>
                     <div class="card-action-bar">
                         <button type="button" onclick="openSlidePreview('lumina-dtc-ecommerce')" class="btn-secondary">Interactive Preview ↗</button>
-                        <a href="https://mdsanaullahsm.gumroad.com" class="btn-primary gumroad-button">Buy Now — $29</a>
+                        <a href="https://mdsanaullahsm.gumroad.com" class="btn-primary gumroad-button">Buy Now — $29 <del class="btn-regular-strike">$99</del></a>
                     </div>
                 </div>
             </div>
@@ -2140,7 +2276,11 @@
             <div class="product-card" data-cat="spreadsheets">
                 <div class="card-header-bar">
                     <span class="card-badge">5-in-1 Mega-Bundle · Personal Finance</span>
+                    <div class="card-price-container">
+                    <span class="card-regular-strike">$89</span>
                     <span class="card-price-display">$27</span>
+                    <span class="card-save-pill">70% OFF</span>
+                </div>
                 </div>
                 <div class="card-media-stage" onclick="openSlidePreview('wealth-engine-5in1')">
                     <img src="products/wealth-engine-5in1/cover-v2.png" alt="The 5-in-1 Wealth Engine OS" loading="lazy">
@@ -2156,7 +2296,7 @@
                     </ul>
                     <div class="card-action-bar">
                         <button type="button" onclick="openSlidePreview('wealth-engine-5in1')" class="btn-secondary">Interactive Preview ↗</button>
-                        <a href="https://mdsanaullahsm.gumroad.com" class="btn-primary gumroad-button">Buy Now — $27</a>
+                        <a href="https://mdsanaullahsm.gumroad.com" class="btn-primary gumroad-button">Buy Now — $27 <del class="btn-regular-strike">$89</del></a>
                     </div>
                 </div>
             </div>
@@ -2165,7 +2305,11 @@
             <div class="product-card" data-cat="templates">
                 <div class="card-header-bar">
                     <span class="card-badge">5-in-1 Mega-Bundle · Startup Pitch Decks</span>
+                    <div class="card-price-container">
+                    <span class="card-regular-strike">$99</span>
                     <span class="card-price-display">$29</span>
+                    <span class="card-save-pill">70% OFF</span>
+                </div>
                 </div>
                 <div class="card-media-stage" onclick="openSlidePreview('founder-pitch-5in1')">
                     <img src="products/founder-pitch-5in1/cover-v2.png" alt="Silicon Valley Pitch Deck System" loading="lazy">
@@ -2181,7 +2325,7 @@
                     </ul>
                     <div class="card-action-bar">
                         <button type="button" onclick="openSlidePreview('founder-pitch-5in1')" class="btn-secondary">Interactive Preview ↗</button>
-                        <a href="https://mdsanaullahsm.gumroad.com" class="btn-primary gumroad-button">Buy Now — $29</a>
+                        <a href="https://mdsanaullahsm.gumroad.com" class="btn-primary gumroad-button">Buy Now — $29 <del class="btn-regular-strike">$99</del></a>
                     </div>
                 </div>
             </div>
@@ -2190,7 +2334,11 @@
             <div class="product-card" data-cat="templates">
                 <div class="card-header-bar">
                     <span class="card-badge">5-in-1 Mega-Bundle · Course Creation</span>
+                    <div class="card-price-container">
+                    <span class="card-regular-strike">$89</span>
                     <span class="card-price-display">$27</span>
+                    <span class="card-save-pill">70% OFF</span>
+                </div>
                 </div>
                 <div class="card-media-stage" onclick="openSlidePreview('masterclass-deck-5in1')">
                     <img src="products/masterclass-deck-5in1/cover-v2.png" alt="Creator Masterclass Presentation Suite" loading="lazy">
@@ -2206,7 +2354,7 @@
                     </ul>
                     <div class="card-action-bar">
                         <button type="button" onclick="openSlidePreview('masterclass-deck-5in1')" class="btn-secondary">Interactive Preview ↗</button>
-                        <a href="https://mdsanaullahsm.gumroad.com" class="btn-primary gumroad-button">Buy Now — $27</a>
+                        <a href="https://mdsanaullahsm.gumroad.com" class="btn-primary gumroad-button">Buy Now — $27 <del class="btn-regular-strike">$89</del></a>
                     </div>
                 </div>
             </div>
@@ -2215,7 +2363,11 @@
             <div class="product-card" data-cat="planners">
                 <div class="card-header-bar">
                     <span class="card-badge">5-in-1 Mega-Bundle · Wedding & Events</span>
+                    <div class="card-price-container">
+                    <span class="card-regular-strike">$89</span>
                     <span class="card-price-display">$28</span>
+                    <span class="card-save-pill">68% OFF</span>
+                </div>
                 </div>
                 <div class="card-media-stage" onclick="openSlidePreview('wedding-suite-5in1')">
                     <img src="products/wedding-suite-5in1/cover-v2.png" alt="Luxury Wedding Planner & Stationery" loading="lazy">
@@ -2231,7 +2383,7 @@
                     </ul>
                     <div class="card-action-bar">
                         <button type="button" onclick="openSlidePreview('wedding-suite-5in1')" class="btn-secondary">Interactive Preview ↗</button>
-                        <a href="https://mdsanaullahsm.gumroad.com" class="btn-primary gumroad-button">Buy Now — $28</a>
+                        <a href="https://mdsanaullahsm.gumroad.com" class="btn-primary gumroad-button">Buy Now — $28 <del class="btn-regular-strike">$89</del></a>
                     </div>
                 </div>
             </div>
@@ -2240,7 +2392,11 @@
             <div class="product-card" data-cat="planners">
                 <div class="card-header-bar">
                     <span class="card-badge">5-in-1 Mega-Bundle · Fitness OS</span>
+                    <div class="card-price-container">
+                    <span class="card-regular-strike">$79</span>
                     <span class="card-price-display">$24</span>
+                    <span class="card-save-pill">70% OFF</span>
+                </div>
                 </div>
                 <div class="card-media-stage" onclick="openSlidePreview('fitness-protocol-5in1')">
                     <img src="products/fitness-protocol-5in1/cover-v2.png" alt="Fitness & Nutrition OS" loading="lazy">
@@ -2256,7 +2412,7 @@
                     </ul>
                     <div class="card-action-bar">
                         <button type="button" onclick="openSlidePreview('fitness-protocol-5in1')" class="btn-secondary">Interactive Preview ↗</button>
-                        <a href="https://mdsanaullahsm.gumroad.com" class="btn-primary gumroad-button">Buy Now — $24</a>
+                        <a href="https://mdsanaullahsm.gumroad.com" class="btn-primary gumroad-button">Buy Now — $24 <del class="btn-regular-strike">$79</del></a>
                     </div>
                 </div>
             </div>
@@ -2265,7 +2421,11 @@
             <div class="product-card" data-cat="templates">
                 <div class="card-header-bar">
                     <span class="card-badge">5-in-1 Mega-Bundle · Agency Branding</span>
+                    <div class="card-price-container">
+                    <span class="card-regular-strike">$99</span>
                     <span class="card-price-display">$29</span>
+                    <span class="card-save-pill">70% OFF</span>
+                </div>
                 </div>
                 <div class="card-media-stage" onclick="openSlidePreview('brand-guidelines-5in1')">
                     <img src="products/brand-guidelines-5in1/cover-v2.png" alt="Studio Brand Guidelines Bible" loading="lazy">
@@ -2281,7 +2441,7 @@
                     </ul>
                     <div class="card-action-bar">
                         <button type="button" onclick="openSlidePreview('brand-guidelines-5in1')" class="btn-secondary">Interactive Preview ↗</button>
-                        <a href="https://mdsanaullahsm.gumroad.com" class="btn-primary gumroad-button">Buy Now — $29</a>
+                        <a href="https://mdsanaullahsm.gumroad.com" class="btn-primary gumroad-button">Buy Now — $29 <del class="btn-regular-strike">$99</del></a>
                     </div>
                 </div>
             </div>
@@ -2290,7 +2450,11 @@
             <div class="product-card" data-cat="templates">
                 <div class="card-header-bar">
                     <span class="card-badge">5-in-1 Mega-Bundle · Social Media</span>
+                    <div class="card-price-container">
+                    <span class="card-regular-strike">$79</span>
                     <span class="card-price-display">$26</span>
+                    <span class="card-save-pill">67% OFF</span>
+                </div>
                 </div>
                 <div class="card-media-stage" onclick="openSlidePreview('viral-carousel-5in1')">
                     <img src="products/viral-carousel-5in1/cover-v2.png" alt="Viral Carousel Growth System" loading="lazy">
@@ -2306,7 +2470,7 @@
                     </ul>
                     <div class="card-action-bar">
                         <button type="button" onclick="openSlidePreview('viral-carousel-5in1')" class="btn-secondary">Interactive Preview ↗</button>
-                        <a href="https://mdsanaullahsm.gumroad.com" class="btn-primary gumroad-button">Buy Now — $26</a>
+                        <a href="https://mdsanaullahsm.gumroad.com" class="btn-primary gumroad-button">Buy Now — $26 <del class="btn-regular-strike">$79</del></a>
                     </div>
                 </div>
             </div>
@@ -2315,7 +2479,11 @@
             <div class="product-card" data-cat="spreadsheets">
                 <div class="card-header-bar">
                     <span class="card-badge">5-in-1 Mega-Bundle · B2B Sales CRM</span>
+                    <div class="card-price-container">
+                    <span class="card-regular-strike">$89</span>
                     <span class="card-price-display">$28</span>
+                    <span class="card-save-pill">68% OFF</span>
+                </div>
                 </div>
                 <div class="card-media-stage" onclick="openSlidePreview('client-pipeline-5in1')">
                     <img src="products/client-pipeline-5in1/cover-v2.png" alt="Client Deal Flow Pipeline System" loading="lazy">
@@ -2331,7 +2499,7 @@
                     </ul>
                     <div class="card-action-bar">
                         <button type="button" onclick="openSlidePreview('client-pipeline-5in1')" class="btn-secondary">Interactive Preview ↗</button>
-                        <a href="https://mdsanaullahsm.gumroad.com" class="btn-primary gumroad-button">Buy Now — $28</a>
+                        <a href="https://mdsanaullahsm.gumroad.com" class="btn-primary gumroad-button">Buy Now — $28 <del class="btn-regular-strike">$89</del></a>
                     </div>
                 </div>
             </div>
@@ -2340,7 +2508,11 @@
             <div class="product-card" data-cat="templates">
                 <div class="card-header-bar">
                     <span class="card-badge">5-in-1 Mega-Bundle · Career & Leadership</span>
+                    <div class="card-price-container">
+                    <span class="card-regular-strike">$79</span>
                     <span class="card-price-display">$25</span>
+                    <span class="card-save-pill">68% OFF</span>
+                </div>
                 </div>
                 <div class="card-media-stage" onclick="openSlidePreview('executive-resume-5in1')">
                     <img src="products/executive-resume-5in1/cover-v2.png" alt="Executive Resume & Portfolio System" loading="lazy">
@@ -2356,7 +2528,7 @@
                     </ul>
                     <div class="card-action-bar">
                         <button type="button" onclick="openSlidePreview('executive-resume-5in1')" class="btn-secondary">Interactive Preview ↗</button>
-                        <a href="https://mdsanaullahsm.gumroad.com" class="btn-primary gumroad-button">Buy Now — $25</a>
+                        <a href="https://mdsanaullahsm.gumroad.com" class="btn-primary gumroad-button">Buy Now — $25 <del class="btn-regular-strike">$79</del></a>
                     </div>
                 </div>
             </div>
@@ -2807,7 +2979,8 @@
 
             document.getElementById('modalTitle').textContent = data.title;
             const buyBtn = document.getElementById('modalBuyBtn');
-            buyBtn.textContent = `Buy Now to Edit in Canva — ${data.price}`;
+            const regPrice = data.anchor || (parseInt(data.price.replace('$', '')) >= 28 ? '$99' : (parseInt(data.price.replace('$', '')) >= 24 ? '$79' : '$69'));
+            buyBtn.innerHTML = `Buy Now — ${data.price} <del style="text-decoration: line-through; text-decoration-color: #F87171; text-decoration-thickness: 2px; color: rgba(255,255,255,0.7); margin-left: 6px; font-size: 13px;">${regPrice}</del> <span style="background: #DC2626; color: #fff; padding: 2px 7px; border-radius: 9999px; font-size: 10px; margin-left: 8px; font-weight: 800;">LIMITED OFFER</span>`;
             buyBtn.href = data.gumroadUrl;
 
             updateModalSlide();
