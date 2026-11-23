@@ -1,0 +1,8 @@
+# SM Studio Robots.txt
+User-agent: *
+Allow: /
+Allow: /products/
+Allow: /sitemap.xml
+
+# Sitemaps
+Sitemap: https://mdsanaullahsm.github.io/auraring-landing-page/sitemap.xml
