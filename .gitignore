@@ -4,6 +4,17 @@ auraring-commercial-package.zip
 *.xlsx
 *.xls
 *.pdf
+*.docx
+*.doc
+*.pptx
+products/*/*.html
+products/*/*.js
+products/*/*.css
+products/*/01_*
+products/*/02_*
+products/*/03_*
+products/*/04_*
+products/*/05_*
 Access-Your-Template.html
 Commercial-License.txt
 *Package/
