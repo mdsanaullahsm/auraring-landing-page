@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" width="100%" height="100%">
+  <defs>
+    <!-- Studio Ambient Floor Shadow -->
+    <radialGradient id="unboxingShadow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.4"/>
+      <stop offset="70%" stop-color="#000000" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Presentation Box Exterior Velvet -->
+    <linearGradient id="boxVelvet" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2D2B29"/>
+      <stop offset="40%" stop-color="#1A1918"/>
+      <stop offset="100%" stop-color="#100F0E"/>
+    </linearGradient>
+
+    <!-- Gold Foil Stamping -->
+    <linearGradient id="foilGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C5A880"/>
+      <stop offset="50%" stop-color="#FFF5E6"/>
+      <stop offset="100%" stop-color="#8F6B40"/>
+    </linearGradient>
+
+    <filter id="boxDropShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="20" stdDeviation="25" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Ground Shadows -->
+  <ellipse cx="450" cy="420" rx="420" ry="60" fill="url(#unboxingShadow)"/>
+
+  <!-- 1. The Presentation Gift Box (Open Bed) -->
+  <g transform="translate(60, 60)" filter="url(#boxDropShadow)">
+    <!-- Outer Box Tray -->
+    <rect x="0" y="0" width="340" height="340" rx="24" fill="url(#boxVelvet)" stroke="rgba(255,255,255,0.08)" stroke-width="2"/>
+    
+    <!-- Inner Molded Velvet Bed -->
+    <rect x="20" y="20" width="300" height="300" rx="16" fill="#0C0B0A" stroke="#22201E" stroke-width="1.5"/>
+    
+    <!-- Central Ring Pedestal -->
+    <ellipse cx="170" cy="170" rx="75" ry="50" fill="#171615" stroke="rgba(197, 168, 128, 0.3)" stroke-width="1.5"/>
+    <ellipse cx="170" cy="165" rx="55" ry="35" fill="#0A0908"/>
+
+    <!-- Ring Resting in Velvet Slot -->
+    <ellipse cx="170" cy="155" rx="42" ry="42" fill="none" stroke="url(#foilGold)" stroke-width="8"/>
+    <ellipse cx="170" cy="155" rx="34" ry="34" fill="#0A0908"/>
+
+    <!-- Gold Foil Logo inside Box Lid -->
+    <text x="170" y="65" fill="url(#foilGold)" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" letter-spacing="4" text-anchor="middle">
+      AURARING • TITANIUM
+    </text>
+  </g>
+
+  <!-- 2. Solid Aluminum Weighted Magnetic Dock -->
+  <g transform="translate(440, 100)" filter="url(#boxDropShadow)">
+    <ellipse cx="90" cy="120" rx="80" ry="26" fill="#000000" opacity="0.4"/>
+    
+    <!-- Dock Cylinder Body -->
+    <ellipse cx="90" cy="95" rx="70" ry="24" fill="#2D2B29" stroke="#4A4744" stroke-width="1.5"/>
+    <path d="M 20,95 L 20,115 C 20,130 160,130 160,115 L 160,95 Z" fill="#1C1A18"/>
+    <ellipse cx="90" cy="115" rx="70" ry="24" fill="none" stroke="#3A3835" stroke-width="1.5"/>
+
+    <!-- Magnetic Pogo Column -->
+    <ellipse cx="90" cy="85" rx="32" ry="12" fill="#0E0D0C" stroke="#C5A880" stroke-width="1.5"/>
+    <circle cx="90" cy="85" r="4" fill="#C5A880"/>
+  </g>
+
+  <!-- 3. Braided USB-C Cable with Leather Strap -->
+  <g transform="translate(630, 80)">
+    <!-- Looped Braided Cable -->
+    <path d="M 60,60 C 130,20 180,100 120,160 C 70,200 40,140 90,90 C 120,60 160,90 140,150" fill="none" stroke="#3A3835" stroke-width="7" stroke-linecap="round" stroke-dasharray="2,3"/>
+    
+    <!-- Leather Tie Strap -->
+    <rect x="95" y="105" width="22" height="36" rx="4" fill="#5C4033" stroke="#8B5A2B" stroke-width="1"/>
+    <circle cx="106" cy="123" r="3" fill="#C5A880"/>
+
+    <!-- Gold-Plated USB-C Plug -->
+    <rect x="135" y="145" width="28" height="14" rx="3" fill="#22201E" stroke="#555" stroke-width="1"/>
+    <rect x="163" y="148" width="10" height="8" rx="2" fill="#D4AF37"/>
+  </g>
+
+  <!-- 4. Precision 8-Ring Sizing Kit Tray (Front Center) -->
+  <g transform="translate(430, 240)" filter="url(#boxDropShadow)">
+    <!-- Molded Tray Base -->
+    <rect x="0" y="0" width="410" height="140" rx="16" fill="#161514" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
+    <text x="24" y="32" fill="#C5A880" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" letter-spacing="2">
+      PRECISION SIZING SET (SIZES 6 - 13)
+    </text>
+
+    <!-- 8 Replica Sizing Rings -->
+    <g transform="translate(24, 52)">
+      <!-- Ring 6 -->
+      <circle cx="16" cy="30" r="14" fill="none" stroke="#4A4744" stroke-width="4"/>
+      <text x="16" y="58" fill="#A8A29E" font-size="10" font-family="sans-serif" text-anchor="middle">6</text>
+
+      <!-- Ring 7 -->
+      <circle cx="64" cy="30" r="16" fill="none" stroke="#4A4744" stroke-width="4"/>
+      <text x="64" y="58" fill="#A8A29E" font-size="10" font-family="sans-serif" text-anchor="middle">7</text>
+
+      <!-- Ring 8 -->
+      <circle cx="116" cy="30" r="18" fill="none" stroke="#4A4744" stroke-width="4"/>
+      <text x="116" y="58" fill="#A8A29E" font-size="10" font-family="sans-serif" text-anchor="middle">8</text>
+
+      <!-- Ring 9 (Selected Gold) -->
+      <circle cx="170" cy="30" r="20" fill="none" stroke="#C5A880" stroke-width="4.5"/>
+      <text x="170" y="58" fill="#C5A880" font-weight="700" font-size="11" font-family="sans-serif" text-anchor="middle">9</text>
+
+      <!-- Ring 10 -->
+      <circle cx="226" cy="30" r="21" fill="none" stroke="#4A4744" stroke-width="4"/>
+      <text x="226" y="58" fill="#A8A29E" font-size="10" font-family="sans-serif" text-anchor="middle">10</text>
+
+      <!-- Ring 11 -->
+      <circle cx="282" cy="30" r="22" fill="none" stroke="#4A4744" stroke-width="4"/>
+      <text x="282" y="58" fill="#A8A29E" font-size="10" font-family="sans-serif" text-anchor="middle">11</text>
+
+      <!-- Ring 12 -->
+      <circle cx="334" cy="30" r="23" fill="none" stroke="#4A4744" stroke-width="4"/>
+      <text x="334" y="58" fill="#A8A29E" font-size="10" font-family="sans-serif" text-anchor="middle">12</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 48" width="240" height="48" fill="none">
+  <defs>
+    <!-- Luxury Champagne Gold Gradient -->
+    <linearGradient id="logoGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF5E6"/>
+      <stop offset="35%" stop-color="#D6BE9E"/>
+      <stop offset="70%" stop-color="#C5A880"/>
+      <stop offset="100%" stop-color="#8F6B40"/>
+    </linearGradient>
+
+    <!-- Subtle Aura Luminous Glow -->
+    <radialGradient id="auraCenter" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#C5A880" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#C5A880" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Left: Iconic Double-Eclipse Ring Emblem -->
+  <g transform="translate(4, 4)">
+    <!-- Ambient Halo Glow -->
+    <circle cx="20" cy="20" r="19" fill="url(#auraCenter)"/>
+    
+    <!-- Outer Precision Ring -->
+    <circle cx="20" cy="20" r="16" stroke="url(#logoGold)" stroke-width="2.2" stroke-linecap="round"/>
+    
+    <!-- Inner Concentric Orbit (Eclipse Silhouette) -->
+    <circle cx="20" cy="20" r="11" stroke="#F8F6F2" stroke-width="1.2" opacity="0.6"/>
+    
+    <!-- Central Luminous Sparkle / Bio-Pulse Vertex -->
+    <circle cx="20" cy="20" r="3" fill="url(#logoGold)"/>
+    <path d="M 20,13 L 20,27 M 13,20 L 27,20" stroke="url(#logoGold)" stroke-width="1" opacity="0.5"/>
+  </g>
+
+  <!-- Right: Luxury Horology Wordmark -->
+  <text x="56" y="29" fill="#F8F6F2" font-family="'Plus Jakarta Sans', -apple-system, sans-serif" font-size="16" font-weight="700" letter-spacing="4.5">
+    AURARING
+  </text>
+  <circle cx="202" cy="24" r="2.5" fill="url(#logoGold)"/>
+</svg>

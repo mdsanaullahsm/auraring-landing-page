@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 320" width="100%" height="100%">
+  <defs>
+    <linearGradient id="chartBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1E293B" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="remGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#818CF8" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#4F46E5" stop-opacity="0.2"/>
+    </linearGradient>
+    <linearGradient id="deepGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#0284C7" stop-opacity="0.2"/>
+    </linearGradient>
+    <linearGradient id="scoreGlow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Card Background -->
+  <rect width="500" height="320" rx="20" fill="url(#chartBg)" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
+
+  <!-- Top Header with Score -->
+  <g transform="translate(30, 30)">
+    <text x="0" y="16" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="600" letter-spacing="1">SLEEP INTELLIGENCE</text>
+    <text x="0" y="44" fill="#F8FAFC" font-family="'Plus Jakarta Sans', sans-serif" font-size="24" font-weight="800">Optimal Recovery</text>
+    
+    <!-- Score Circle -->
+    <circle cx="400" cy="24" r="30" fill="none" stroke="#334155" stroke-width="6"/>
+    <circle cx="400" cy="24" r="30" fill="none" stroke="url(#scoreGlow)" stroke-width="6" stroke-dasharray="188" stroke-dashoffset="24" stroke-linecap="round"/>
+    <text x="400" y="28" fill="#F8FAFC" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" font-weight="800" text-anchor="middle">92</text>
+    <text x="400" y="42" fill="#10B981" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="700" text-anchor="middle">SCORE</text>
+  </g>
+
+  <!-- Sleep Stage Bars -->
+  <g transform="translate(30, 110)">
+    <!-- Time Grid Lines -->
+    <line x1="0" y1="0" x2="440" y2="0" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+    <line x1="0" y1="40" x2="440" y2="40" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+    <line x1="0" y1="80" x2="440" y2="80" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+    <line x1="0" y1="120" x2="440" y2="120" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+
+    <!-- Y-Labels -->
+    <text x="-10" y="5" fill="#64748B" font-family="sans-serif" font-size="10" text-anchor="end">Awake</text>
+    <text x="-10" y="45" fill="#64748B" font-family="sans-serif" font-size="10" text-anchor="end">REM</text>
+    <text x="-10" y="85" fill="#64748B" font-family="sans-serif" font-size="10" text-anchor="end">Light</text>
+    <text x="-10" y="125" fill="#64748B" font-family="sans-serif" font-size="10" text-anchor="end">Deep</text>
+
+    <!-- Sleep Curve Path -->
+    <path d="M 0,10 Q 30,5 50,40 T 100,120 T 150,80 T 200,40 T 250,120 T 310,80 T 360,40 T 400,80 T 440,20 L 440,140 L 0,140 Z" fill="url(#deepGrad)" opacity="0.3"/>
+    
+    <path d="M 0,10 Q 30,5 50,40 T 100,120 T 150,80 T 200,40 T 250,120 T 310,80 T 360,40 T 400,80 T 440,20" fill="none" stroke="#38BDF8" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Data Highlights -->
+    <circle cx="250" cy="120" r="5" fill="#38BDF8"/>
+    <circle cx="200" cy="40" r="5" fill="#818CF8"/>
+  </g>
+
+  <!-- Metric Badges Bottom -->
+  <g transform="translate(30, 270)">
+    <text x="0" y="0" fill="#94A3B8" font-size="11" font-family="'Plus Jakarta Sans', sans-serif">Total Sleep: <tspan fill="#F8FAFC" font-weight="700">8h 14m</tspan></text>
+    <text x="160" y="0" fill="#94A3B8" font-size="11" font-family="'Plus Jakarta Sans', sans-serif">Deep: <tspan fill="#38BDF8" font-weight="700">1h 52m (23%)</tspan></text>
+    <text x="320" y="0" fill="#94A3B8" font-size="11" font-family="'Plus Jakarta Sans', sans-serif">HRV: <tspan fill="#10B981" font-weight="700">68 ms</tspan></text>
+  </g>
+</svg>
