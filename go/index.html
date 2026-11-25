@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Template Smart Gateway — Aura Digital Systems</title>
+  <title>Verified Buyer Template Portal — SM Studio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
@@ -15,8 +15,12 @@
       --border-hairline: #D6D0C2;
       --ink-obsidian: #121210;
       --body-taupe: #3E3C36;
-      --accent-sage: #2E4B3E;
-      --accent-bronze: #8A6A3B;
+      --ok-bg: #E7EDE8;
+      --ok-border: #C2D4C6;
+      --ok-ink: #1A3327;
+      --warn-bg: #F5ECE6;
+      --warn-border: #DFC3B0;
+      --warn-ink: #5A2814;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -58,30 +62,38 @@
       font-weight: 700;
       line-height: 1.22;
       margin-bottom: 10px;
-      color: var(--ink-obsidian);
     }
-    .sub {
-      color: var(--body-taupe);
-      font-size: 15px;
-      margin-bottom: 24px;
-    }
-    .status-banner {
-      background: #E7EDE8;
-      border: 1px solid #C2D4C6;
-      color: #1A3327;
+    .sub { color: var(--body-taupe); font-size: 15px; margin-bottom: 22px; }
+    .banner {
       border-radius: 12px;
       padding: 14px 18px;
       font-size: 14px;
       font-weight: 600;
-      margin-bottom: 24px;
+      margin-bottom: 22px;
       display: none;
     }
-    .actions {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 12px;
-      margin-bottom: 24px;
+    .banner.ok { background: var(--ok-bg); border: 1px solid var(--ok-border); color: var(--ok-ink); }
+    .banner.warn { background: var(--warn-bg); border: 1px solid var(--warn-border); color: var(--warn-ink); }
+    .unlock-form { display: none; gap: 10px; margin-bottom: 20px; flex-wrap: wrap; }
+    .unlock-form input {
+      flex: 1;
+      min-width: 220px;
+      padding: 13px 16px;
+      border-radius: 10px;
+      border: 1px solid var(--border-hairline);
+      font-size: 14px;
+      background: #FFFFFF;
     }
+    .unlock-form button {
+      padding: 13px 22px;
+      border-radius: 10px;
+      border: none;
+      background: var(--ink-obsidian);
+      color: #F7F4ED;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .actions { display: grid; grid-template-columns: 1fr; gap: 12px; margin-bottom: 24px; }
     .btn {
       display: flex;
       align-items: center;
@@ -97,52 +109,35 @@
       transition: transform 0.12s ease, border-color 0.12s ease;
     }
     .btn:hover { transform: translateY(-1px); border-color: var(--ink-obsidian); }
-    .btn.primary {
-      background: var(--ink-obsidian);
-      color: #F7F4ED;
-      border-color: var(--ink-obsidian);
-    }
-    .btn .meta {
-      font-size: 12px;
-      font-weight: 600;
-      opacity: 0.78;
-    }
-    .backup-box {
-      border-top: 1px solid var(--border-hairline);
-      padding-top: 20px;
-      color: var(--body-taupe);
-      font-size: 13.5px;
-    }
+    .btn.primary { background: var(--ink-obsidian); color: #F7F4ED; border-color: var(--ink-obsidian); }
+    .btn .meta { font-size: 12px; font-weight: 600; opacity: 0.78; margin-left: 12px; }
+    .backup-box { border-top: 1px solid var(--border-hairline); padding-top: 20px; color: var(--body-taupe); font-size: 13.5px; }
     .backup-box strong { color: var(--ink-obsidian); }
-    .footer-link {
-      margin-top: 18px;
-      font-size: 13px;
-      color: var(--body-taupe);
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
+    .footer-link { margin-top: 18px; font-size: 13px; color: var(--body-taupe); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
     .footer-link a { color: var(--ink-obsidian); font-weight: 600; }
   </style>
 </head>
 <body>
   <main class="card">
-    <div class="pill" id="sku-pill">AURA DIGITAL SMART GATEWAY</div>
-    <h1 id="product-title">Select Your Platform Delivery</h1>
-    <p class="sub" id="product-sub">Permanent cloud template routing across Canva, Google Slides, and Figma — backed by offline Word, Fillable PDF, Excel & PowerPoint assets in your download package.</p>
+    <div class="pill" id="sku-pill">PROTECTED BUYER PORTAL</div>
+    <h1 id="product-title">Purchase Verification Required</h1>
+    <p class="sub" id="product-sub">To protect creators and paying customers, cloud template links unlock exclusively via your post-purchase Gumroad Receipt or downloaded Access-Your-Template.html file (no GitHub account required).</p>
 
-    <div class="status-banner" id="redirect-banner"></div>
+    <div class="banner" id="status-banner"></div>
+    <form class="unlock-form" id="unlock-form">
+      <input type="text" id="key-input" placeholder="Paste Buyer Unlock Key from Gumroad Receipt..." autocomplete="off" />
+      <button type="submit">Unlock Access</button>
+    </form>
 
     <div class="actions" id="action-list"></div>
 
     <div class="backup-box">
-      <strong>100% Zero-Lockout Ownership:</strong> Every package folder already includes 5 editable Microsoft Word (<code>.docx</code>) styles, 5 interactive fillable PDFs, an automated Excel (<code>.xlsx</code>) model, a Google Slides exported PowerPoint (<code>.pptx</code>), and a high-resolution Canva PDF. Using a Free Canva account? Simply drag &amp; drop the included <code>_Printable.pdf</code> or <code>_Master_Deck.pptx</code> into Canva &rarr; <em>Upload files</em> to edit every layer directly.
+      <strong>Post-Purchase Zero-Lockout Protection:</strong> After purchasing on Gumroad, your downloaded ZIP contains <code>Access-Your-Template.html</code> with your 1-Click Smart Link plus Direct Backup Links (Google Slides <code>/copy</code>, Canva, Word <code>.docx</code>, Fillable PDFs, Excel <code>.xlsx</code> &amp; PowerPoint <code>.pptx</code>).
     </div>
 
     <div class="footer-link">
       <span>SKU: <code id="sku-code">—</code></span>
-      <a href="../index.html">&larr; Browse Full 30-Product Catalog</a>
+      <a href="../index.html">&larr; Return to Storefront Catalog</a>
     </div>
   </main>
 
@@ -154,55 +149,103 @@
       const to = (params.get("to") || "").toLowerCase();
       const auto = params.get("auto") === "1";
       const catalog = window.AURA_ROUTES || {};
-      const item = catalog[slug];
+      const entry = catalog[slug];
 
       const pill = document.getElementById("sku-pill");
       const title = document.getElementById("product-title");
       const sub = document.getElementById("product-sub");
+      const banner = document.getElementById("status-banner");
+      const form = document.getElementById("unlock-form");
       const actions = document.getElementById("action-list");
-      const banner = document.getElementById("redirect-banner");
       document.getElementById("sku-code").textContent = slug || "catalog";
 
-      if (!item) {
-        pill.textContent = "AURA DIGITAL STOREFRONT";
-        title.textContent = "All 30 Digital Suites Ready";
-        sub.textContent = "Use your downloaded Access-Your-Template.html shortcut or browse the catalog below.";
-        const a = document.createElement("a");
-        a.className = "btn primary";
-        a.href = "../index.html";
-        a.innerHTML = '<span>Open Full Storefront Catalog</span><span class="meta">30 Suites &nearr;</span>';
-        actions.appendChild(a);
-        return;
+      function b64uToBytes(s) {
+        const pad = s.length % 4 ? "=".repeat(4 - (s.length % 4)) : "";
+        const b64 = s.replace(/-/g, "+").replace(/_/g, "/") + pad;
+        const bin = atob(b64);
+        const arr = new Uint8Array(bin.length);
+        for (let i = 0; i < bin.length; i++) arr[i] = bin.charCodeAt(i);
+        return arr;
       }
 
-      pill.textContent = item.kind === "web" ? "WEB THEME SMART ROUTE" : "TRIPLE-PLATFORM SMART ROUTE";
-      title.textContent = item.title;
+      async function tryUnlock(rawKey) {
+        actions.innerHTML = "";
+        if (!entry) {
+          pill.textContent = "SM STUDIO CATALOG";
+          title.textContent = "Browse Our 30 Commercial Suites";
+          const a = document.createElement("a");
+          a.className = "btn primary";
+          a.href = "../index.html";
+          a.innerHTML = '<span>Open Official Catalog & Checkout</span><span class="meta">30 Suites &rarr;</span>';
+          actions.appendChild(a);
+          return;
+        }
 
-      const links = [];
-      if (item.canva) links.push({ key: "canva", label: "Open in Canva Studio", meta: "Cloud Design &rarr;", url: item.canva });
-      if (item.gslides) links.push({ key: "gslides", label: "Make a Free Copy in Google Slides", meta: "1-Click /copy &rarr;", url: item.gslides });
-      if (item.figma) links.push({ key: "figma", label: "Duplicate Editable Kit in Figma", meta: "Drafts /duplicate &rarr;", url: item.figma });
-      if (item.demo) links.push({ key: "demo", label: "Preview Live Storefront Showcase", meta: "GitHub Pages &rarr;", url: item.demo });
+        title.textContent = entry.title;
+        if (!rawKey) {
+          pill.textContent = "LOCKED • PURCHASE REQUIRED";
+          banner.className = "banner warn";
+          banner.style.display = "block";
+          banner.textContent = "Access key missing. Open this page from your Gumroad Receipt or downloaded Access-Your-Template.html, or paste your Receipt Unlock Key below.";
+          form.style.display = "flex";
+          const buy = document.createElement("a");
+          buy.className = "btn primary";
+          buy.href = "../index.html";
+          buy.innerHTML = '<span>Get Instant Access on SM Studio / Gumroad</span><span class="meta">View Product &rarr;</span>';
+          actions.appendChild(buy);
+          return;
+        }
 
-      links.forEach((lk, i) => {
-        const isPrimary = to ? lk.key === to : i === 0;
-        const el = document.createElement("a");
-        el.className = "btn" + (isPrimary ? " primary" : "");
-        el.href = lk.url;
-        el.rel = "noopener noreferrer";
-        el.innerHTML = `<span>${lk.label}</span><span class="meta">${lk.meta}</span>`;
-        actions.appendChild(el);
+        try {
+          const key = await crypto.subtle.importKey("raw", b64uToBytes(rawKey.trim()), { name: "AES-GCM" }, false, ["decrypt"]);
+          const decBuf = await crypto.subtle.decrypt({ name: "AES-GCM", iv: b64uToBytes(entry.iv) }, key, b64uToBytes(entry.ct));
+          const unlocked = JSON.parse(new TextDecoder().decode(decBuf));
+
+          form.style.display = "none";
+          pill.textContent = entry.kind === "web" ? "VERIFIED WEB THEME ACCESS" : "VERIFIED TRIPLE-PLATFORM ACCESS";
+          sub.textContent = "Buyer purchase key verified locally in your browser — no GitHub login needed.";
+
+          const links = [];
+          if (unlocked.canva) links.push({ key: "canva", label: "Open in Canva Studio", meta: "Canva Link &rarr;", url: unlocked.canva });
+          if (unlocked.gslides) links.push({ key: "gslides", label: "Make a Free Copy in Google Slides", meta: "1-Click /copy &rarr;", url: unlocked.gslides });
+          if (unlocked.figma) links.push({ key: "figma", label: "Duplicate Editable Kit in Figma", meta: "Drafts /duplicate &rarr;", url: unlocked.figma });
+          if (unlocked.demo) links.push({ key: "demo", label: "Preview Live Storefront Showcase", meta: "HTML Theme &rarr;", url: unlocked.demo });
+
+          links.forEach((lk, i) => {
+            const isPrimary = to ? lk.key === to : i === 0;
+            const el = document.createElement("a");
+            el.className = "btn" + (isPrimary ? " primary" : "");
+            el.href = lk.url;
+            el.rel = "noopener noreferrer";
+            el.innerHTML = `<span>${lk.label}</span><span class="meta">${lk.meta}</span>`;
+            actions.appendChild(el);
+          });
+
+          const targetObj = to ? links.find(l => l.key === to) : null;
+          banner.className = "banner ok";
+          banner.style.display = "block";
+          if (targetObj && auto) {
+            banner.textContent = `Verified! Redirecting to ${targetObj.label}...`;
+            setTimeout(() => { window.location.assign(targetObj.url); }, 650);
+          } else {
+            banner.textContent = "Verified! Click any platform button below to open your editable copy.";
+          }
+        } catch (err) {
+          pill.textContent = "INVALID UNLOCK KEY";
+          banner.className = "banner warn";
+          banner.style.display = "block";
+          banner.textContent = "Unlock key did not match this product. Copy the exact link/key from your Gumroad Receipt or downloaded Access-Your-Template.html.";
+          form.style.display = "flex";
+        }
+      }
+
+      const hashParams = new URLSearchParams((window.location.hash || "").replace(/^#/, ""));
+      const initialKey = hashParams.get("k") || params.get("k") || "";
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        tryUnlock(document.getElementById("key-input").value);
       });
-
-      const targetObj = to ? links.find(l => l.key === to) : null;
-      if (targetObj && auto) {
-        banner.style.display = "block";
-        banner.textContent = `Routing you to ${targetObj.label}... Use any alternative button below anytime if needed.`;
-        setTimeout(() => { window.location.assign(targetObj.url); }, 650);
-      } else if (targetObj) {
-        banner.style.display = "block";
-        banner.textContent = `Highlighted: ${targetObj.label}. Click below to open or switch platforms anytime.`;
-      }
+      tryUnlock(initialKey);
     })();
   </script>
 </body>
