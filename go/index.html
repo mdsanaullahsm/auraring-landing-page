@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Template Smart Gateway — Aura Digital Systems</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --stone-bg: #EAE6DD;
+      --card-ivory: #F7F4ED;
+      --pill-sand: #E2DCD0;
+      --border-hairline: #D6D0C2;
+      --ink-obsidian: #121210;
+      --body-taupe: #3E3C36;
+      --accent-sage: #2E4B3E;
+      --accent-bronze: #8A6A3B;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--stone-bg);
+      color: var(--ink-obsidian);
+      font-family: 'Instrument Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 28px 16px;
+      line-height: 1.55;
+    }
+    .card {
+      width: 100%;
+      max-width: 700px;
+      background: var(--card-ivory);
+      border: 1px solid var(--border-hairline);
+      border-radius: 18px;
+      padding: 36px 32px;
+      box-shadow: 0 14px 40px rgba(18,18,16,0.06);
+    }
+    .pill {
+      display: inline-block;
+      background: var(--pill-sand);
+      color: var(--ink-obsidian);
+      border: 1px solid var(--border-hairline);
+      border-radius: 999px;
+      padding: 6px 14px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+    h1 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 1.22;
+      margin-bottom: 10px;
+      color: var(--ink-obsidian);
+    }
+    .sub {
+      color: var(--body-taupe);
+      font-size: 15px;
+      margin-bottom: 24px;
+    }
+    .status-banner {
+      background: #E7EDE8;
+      border: 1px solid #C2D4C6;
+      color: #1A3327;
+      border-radius: 12px;
+      padding: 14px 18px;
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 24px;
+      display: none;
+    }
+    .actions {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      text-decoration: none;
+      padding: 15px 20px;
+      border-radius: 12px;
+      font-weight: 700;
+      font-size: 15px;
+      border: 1px solid var(--border-hairline);
+      background: #FFFFFF;
+      color: var(--ink-obsidian);
+      transition: transform 0.12s ease, border-color 0.12s ease;
+    }
+    .btn:hover { transform: translateY(-1px); border-color: var(--ink-obsidian); }
+    .btn.primary {
+      background: var(--ink-obsidian);
+      color: #F7F4ED;
+      border-color: var(--ink-obsidian);
+    }
+    .btn .meta {
+      font-size: 12px;
+      font-weight: 600;
+      opacity: 0.78;
+    }
+    .backup-box {
+      border-top: 1px solid var(--border-hairline);
+      padding-top: 20px;
+      color: var(--body-taupe);
+      font-size: 13.5px;
+    }
+    .backup-box strong { color: var(--ink-obsidian); }
+    .footer-link {
+      margin-top: 18px;
+      font-size: 13px;
+      color: var(--body-taupe);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .footer-link a { color: var(--ink-obsidian); font-weight: 600; }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="pill" id="sku-pill">AURA DIGITAL SMART GATEWAY</div>
+    <h1 id="product-title">Select Your Platform Delivery</h1>
+    <p class="sub" id="product-sub">Permanent cloud template routing across Canva, Google Slides, and Figma — backed by offline Word, Fillable PDF, Excel & PowerPoint assets in your download package.</p>
+
+    <div class="status-banner" id="redirect-banner"></div>
+
+    <div class="actions" id="action-list"></div>
+
+    <div class="backup-box">
+      <strong>100% Zero-Lockout Ownership:</strong> Every package folder already includes 5 editable Microsoft Word (<code>.docx</code>) styles, 5 interactive fillable PDFs, an automated Excel (<code>.xlsx</code>) model, a Google Slides exported PowerPoint (<code>.pptx</code>), and a high-resolution Canva PDF. Using a Free Canva account? Simply drag &amp; drop the included <code>_Printable.pdf</code> or <code>_Master_Deck.pptx</code> into Canva &rarr; <em>Upload files</em> to edit every layer directly.
+    </div>
+
+    <div class="footer-link">
+      <span>SKU: <code id="sku-code">—</code></span>
+      <a href="../index.html">&larr; Browse Full 30-Product Catalog</a>
+    </div>
+  </main>
+
+  <script src="./routes.js"></script>
+  <script>
+    (function () {
+      const params = new URLSearchParams(window.location.search);
+      const slug = params.get("p") || "";
+      const to = (params.get("to") || "").toLowerCase();
+      const auto = params.get("auto") === "1";
+      const catalog = window.AURA_ROUTES || {};
+      const item = catalog[slug];
+
+      const pill = document.getElementById("sku-pill");
+      const title = document.getElementById("product-title");
+      const sub = document.getElementById("product-sub");
+      const actions = document.getElementById("action-list");
+      const banner = document.getElementById("redirect-banner");
+      document.getElementById("sku-code").textContent = slug || "catalog";
+
+      if (!item) {
+        pill.textContent = "AURA DIGITAL STOREFRONT";
+        title.textContent = "All 30 Digital Suites Ready";
+        sub.textContent = "Use your downloaded Access-Your-Template.html shortcut or browse the catalog below.";
+        const a = document.createElement("a");
+        a.className = "btn primary";
+        a.href = "../index.html";
+        a.innerHTML = '<span>Open Full Storefront Catalog</span><span class="meta">30 Suites &nearr;</span>';
+        actions.appendChild(a);
+        return;
+      }
+
+      pill.textContent = item.kind === "web" ? "WEB THEME SMART ROUTE" : "TRIPLE-PLATFORM SMART ROUTE";
+      title.textContent = item.title;
+
+      const links = [];
+      if (item.canva) links.push({ key: "canva", label: "Open in Canva Studio", meta: "Cloud Design &rarr;", url: item.canva });
+      if (item.gslides) links.push({ key: "gslides", label: "Make a Free Copy in Google Slides", meta: "1-Click /copy &rarr;", url: item.gslides });
+      if (item.figma) links.push({ key: "figma", label: "Duplicate Editable Kit in Figma", meta: "Drafts /duplicate &rarr;", url: item.figma });
+      if (item.demo) links.push({ key: "demo", label: "Preview Live Storefront Showcase", meta: "GitHub Pages &rarr;", url: item.demo });
+
+      links.forEach((lk, i) => {
+        const isPrimary = to ? lk.key === to : i === 0;
+        const el = document.createElement("a");
+        el.className = "btn" + (isPrimary ? " primary" : "");
+        el.href = lk.url;
+        el.rel = "noopener noreferrer";
+        el.innerHTML = `<span>${lk.label}</span><span class="meta">${lk.meta}</span>`;
+        actions.appendChild(el);
+      });
+
+      const targetObj = to ? links.find(l => l.key === to) : null;
+      if (targetObj && auto) {
+        banner.style.display = "block";
+        banner.textContent = `Routing you to ${targetObj.label}... Use any alternative button below anytime if needed.`;
+        setTimeout(() => { window.location.assign(targetObj.url); }, 650);
+      } else if (targetObj) {
+        banner.style.display = "block";
+        banner.textContent = `Highlighted: ${targetObj.label}. Click below to open or switch platforms anytime.`;
+      }
+    })();
+  </script>
+</body>
+</html>
