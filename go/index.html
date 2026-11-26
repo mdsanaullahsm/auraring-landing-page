@@ -208,7 +208,8 @@
           const links = [];
           if (unlocked.canva) links.push({ key: "canva", label: "Open in Canva Studio", meta: "Canva Link &rarr;", url: unlocked.canva });
           if (unlocked.gslides) links.push({ key: "gslides", label: "Make a Free Copy in Google Slides", meta: "1-Click /copy &rarr;", url: unlocked.gslides });
-          if (unlocked.figma) links.push({ key: "figma", label: "Duplicate Editable Kit in Figma", meta: "Drafts /duplicate &rarr;", url: unlocked.figma });
+          if (unlocked.gsheets) links.push({ key: "gsheets", label: "Make a Free Copy in Google Sheets", meta: "1-Click /copy &rarr;", url: unlocked.gsheets });
+          if (unlocked.figma) links.push({ key: "figma", label: "Open Editable Kit in Figma (Click File &rarr; Duplicate to Drafts)", meta: "Figma View &amp; Copy &rarr;", url: unlocked.figma });
           if (unlocked.demo) links.push({ key: "demo", label: "Preview Live Storefront Showcase", meta: "HTML Theme &rarr;", url: unlocked.demo });
 
           links.forEach((lk, i) => {
