@@ -1,44 +1,43 @@
 # AuraRing — Luxury Biometric Wearable DTC Landing Page Theme
 
-Thank you for purchasing **AuraRing**! This is a production-ready, ultra-lightweight, high-converting luxury e-commerce web template engineered for DTC wearables, smart jewelry, and premium physical hardware.
+Thank you for purchasing **AuraRing** (`SKU #02`)! This is a modular, production-ready HTML5 / CSS3 / Vanilla JS storefront engineered for wearable tech, smart jewelry, and luxury hardware launches.
 
 ---
 
-## ⚡ Quick Start (Instant Preview)
+## Quick Start (Zero Build Tools)
 
-1. **Direct Double-Click:** Open `index.html` in any web browser (Chrome, Safari, Edge, Firefox).
-   - Zero npm install.
-   - Zero node_modules.
-   - Zero build tools required.
-   - 100% self-contained styling and vector graphics.
+1. Double-click `index.html` to launch locally in Chrome, Edge, Safari, or Firefox.
+2. Open `Access-Your-Template.html` for an illustrated step-by-step developer customization and deployment guide.
 
 ---
 
-## 📁 Package Anatomy
+## Modular File Architecture
 
-- `index.html` — Master single-page storefront with hero material switcher, sizing caliper, countdown allocation bar, and checkout drawer.
-- `assets/css/style.css` — Modular editorial stylesheet using CSS custom properties (variables) for effortless color & font customization.
-- `assets/js/main.js` — Interactive UI engine handling the titanium material switcher, sizing millimeter calculation, and slide drawer.
-- `assets/images/` — 10 handcrafted vector SVGs (Stealth Black, Rose Gold, Space Silver, Brushed Titanium, sensor tech, unboxing, app chart).
-- `Commercial-License-Certificate.txt` — Official commercial client implementation license.
+- `index.html` — Clean semantic multi-section storefront (Hero finish configurator, 4-Step Sizing Ritual, Engineering deep-dive, App showcase, Comparison matrix, Editions & Pricing, FAQ, Slide-over Checkout drawer).
+- `assets/css/style.css` — External editorial stylesheet powered by top-level CSS Custom Properties (`:root`) with full tablet & mobile (`<= 768px`) responsive grids.
+- `assets/js/main.js` — Modular Vanilla JS engine controlling material swatches, millimeter caliper, hotspot popups, dynamic `NORDIC10` promo pricing, and `auraring:checkout` payment gateway hook (`#proceedCheckoutBtn`).
+- `assets/images/` — 10 crisp vector SVG product & telemetry illustrations.
+- `04_Commercial_License/Commercial-License-Certificate.txt` — Commercial client rights.
 
 ---
 
-## 🎨 Customizing Finishes & Branding
+## Customizing Colors & Brand Tokens
 
-All color tokens are located at the top of `assets/css/style.css` in `:root`:
+Edit the top of `assets/css/style.css`:
 ```css
 :root {
-  --bg-primary: #0C0D0E;       /* Canvas Background */
-  --accent-titanium: #D8D2C2;  /* Primary Metallic Accent */
-  --accent-gold: #C6A969;      /* Champagne Accent */
-  --text-primary: #F7F6F2;     /* High-Contrast Readability */
+  --canvas-dark: #121110;      /* Deep Studio Basalt Background */
+  --canvas-warm: #F4EFEA;      /* Warm Sandstone Editorial Sections */
+  --accent-gold: #C5A880;      /* 18K Horizon Champagne Accent */
+  --accent-action: #1D4ED8;    /* Primary Reserve CTA Button */
 }
 ```
 
----
+## Connecting Your Payment Link
 
-## 🚀 One-Click Free Deployment
+Open `assets/js/main.js` and look for `proceedCheckoutBtn` (`window.addEventListener` / checkout payload) to redirect to your live Stripe Payment Link, Shopify Cart permalink, or Gumroad / Lemon Squeezy checkout.
 
-- **GitHub Pages:** Upload this folder to a GitHub repository, enable Pages under Settings > Pages.
-- **Vercel / Netlify:** Drag-and-drop this entire unzipped folder into [vercel.com](https://vercel.com) or [netlify.com/drop](https://app.netlify.com/drop) for instant global edge hosting with free SSL.
+## Free Static Hosting (60 Seconds)
+
+- **Vercel / Netlify:** Drag-and-drop this extracted folder into [app.netlify.com/drop](https://app.netlify.com/drop) or import to Vercel for instant HTTPS deployment.
+- **GitHub Pages:** Commit this folder to a GitHub repository and enable Settings -> Pages.
