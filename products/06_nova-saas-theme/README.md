@@ -1,18 +1,16 @@
-# Nova — Premium B2B AI SaaS Landing Page Template
+# Nova Cloud — Modular B2B AI & SaaS Landing Page Theme
 
-A modern, high-converting, responsive landing page engineered for B2B AI software, SaaS platforms, and enterprise digital tools.
+Clean, zero-dependency production template engineered for AI startups, API products, and B2B software launches.
 
-## Features
-- **Zero Build Step:** 100% Vanilla HTML5, modern CSS3, and JavaScript.
-- **Dark & Light Mode:** Built-in theme switcher with smooth CSS variable transitions.
-- **High-Converting Anatomy:** Hero section with live conversion badges, feature matrix, interactive pricing calculator, social proof testimonials, FAQ accordion, and dual CTA action bars.
-- **Responsive:** Mobile drawer navigation with 100% cross-device compatibility.
-- **Typography:** Plus Jakarta Sans & Space Grotesk via Google Fonts CDN.
+## File Structure
+- `index.html` — Semantic HTML5 landing page (`Hero`, `Feature Matrix`, `API Spend Estimator`, `Pricing Matrix`, `Proof`, `FAQ`, `Trial Modal`)
+- `assets/css/style.css` — Custom CSS property tokens (`--bg`, `--surface`, `--accent`, `.light-mode`) + responsive 390px mobile drawer
+- `assets/js/main.js` — Dark/light persistence, Monthly/Annual 20% billing switch, live request volume calculator, FAQ accordion & `STRIPE_PAYMENT_LINKS` billing hook
+- `assets/images/*.svg` — 6 lightweight vector graphics (`nova-logo.svg`, `telemetry-sparkline.svg`, `architecture-nodes.svg`, `latency-gauge.svg`, `security-shield.svg`, `deployment-pipeline.svg`)
+- `Access-Your-Template.html` — Visual quick-deploy guide (Netlify Drop & Vercel)
+- `04_Commercial_License/Commercial-License-Certificate.txt` — Client & commercial deployment rights
 
-## Quick Start
-1. Double click `index.html` to open in any web browser.
-2. Edit text, pricing, and links directly inside `index.html`.
-3. Deploy to Vercel, Netlify, or GitHub Pages in under 60 seconds.
-
-## License
-Commercial License included. See `Commercial-License-Certificate.txt`.
+## Quick Deploy
+1. Open `index.html` locally to test Dark/Light toggle, billing switch, and ROI calculator.
+2. Add your Stripe/Paddle payment links inside `STRIPE_PAYMENT_LINKS` in `assets/js/main.js`.
+3. Drag the extracted folder onto Netlify Drop (`app.netlify.com/drop`) or Vercel to go live in 30 seconds.

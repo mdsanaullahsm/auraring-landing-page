@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vanguard Creative — Creative Agency & Brand Studio Template</title>
+  <meta name="description" content="Modular 5-industry responsive HTML5, CSS3, and Vanilla JS landing page kit with light/dark mode, service packages, testimonials, FAQ accordion, and quote request modal." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" /></noscript>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body data-preset="agency">
+  <header class="site-header">
+    <div class="container nav-row">
+      <a href="#top" class="brand-link">
+        <img src="../assets/images/brand-mark.svg" alt="Brand Mark" width="34" height="34" />
+        <span id="brandName">Vanguard Creative</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#services">Services</a>
+        <a href="#packages">Packages</a>
+        <a href="#proof">Results</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="tel:+15552348910" class="phone-link" id="navPhone">(555) 234-8910</a>
+        <button type="button" class="mode-toggle" id="modeToggle" aria-label="Toggle Light and Dark Theme">Light Mode</button>
+        <button type="button" class="btn-primary" data-open-quote="Growth Flagship">Book Consultation</button>
+        <button type="button" class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mobileDrawer" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-drawer" id="mobileDrawer">
+      <a href="#services">Core Services</a>
+      <a href="#packages">Service Packages</a>
+      <a href="#proof">Client Proof</a>
+      <a href="#faq">Questions &amp; Answers</a>
+      <button type="button" class="btn-primary" data-open-quote="Growth Flagship">Request Free Estimate</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow-pill" id="heroTag">Creative Agency &amp; Brand Studio</span>
+          <h1 id="heroTitle">We Design High-Trust Brands That Convert Inbound Demand.</h1>
+          <p class="hero-sub" id="heroSub">Identity systems, high-velocity marketing sites, and paid conversion funnels built cleanly for ambitious B2B &amp; consumer companies.</p>
+          <div class="hero-ctas">
+            <button type="button" class="btn-primary" data-open-quote="Growth Flagship">Request Project Estimate</button>
+            <a href="#packages" class="btn-secondary">Compare Packages &rarr;</a>
+          </div>
+          <div class="trust-strip">
+            <span class="trust-item"><img src="../assets/images/trust-shield.svg" width="20" height="20" alt="" /> 4.9 / 5 Verified Client Rating</span>
+            <span class="trust-item">14-Day Turnaround SLA</span>
+            <span class="trust-item">Licensed &amp; Insured Delivery</span>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <img src="../assets/images/hero-blueprint.svg" alt="Performance Dashboard Blueprint" width="520" height="300" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-kicker">Specialized Capabilities</span>
+          <h2>Focused Service Execution Built Around Measurable ROI</h2>
+          <p>Clean scope, fixed timelines, and direct senior oversight from kickoff through post-launch review.</p>
+        </div>
+        <div class="grid-3">
+          <article class="card">
+            <img src="../assets/images/service-strategy.svg" width="44" height="44" alt="" />
+            <h3 id="svcTitle1">Brand &amp; Identity Systems</h3>
+            <p id="svcDesc1">Complete typography, visual tokens, logo architecture, and executive style guides.</p>
+          </article>
+          <article class="card">
+            <img src="../assets/images/service-delivery.svg" width="44" height="44" alt="" />
+            <h3 id="svcTitle2">High-Speed Web Engineering</h3>
+            <p id="svcDesc2">Accessible HTML5, lightweight CSS architecture, and SEO-clean landing funnels.</p>
+          </article>
+          <article class="card">
+            <img src="../assets/images/service-growth.svg" width="44" height="44" alt="" />
+            <h3 id="svcTitle3">Conversion CRO Sprints</h3>
+            <p id="svcDesc3">Landing experiments, clear offer positioning, and measurable inbound lead lift.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="packages">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-kicker">Transparent Scopes</span>
+          <h2>Structured Engagements Without Surprise Billing</h2>
+          <p>Every tier includes full documentation, senior implementation, and clear milestone sign-off.</p>
+        </div>
+        <div class="grid-3">
+          <article class="card pkg-card">
+            <h3 id="pkgName1">Brand Sprint</h3>
+            <div class="pkg-price" id="pkgPrice1">$2,800</div>
+            <ul class="pkg-list" id="pkgList1">
+              <li>Logo + Color Token System</li>
+              <li>1-Page Launch Website</li>
+              <li>10-Day Delivery</li>
+            </ul>
+            <button type="button" class="btn-secondary" data-open-quote="Essential Package">Select Essential</button>
+          </article>
+          <article class="card pkg-card featured">
+            <h3 id="pkgName2">Full Digital Flagship</h3>
+            <div class="pkg-price" id="pkgPrice2">$5,600</div>
+            <ul class="pkg-list" id="pkgList2">
+              <li>Multi-Page Web System</li>
+              <li>Copy &amp; Wireframe Audit</li>
+              <li>Analytics &amp; Lead Capture</li>
+            </ul>
+            <button type="button" class="btn-primary" data-open-quote="Growth Flagship">Book Flagship Scope</button>
+          </article>
+          <article class="card pkg-card">
+            <h3 id="pkgName3">Growth Partner Retainer</h3>
+            <div class="pkg-price" id="pkgPrice3">$3,200/mo</div>
+            <ul class="pkg-list" id="pkgList3">
+              <li>Weekly Funnel Optimization</li>
+              <li>Campaign Landing Pages</li>
+              <li>Priority Slack Access</li>
+            </ul>
+            <button type="button" class="btn-secondary" data-open-quote="Partner Retainer">Inquire About Retainer</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="proof">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-kicker">Client Outcomes</span>
+          <h2>Proven Results Across Local &amp; B2B Clients</h2>
+        </div>
+        <div class="grid-3">
+          <article class="card">
+            <div class="quote-metric" id="proofMetric1">+142% Qualified Leads</div>
+            <p class="quote-text" id="proofQuote1">"Rebuilding our flagship positioning lifted demo bookings within 30 days."</p>
+            <div class="quote-author" id="proofAuthor1">Elena Vance, VP Marketing at CloudAxis</div>
+          </article>
+          <article class="card">
+            <div class="quote-metric" id="proofMetric2">14-Day Ship Time</div>
+            <p class="quote-text" id="proofQuote2">"Fastest agency launch we have ever managed without sacrificing polish."</p>
+            <div class="quote-author" id="proofAuthor2">Marcus Sterling, Founder at VerveBio</div>
+          </article>
+          <article class="card">
+            <div class="quote-metric" id="proofMetric3">99 Lighthouse Score</div>
+            <p class="quote-text" id="proofQuote3">"Core Web Vitals went green across mobile and desktop overnight."</p>
+            <div class="quote-author" id="proofAuthor3">Nadia Patel, Head of Product at Kinetix</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-kicker">Common Questions</span>
+          <h2>Everything You Need Before Starting</h2>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button type="button" class="faq-btn" aria-expanded="false">How fast can we kick off and go live? <span>+</span></button>
+            <div class="faq-panel">Discovery starts within 48 hours of deposit confirmation, with initial architecture delivered inside the first 5 business days.</div>
+          </div>
+          <div class="faq-item">
+            <button type="button" class="faq-btn" aria-expanded="false">Do we own all final creative &amp; source assets? <span>+</span></button>
+            <div class="faq-panel">Yes. Upon completion, 100% of custom layouts, domain configurations, and production assets transfer directly to your team.</div>
+          </div>
+          <div class="faq-item">
+            <button type="button" class="faq-btn" aria-expanded="false">How do we connect this quote form to our email or CRM? <span>+</span></button>
+            <div class="faq-panel">Paste your Formspree, Netlify Forms, or Make/Zapier webhook URL into <code>SUBMIT_WEBHOOK_URL</code> inside <code>assets/js/main.js</code>.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <span>&copy; 2026 <strong id="footerBrand">Vanguard Creative</strong>. All Rights Reserved.</span>
+      <span>Mon&ndash;Fri 08:30&ndash;18:00 &bull; Licensed Local &amp; Digital Advisory</span>
+    </div>
+  </footer>
+
+  <div class="modal-backdrop" id="quoteModal" role="dialog" aria-modal="true" aria-labelledby="quoteModalHeading">
+    <div class="modal-box">
+      <div class="modal-head">
+        <div>
+          <span class="section-kicker" id="modalPresetLabel">Vanguard Creative</span>
+          <h3 id="quoteModalHeading">Request Consultation &amp; Scope</h3>
+        </div>
+        <button type="button" class="modal-close" id="modalCloseBtn" aria-label="Close modal">&times;</button>
+      </div>
+      <form class="form-stack" id="quoteForm">
+        <label>Your Name <input type="text" id="quoteName" placeholder="Jordan Alvarez" required /></label>
+        <label>Work Email <input type="email" id="quoteEmail" placeholder="jordan@company.com" required /></label>
+        <label>Selected Scope
+          <select id="quotePackage">
+            <option value="Essential Package">Essential Package</option>
+            <option value="Growth Flagship">Growth Flagship (Recommended)</option>
+            <option value="Partner Retainer">Partner Retainer</option>
+          </select>
+        </label>
+        <label>Project Notes <textarea id="quoteNotes" rows="3" placeholder="Briefly describe your timeline and goals..."></textarea></label>
+        <button type="submit" class="btn-primary">Submit Estimate Request</button>
+      </form>
+      <div class="form-success" id="quoteSuccess"></div>
+    </div>
+  </div>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

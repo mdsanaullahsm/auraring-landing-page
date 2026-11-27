@@ -1,17 +1,16 @@
-# Small Business Landing Page Kit — 5 HTML Templates (Vanguard)
+# Small Business 5-in-1 Modular Web Kit (SKU #08)
 
-A high-converting, clean, responsive landing page template engineered for local service businesses, agencies, contractors, and consultants.
+Production-ready HTML5, CSS3, and Vanilla JavaScript landing suite with **5 distinct industry themes** (Creative Agency, IT Advisory, Artisan Bistro, Legal & Finance, Custom Contractors) — zero build tools or npm dependencies.
 
-## Features
-- **Zero Build Step:** Pure Vanilla HTML5, modern CSS3, and JavaScript.
-- **Conversion-Focused Anatomy:** Sticky header with click-to-call phone action, hero with benefit badge, service card matrix, trust metrics, client review cards, lead capture contact form, and FAQ accordion.
-- **Responsive:** Mobile drawer navigation with 100% cross-device compatibility.
-- **Typography:** Plus Jakarta Sans & Space Grotesk via Google Fonts CDN.
+## Package Structure
+- `index.html` — Live interactive switcher across all 5 industry themes + Light/Dark toggle
+- `templates/` — **5 standalone deployable starters** (`01-creative-agency.html` .. `05-custom-contractors.html`) sharing modular assets cleanly
+- `assets/css/style.css` — Centralized CSS custom property palette tokens & responsive layout
+- `assets/js/main.js` — Theme engine, FAQ accordion, mobile drawer & consultation modal (`SUBMIT_WEBHOOK_URL` hook)
+- `assets/images/` — 6 crisp intrinsic vector SVG icons & blueprint graphics
+- `04_Commercial_License/Commercial-License-Certificate.txt` — Commercial client deployment rights
 
-## Quick Start
-1. Double click `index.html` to open in any web browser.
-2. Edit text, services, and phone numbers directly inside `index.html`.
-3. Deploy to Vercel, Netlify, or GitHub Pages in under 60 seconds.
-
-## License
-Commercial License included. See `Commercial-License-Certificate.txt`.
+## Deploy in 30 Seconds
+1. Double-click `index.html` or any `templates/*.html` file locally to preview offline.
+2. To deploy a single client site (e.g. Bistro), rename `templates/03-artisan-bistro.html` to `index.html` (updating relative `assets/` paths) or keep `index.html` with your default `data-preset="bistro"`.
+3. Drag the folder directly into **Netlify Drop**, **Vercel**, or **Cloudflare Pages** for instant free HTTPS.
