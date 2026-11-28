@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="190" viewBox="0 0 420 190" fill="none">
+  <rect width="420" height="190" rx="12" fill="#0D1119" stroke="#1E293B" stroke-width="1.2"/>
+  <circle cx="210" cy="95" r="56" stroke="#06B6D4" stroke-width="1.4" stroke-dasharray="5 4"/>
+  <circle cx="210" cy="95" r="24" fill="#131926" stroke="#34D399" stroke-width="1.8"/>
+  <path d="M203 95L208 100L218 90" stroke="#34D399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="110" cy="50" r="16" fill="#131926" stroke="#38BDF8"/>
+  <circle cx="310" cy="50" r="16" fill="#131926" stroke="#38BDF8"/>
+  <circle cx="110" cy="140" r="16" fill="#131926" stroke="#38BDF8"/>
+  <circle cx="310" cy="140" r="16" fill="#131926" stroke="#38BDF8"/>
+  <line x1="125" y1="57" x2="188" y2="85" stroke="#1E293B" stroke-width="1.5"/>
+  <line x1="295" y1="57" x2="232" y2="85" stroke="#1E293B" stroke-width="1.5"/>
+  <line x1="125" y1="133" x2="188" y2="105" stroke="#1E293B" stroke-width="1.5"/>
+  <line x1="295" y1="133" x2="232" y2="105" stroke="#1E293B" stroke-width="1.5"/>
+</svg>
