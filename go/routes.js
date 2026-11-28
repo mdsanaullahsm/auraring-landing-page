@@ -4,181 +4,181 @@ window.AURA_ROUTES = {
   "01_real-estate-marketing-kit": {
     "title": "The Estate \u2014 Luxury Real Estate Marketing Kit",
     "kind": "kit",
-    "iv": "1ODIvNR7wf7zqaTV",
-    "ct": "xWhnq5soCYEFm-JHs-kb1_I8LEJ4qRgZmlbT1p8tRdYYX_FmcBkVaHCY6xI6-uk62L3nRidCUPVh9LcsOwZ40venKLKf_W7EiPol7Uu7JHMNuK_Jp9bQySlYpYtN-ygupawQLP0UJUCi7G68bTyubwB1umdiZMBSJ3E7pe4oHHL5DeGKk4pdLbrhTsl3Z99TcbBw8zIQOFQKJKVCeD-90YsOr0H3JMc1JYTVXziQYe1614SbH4mmlO7_GI0QUXkZ960qVFQEOkf6wkbwcKmwGbMUR024hdenGgqs4ELG0H3Sl2pa-tOwxseFV3M4Q86qT3g5VQNZQvhS_u_9jRYJJrvnVn8kfsV1Ir8h0ekeOgkzMBJ-co5xJOs1m2maOlzIQYhKYXepUP2Py5yW-JUas2xxLua2lTxxEqF6eEMLXeRggY1VxHALyMvf7V_VlQ4oNTNW6DDBOQ"
+    "iv": "AZVdJKgR50UprA4o",
+    "ct": "cCp6jQEd4JYK_jP3pWqMmlynj9fh-8qmrMfhjgctHDZbD8cxnWdSn8GTBiBtpeiJVbJjVXG9sLxo_z2lPlzQdVEdsoqrPaAyWXXchmOabnWawkepQty916NuO2FBT68AzoboFvZLD1CuhIXrZOfeEAUhkeNAud_flfA-msriZY0CLurQwqtPLIX2g2X6PtuqXBA181ADaVa6mMnAnQSN8dk_DLqWWeOcKiV3V0BjVffWn0lWYDBl9HDYSrqbVU0im5NwshmExi13eZMD51ffneyvvqzZKvxseoAwU8auy-qk4OPhGrv_pbVu_cQTZMFVpvdTA7pVFzmvfTybqGvgO6a8Ynm5fxMFNpAyELzRwfKu4oRWbhhKeeQBx3yhXsBZElfu_JEWWEj89ClgwW1vanbiJ_VwBan3FNmgZb768w_HKDFw0E_X1asAgOiRAZuLLm_8RlJ_oA"
   },
   "02_auraring-landing-page": {
     "title": "AuraRing \u2014 Luxury Single Product E-Commerce",
     "kind": "web",
-    "iv": "9wolz2xTsibyMGiJ",
-    "ct": "WiKqBpxzrtBn4gl_ZIQNGK4XKpK7DzFUnunnN72iiJ93JR4e464Qyyh63jlLxX7R2D-bizpMXaCoyZqL0cwzwDv5_k0ml1OD9ypF_eFTXETK"
+    "iv": "hAAkdqXE9tYYO-Po",
+    "ct": "3jbq7kZTFWbTU1bRIDnnTI4GYFebsfLhDJw-EpP4qyTkWbTqXWvMZ1Pf8YwjAiF4zrYMj-B8FSIngyeOrC_13pzAhMwdx4D_wSwlEOND7ROm"
   },
   "03_startup-pitch-deck": {
     "title": "The Pitch \u2014 Seed to Series A Startup Pitch Deck",
     "kind": "kit",
-    "iv": "tvXwOxyApguxFnuW",
-    "ct": "7mECCSFKOSNjP7OQWHveJQBDd1F_7pIe6gpeFmrIKxIiViPUDKgFoPSpPttPtbdsITQlcd4DPTvZiY0fvtaR-PPYYEkk7RBGOwTdw8Ns88auwrMDQbbR0rcK5N2CR8XWJpP8wRjwZqy8gRJDkIwvwmFCToM-vkqColL88-vQumv_TgCp3ib4OSoJRHgYLinGkWpY0u9RjDp2bapAveQ2EC5WaF6GDflD5wVtOhyhMFFz_kXr0x6cnCoztmUzH-tdO6LddRXPVVNW1hKDxkKIJLvYnbYuluDYjqw9"
+    "iv": "Xt4W8Mm5Z1ZazNGp",
+    "ct": "mTAx6zVat-a2T6hX8afBCp0O90tbjk5KGQOAdxWYcbArvbUWlwEEWa89x4FujUFwxcaI82LZb_TJmS5xHviid1UsrckmSASGkch_DDuVoOgFCkMLdUkfBU_q9zjI0ERNxXKjATCEH5vztEzT8lfJLltHnk3Bt_lh_xGjyBOkKXu1zC3cOHwiXXUu7RsV0msGU0ZnHqBqgVBhWaEZ75RaulrJE1n4uXfSF2FU6SHJQqSIwiHS0tlXUc7Z4-M0uVx4w7pNxk04d_uNSX9ga-jrPnD1PcqzhgDePEWN"
   },
   "04_freelance-client-proposal": {
     "title": "The Close \u2014 Client Proposal & Agreement Suite",
     "kind": "kit",
-    "iv": "LEbHV3U2FbVqm1HC",
-    "ct": "XwvuqdQUSmAPATC5sPBZhda6BeKc8mkfNmm-9MehN6lNlkC0uJakKsVz-PgYndBqEXOb6fB2DX_KhTv8e9PdoJj8ODvNGIVy30-KMZAfzNhNZu6xEv7m3wiN4SWOmEmvDbeWc4JNCITEzAKwCJpXXTWklWE3AyigLNNG5NnejjoetxQDfMNmVdJ-Naa8OlFZUpTtFQ84E1mluuhY9hJa9pOcQA_4ekVyLVfyHaGKbfwh4wPtUSrWUl26v9ooa8HuSIDVYIO67MOj_FSZbp6uwdiKzOW2zPsjlkR3"
+    "iv": "DTRsqgBQQBuKyqt0",
+    "ct": "HFr6HHmDA8fxJ19-AImi9Hw-ip--oFgXUZ_WJd4OgbuFpxaWA4CNiBUIWSILby2fQEGeKotrVujR9ZWiEZGo2fw5PtrvMgZxDHYxq4GVr8IO3BKkhEU6_3oZch8lARaNexrfkWIrppAuQ59Cl6mNdNo4zst0yBGNbxMkZmY7FzmOcbMiKqwZQg5spnbRL1GynS2mkDCL4iW4lnWeS4ORUlZEt8FX4bXVNXb4XUSB3BbCvvbg9vJD2dm45DMB8aPMlMKdfkTmaiK-84scKycOelJaKOPHtROGJNcO"
   },
   "05_social-media-carousel-kit": {
     "title": "The Creator \u2014 Authority Social Media Carousel Kit",
     "kind": "kit",
-    "iv": "J90CON-GKufEVqXc",
-    "ct": "JcnboVU-Ecn_OV_mVKMmZ8kf-5Vi8qQcj4RC0ZIUgWpLSocR-xhkcF6YQ42xTkcjmx1jpZXtsLSmuXH0AWoDz6MZrbQMISEv9JuqALzSf7B2AvjteuSsWBcNPtpV06Y2PbfA1KGY3hh2h365AVCoqTIvlziHPI_-98p8DLmoj0-gZ0cQp2BMa7Ke__bsGedM-qoXbrwwswXV7azVzg_sbEj58tSSUmOKxFihJikdt4DD3Z55BXXa6zq9-mBtAnMWqqGlUvqLniuyNrm0olMpl2bid6deMh1PuzhR"
+    "iv": "TfBLt7Pdc-d92aNp",
+    "ct": "AC55WuXIRbZh2_wGYAlN9ZaYKekV0mmb5lmr2bEMkLZYUDE_8wCHZmfFelilF0brLjf7Tgpqtud2HD3G5t6PZPPqcwDYFmFp_-GN2nS0EHoiaX4Ws04Y1jYNW9RYhkLOqsQgy3uiek36HVr0Xt3GvrJGNW1rXaf0IlMV3y8p1kz9EtvYYy3T1FO6siUStmrQZpn6i9_k2OxQXoPUDzFVQ9BsMbHktjDvXlvEvq4yKmAH3W3g9W1sIZSM6A2dfZ9-MqHm8vimS0dG1jAefEmH18No-k8Ik_4N57l6"
   },
   "06_nova-saas-theme": {
     "title": "Nova \u2014 Dark-Mode B2B SaaS Launch Theme",
     "kind": "web",
-    "iv": "jSVqtcjnfJaocIxH",
-    "ct": "CKXeTtPgRJ5f7G3zl2PtkQ0zwEpxXrkI-ue0YTdMJZqV_oZvNAaDU1FzF8Kas9JrcDr3QWxRYWNdCCdl3R2vj9IFYQLqDyUURb3SneynvDRd"
+    "iv": "4xq0qoL5AJGI6rwm",
+    "ct": "RYA-xy2D5692W61GvARVDwivxkIM8XdkuOiiA0reih2MjDVAb2y3tdMm_lczcOOxNuo5OAPRtdrK4-XEkpLujk1G8suBi8g4o5y2oadI1YG4"
   },
   "07_minimalist-habit-tracker": {
     "title": "90-Day Identity & Minimalist Habit Tracker",
     "kind": "kit",
-    "iv": "mlLrFlgnhUxFvrIF",
-    "ct": "cG7RccaGuLZPCtKeYy9mtAhlsP0L2_opGzRuQvMDdwNGlUzTh4huiSg-4DcJz6bAaZe_Trc1KNVva0PuRw1G2OhfiUiQvSTrmqAFIhHAXMd95a1rzpqMciJOQ-CRgfu36hE6qJ7In0kydIbyij9KhPig1JKJb4FY-4WFh7_mBl2K1aF0Fzwlm0zFQV85POowhOSCeTKiHBHgCT6LhJDYGfMhlzm473s1fFcuMiJeJQ9xbO5QB_wrjMSqbpU8LiJxZncb9tAyVZuqqNlid_d0y-hGUkPWrp30rMqz"
+    "iv": "lPIC5H4KqaHcB_z-",
+    "ct": "pA6umvqc4Ul8Z4zs4-S_R27VpAn6ofeZHw5VwTDTUdGd4ekjwqB7iAY1kPSPNfafoKIzmSpv90kqDG6BliraXMHOXq8m3i80e2PF_bBpCQqHFRYd3xfTWWrLAtFteMV_GjstyHQoiszwvOICuIgse12Xd5OVb6iDFz4BE4nvRYNQQGODm35orsyxvvw4TI5CXdPCJd7OBEyWjeGmwTzbhnEOAI9gTrUhxOAhaxLcas8Fj-9KfwrK7mUhxWvxA31aA-azq1h8QIk9tRw5dSqbnYMM-xuAlVJi8l-o"
   },
   "08_smallbiz-landing-kit": {
     "title": "SmallBiz Local Service Multi-Landing Kit",
     "kind": "web",
-    "iv": "NWypzMWZ3xepMPfi",
-    "ct": "ErJeeOdN5ox9BAY46a4wxdfUu2-jx5NznHNhpLS4o62YPtIHOiWBkNutRQ6_cwA5ySCx9kOguRgAR2lO1HxT_7EGml56FE36PhPI-0bSBnMw"
+    "iv": "-j1c2D_MXRCgvzjJ",
+    "ct": "wa80KoJxgMsAUZvXBqAgjGjm5xmQNe5uAfaeyoWIIrJPWgNiqcAEACo0VkaJotZa1JRsUUxNvnAhXL5iP7Twk28CGicnETZJZvK-rq9frhCq"
   },
   "09_executive-ats-resume": {
     "title": "Executive ATS Resume & Board Bio Suite",
     "kind": "kit",
-    "iv": "WqYNIXJxU_raeVEj",
-    "ct": "RgcLQfh0piHK3HQcBvu98CbK8VgUrR8XwXa-Hyi4GUy1GsMviwlT9Tq2tDkxbgN5QEZPL9R6jXp6LFe280A6MvdPVWkS61mJS6RlHDxO8msOpfmnJVql4Sfnrf9x0xbpc4K10rLFpGNzTi_pOrW5-2HiDrIg5eJX2B4_3I3hPzeTpJ8SPAdLuzaMoLmHtMOJeshg0BHvfO5B_Jlz9G3c4J0ZBJMfbUgjXcdTOVtjSLaBuZGqBz87au8s58BaZyGTy8HqPTDA8mKQ2iOyiu8ImoUpdgYes412YS_d"
+    "iv": "Y104xfbk_qfoo8tA",
+    "ct": "IItbpnSNZ7eojRVdmnYAdLguSDiCOM_oAvPj7EiYNd8NbACshew38Iv6WIfiV4aaU7UTXb64q7e6LrrX0CQNPIh4CEDLK8EhXL4oGRfdHQ82wUsRbWVA_zvlH5NlrGSf4tIZbhLqx6IaRdGq7tJTw81MIMRy_7PyQBxLswogXKBgZl9TjVB2qqv23BeOEtAxqhFzEx20yjVWQ4Ph9xxBT772NCbbqcTwZcS75xnbRgLp3FIyQKRPsUDg1_QsAsZaQ5aKuck3P9S9TqxGbeuaMSQsq9hyhStsvKZK"
   },
   "10_wedding-budget-simulator": {
     "title": "Editorial Wedding Budget & Vendor Simulator",
     "kind": "kit",
-    "iv": "pxs3avhAV6uRfI6B",
-    "ct": "OvhJFZdatK2Z2-apZSnQytOUgOuoTlmgXcGyk1gAn89wnoJpw4dKoLBulSE_-vWx8_2BeeJPPo_OEieK0cYv9Bw1UxPgxcf17Z6CIjQSeislfSsxLYAQ90-st0oHGE4LqmuH8Pl60B-nIqp2ebJ0Za72SrZ4AN_b58cLsuDd83BWbeyvSZSsnbxqa3KH1cK3bYsixCrHQEmDI8a_sI0SzdruqZwSWdFrLNjx6x1ZK0TjOlAltRlqOfT7_KtmI9qEmwvRqVrZNfnq1dSfzyRHpqldxAK-no-DDvw2"
+    "iv": "M0zFADhaAxGSVfFf",
+    "ct": "APbPkH3Bf7SCwH064bT2P_J4p482RKd407r_wGz7DuE_JJBWuF_OsOlCkA6CBWsiJ4hINaCzSojlrSRnFef4g31B2OFkfppb-YMtZaTrwQwf5os4P_3oMzc4dDysH1j6NYrzMIAYkGWv2HQgtABZ6H7Gh5fqoo7IXwshGh40sZg18d325tlyGoecrjlgA94NsX0sEeCk-mt190gIGrgWhSSOV0Pu-quMgKUPQ_EZDIAGDPbgxbfgC9LdMTWUueF5T0YO-UDEUQT-HCzg0DtrpJzrOnoNxg5oIWoA"
   },
   "11_wealth-matrix-finance-tracker": {
     "title": "Wealth Matrix \u2014 Personal Net Worth & Finance Tracker",
     "kind": "kit",
-    "iv": "pa5JWVlZXbM8MBfU",
-    "ct": "OP-_gdxn6ftyH127buf3M4kwBroqlnwHgYmE0aU4CvRR3sg7eIGfO_8AscNntmaYb1loEXSI29IuKwqEDtrcU6z6fkE82zLOZ_swb9zA6CPq1ZWxue_Ih2oyW443pq0g-wDUYazfb5O-csa_vwpy29zz5J_TL-vUC4NYqNKWc_s4KBqrg4B8XtTFwcz3vMuFxqsMxGlBg58Mambbfb-w7TvogGTC8z_SI510wrbTwtg91jDwKpi0_dcb1gGKPTkCtIPIe29OD5uqQ1S7g8OanPRCZBBFez0WTUuO"
+    "iv": "J2BCdhDliGoE3-Q-",
+    "ct": "jfsECqD1G9sjc_bRZuk_qcqgQFSZx8SmXyHaz06W0vfBhq0LJol7qlZPdjCU5hdJ3pzMBRwD-lP0LrWT051KlDMbN49D-awlWSXEgN4-Xa3lA1vw_t_wOf_JUd8f101wEKBFi45QQ2J3Ze6fouzJPKBRsJErxZmmI_YhVttbGkf4AsLCwShJrhFxcNpEFLUO-LHzcorpu5vkBYCX6t1GqOypHUP_pcO39CWOWWSJsFCzWqtVV57aZbX_Js8U3enUtXqiz7ZqI_27sur4O7THOkLzfulzqkbtaDWT"
   },
   "12_course-master-presentation-deck": {
     "title": "Course Master \u2014 Flagship Workshop Slide Suite",
     "kind": "kit",
-    "iv": "kBHPln_NjQVOQFrS",
-    "ct": "vOx8mekukLvaRUVUYMlcV6tgUe1rFX2IojpoecjHWC3peh-wjTQyAoYxxFJLr2u8luRAZ0IFWlB41iTBeU6SgzDEAg03rElN8QopusLv5fWaUSqoCjvX7DP6DgGSU6E82brBIGQKd2NeC_WBys_oZCiyJy1BHnAb9LrQLrH-szzJEjZ2oEv2BBFhW5aC3Ltqdgf7LnjPrzf5Kv7TqmCwEcJdu6FKtIPVeN2kmQ0LCj1E0vSlhd6IXFNhd2QoVJxFoTv2SDhHXWYmfCJmdHmgD8KqHM3V9r4VLVFV"
+    "iv": "lUmfNr7idNm3Y-qW",
+    "ct": "f0nKC7jtLV3v8QH1U8p7HCgv1v5wVE_5W1C-IFPukuUFwlKAkf124Xg2p0LjMaJyd3fTwFDLyarqDXU_HDicrN-I9IDPulh_FL0O4ZXuHHrKKR-ILgEhbiZiynJznXGwAnTcWvvbH6x9g-eSamVk5sMI7_yxbdkaQYZaqJjNdd0G_ihv1YnOnJW6J6LseK0uU0x1aVb_K5zUFY6aRD-WFCF2qItzXNNElHI58vHhY-n9v6ySFWIintdooHwq5BIy9HrKwXOFZsEBAtNd113F8rANLRvkWeQ8ZLig"
   },
   "13_monogram-wedding-stationery-suite": {
     "title": "The Monogram \u2014 Heirloom Wedding Stationery Suite",
     "kind": "kit",
-    "iv": "i7ft1GZDygkqGJHp",
-    "ct": "k6RITFme4TxJmncyIwHkC75lxzZmp5Ok91wazxDDc_J8-mJQjEUbObrp5SUnXKrMIZQslbKqlPORsBgZtNtWXamUR14YwtKtk8dsjHralNna49gM2K9fqlNELz21GfmZ7fF1k0M1MMbF4Sh7XDf0S5TLOJd2rnwfQcX1H_JAt6ymwXPQABr-PQAAqfoz_OccJMaS-u9cZF-K1Q2B1bgbljKcsGnX05ZZrR24fHQ1ZMB8rnNYNSc1nb9qK54s2NHy-le0Dn2EF0H-RctH4XsOveqqvX5sotVZKFNvrApYDvWXmaENbCZCdUfExEyXIG5vobm8wVlVNBbxH599_E3d3lAQHbfYHGS8SoaqrwURbAAhkivaqywevLNweaM5amzCtkcz"
+    "iv": "Cz0httheLulMjWD0",
+    "ct": "R6QfdgGJhn9Y6ZlzCYLf2wDkKUrTMTrkXL2Bl0J7CF1TrcSKrWQfAAkdXfhE893K62tZvJCH1hmpsOvfHWy7RItmuRETr6bAy96zKtgjxhZOSmBX3kqcyrI_NJuGwvEd7PX--LxWy6dx_HJXaeQnwXDpTR-x_6tctC0Ybjrlqfz5eW9dNHOKKRkFi2xTcYRN7Kx95HPe5xX_TLfCUJ5z70bWxUPbnR-gv5NkjB5fghitYD0sBSA2Q1f4p8OdWvfOgIwFEnI-ta2R19iXyJcUaa6iOSJyFch2E6Q4IGCSAu7m9Ly9kuMc2vgK5MA8RFSFvhzWzj9LAEQMzpUmzEpNNvXShY5gJUxl888Fk3BrMEDIBnya1_31SQSbab9ZcPkhcAST"
   },
   "14_75-day-transformation-blueprint": {
     "title": "75-Day Transformation & Performance Protocol",
     "kind": "kit",
-    "iv": "FhsYIaeSVdcJZCEq",
-    "ct": "clRFmhdwz4zR9H36DAYEQCtUT6Lqvnqq0LIr3QafS9QPbbygchD5cu0SveD0Y7tYebaeD0tv0h2Fkp8slw2CIvHIbS9dCiDzPPzQ-98UAbap4d9cy_v_3XwAcoHTNQq8IKZTF8LSA_RoooDSvANneFSCW7Pnd-Y5ptyTvgXRapAonxO8rTlO59nIQNFY35UUnYxqfZSn6M5pPxjJ6yrepMFiQb77gvidLhchrMB7B51oD2E6MPxnGvSjFADpBk6ptgiGIo9VXYeDLO9FW1IvvcIJBpka8GCaSaIa"
+    "iv": "N4EEmOXae_5nyVMx",
+    "ct": "gyaD642_kkY1CYSbDrgUGwBR-N9XY0RFHOKYoZiAfnR8WG6bgBvKpvNtrVJ5AMrEhw7VeFeZebvC43zeQ8o5voXxPQWb7M4RX1OQEVATVEptlDT6ehdawxV8c4nJ2t-jSxh_u-ziN4QzgfYQwTTiUzvVqtFHWsjo8LrgZHulFUoEJLAVVjXKA_AGHhY9AUhlC8ovbTNXGgWl113YeLClt_Lk5uRmCselSTaWrn6deft6Kt61Puy-kXOCAZ5TZvbTXbHKWbxtzUMnjrIeR3nscRQdzAgdSPRb6HBf"
   },
   "15_apex-wealth-landing-theme": {
     "title": "Apex Wealth \u2014 Private Advisory Landing Theme",
     "kind": "web",
-    "iv": "Dj7BUjjwGp-67lYB",
-    "ct": "YqojXSBHivSL7mHpZU7Gzsa6Lt9rDni_IReyW-8Hl88MuBQVZokR7VTfx3Ot7SPYi6iWn0Dlh2QBMVoRLoRkdUSj8j3Aa2ChSgC_agyIK5_k"
+    "iv": "yzlKvoD-yPPrls3p",
+    "ct": "RxIW_QOlBbNIVfj3RI-bRqRfK0dr2KoVcd08-tpnxP8l-J3m_qLbd6R3E4jKJW2kQhQP29WBSy5_ZeD2iJvMYHcRFtSQKLQbtpKa8jZsBQ52"
   },
   "16_brand-bible-guidelines-deck": {
     "title": "Brand Bible \u2014 Visual Identity & Guidelines Deck",
     "kind": "kit",
-    "iv": "tJKrTqA4E3XqusaG",
-    "ct": "qygD8qfH70hejgWL1ICgR13L3w0h_oXLJxvj74jtwxqEfnGLdPkWBLqm8GocdhqZtc0kZvZp_KV8aD5fUCngKjfFPdncQea65CFl8-bdftewPaKYvUH1N-CZzImvDvUtzzxKb4fD25L8sxMKFtIp55-G9tc0sYwi0rSnjOIioYR6FQYa78qIn9cDdJtRnAVZoTF5WwZw2GyuPD0Gk381QBwcs55acnKhWmYmXESZGbHZ5oA0mePQfi4HEvzFbn0o4SD-AHz9wjBadIieO3A7CVmVy433BfLyiLar"
+    "iv": "0vXuzA8fIbElX4kJ",
+    "ct": "dMWsjaVAhyfVR3cPnuz5xSwz3LpBmDCjnmsRkI_Pq3-gmmHAM98WWW_O1C-DM4Ob9vSQYkGCNdVfDjYTXgadwAEjYoQ4feKNvkCXf-0PTUCEN7rPM-l4XzbqkwEJWiIlBaHNRna8nDRUMv8BqZSEZoPxnH3-OeP39GEx6Irm8NZ-0jLarB8kDbtR_rI8iDiA_Y55UCc1538L46jYIjLmqZMpliVFQnpS5fTBtlWsKjpmaC3PEZaByHSTaf0AzLsOzpuQDRkYobp8Y6chtZW8HgxVdIm-KJlJhDCp"
   },
   "17_creator-sponsorship-media-kit": {
     "title": "Creator Sponsorship Media Kit & Rate Card",
     "kind": "kit",
-    "iv": "dhzqQgDpU4Rw9XlO",
-    "ct": "G385hcrvpFjbG_mcjdXHHGbcFRIatZx-lU7sI4VxkFJ-dkjimJI4S-RSOBwfPqA6I-Ypj59P7PJv21qILI8dZ99lNJa5P5LBDVZWPFc2yv1OgFU6ur8vKR9Mq80ciHv3arqoceN5BoM5jzN0rtRR-TzVqokd4uxoJkGcLbbpv5fjkAnEaiW0GW1DX6M_0BhOI4lRKcVAlggVA9I89FyxB-iyve8-CRVLJ3F5kD0vXZCe56YVtiXkzc_0abQFrz-injJF5Wb0zc_IFzznbwMEtS52rfQDTnCeqTbb"
+    "iv": "t_18lL3K3f7c4pfe",
+    "ct": "OUkM4h4jV7EXd12cS9tTJSvBgJMPWbJrphBfP3IeYUHQ-_NbGYYIzlzr9KNUZlZI6jA0duOVP0OQ2S8RMdrwrdOFCziKj5EkIw8CfxVwGw1xHnOp8L1XaQlRP4QebiBjdSqiB8AOMAtSkhy0YPK--SC0V_DoKYFEKYHjWOiIEpTiIlQ4DOLNGht6ybUKPJIxeE8NpzN_P9isZ7qw0KftLGILd8x_9N8HsuljXhKiyKU-Mh2ElCw-SxGRvheUmoODII2wFTv0EINnbf3Sgd2VyiE6Rd6Lj88_UJO9"
   },
   "18_solopreneur-crm-pipeline": {
     "title": "Solopreneur CRM & Deal Pipeline Operating Kit",
     "kind": "kit",
-    "iv": "s0slRNhJXML8oSyS",
-    "ct": "1yxSVYlyJLsQViWmPPLQjn_7bumamS3ccozWJtDT3hljZGa6jmff8sVmHKOyoVR5gPSfSbCTRIA42QHYONeuW4i-yfBDzez0ddJjTVRfGx4l3OtCIIft4dWXFT58V4TduVjjZHDnyqZMYdT67jkvc4IVwXgXbN63Y85uDJSbD_FLWaivhoyUWDbnMPWQdv08JHcQ6k1__DOmvL_Ng7eyYmuWUUs1Of5MsAFpKa5WJiWIfWGJlbrErIKSxxCINlp5djDdTdEeLZlt7iVaeA-v5-ePS_B97y6Jngr7"
+    "iv": "6Oi2sq3z1Dy6XUMg",
+    "ct": "WNnsHOM36DWBU0GuvZNlTyRU2uoE4yyruxyDY6GhIuxqsX092WWOsvT1_B8bOahs883Hl1XnUlw7BTvT5p38pA0JL_ct_rXFEU_sxCXNcvs5orUv5DOnoJFS4BzkIzgg8YbLr1nyxdmhNu_8lcZZnPen4C07vtP19XJNNrwIMhi9utGEnGP5Z7h460mszUZRs0vWAxjTn6uGi6mxqvGOAInEjTojzOW0CIR02EshOl267_eU_yjQuD-Vx1cETcyELvTVDdvA3J_44rN9Nkx0rfQk7KdVYVp_aapm"
   },
   "19_podcast-launch-production-planner": {
     "title": "Podcast Launch & Show Production Studio Planner",
     "kind": "kit",
-    "iv": "6dPmN0YbqrkNe7J9",
-    "ct": "1sa-vJDF2DIcnoUTvoBODU-0rOMDA6Y3qYPF9nfq7nxbm1Rgf9NKwQMfnMd052ok24TyWTzTtQWS68gE6n1RxBq_mHZp3GrhGHy2NwF0ASvDaRHNhhbSsFgHjRxKoUSOFa4y9-xpaCB1Ydn0zI4qJ7xIeo69-uP0TxWQw_Ozh6uq3aO7frxwM1lLXjJz03Mhp_CAl-UIjmu84HbCY_nDokUXCZXRyNvN9YykjtLLCv1UtvZemEUObPKWT9zl49cCpN4YhPLVU5HnOJSANvjGev9PRD0biibFo7P1"
+    "iv": "GQE54eIcyTUsC8OQ",
+    "ct": "6megw46Mzmmj2fmZNZG4cHQQ8HccBWRD9BE2JI1de-PN-khkigdVN5LLcLJS_47kwJ48BFuJOIiE63SPrnIhlPX21BTCmIDkrmy5SNLfdKdynrllIIhLxRtQ2K3LmVpma_bQx7ODwKBxunKT6qX89bo5cFr855yPh71vVfyeQDcG3umZakqE7ESYHNvonfr0KiG2hL23If8BQrws3DuYN-RSA1K0VBGvZUUW-q-KLcEAH7nh_gaPue7UZrI_x4NUS0_xjaprxMSa_aAKOhwbznqVa0GQkTvYtJB0"
   },
   "20_chrono-developer-portfolio-theme": {
     "title": "Chrono \u2014 Principal Engineer Portfolio Theme",
     "kind": "web",
-    "iv": "Tsi0f_9fpK0ONuFo",
-    "ct": "c1YKPVLzKMkhnBUr_JOHt5KOMjFqAkX3NDIcCp_vven9Ax2AN4Uecoz3v2YsYvGvi9e2lYngTJwZVK8TDf-IJJDHwzxJfNPhwaF8LpETQaxYEoR7SHvkOjE"
+    "iv": "eMWHGwf0G2ncoN0U",
+    "ct": "VTJvSJyeV6sIwINYIaxVZifdJfuFSK0RDaGvseHwyVVcd4Msdo8b2_C98Teg2oPXL8FHG9bzxSRv_XI8a1ISC77L5CDulavY_qQsqbDBozDZVQ3vupzXTGo"
   },
   "21_lumina-dtc-ecommerce": {
     "title": "Lumina \u2014 Luxury Skincare DTC E-Commerce Theme",
     "kind": "web",
-    "iv": "Yk62UlePFnbM7poR",
-    "ct": "pFYUc7qI7nYIk6vIucJMJOMQ47RXhibvsGvLCdcFtAteLfxYr1rUQ4zDus5E41bs0MWjgVpSTcv-L5pw0tgdZY94034WBTkfPcUTze0YioDU"
+    "iv": "NqVn-2VxTfkEyUIc",
+    "ct": "I4Jsiz2H6vhZzz10TaGytPv4e9U9bg5k6u_Q0RrlNxviIE3rxrq8Mwm77r0jT3WkLYXScYtn3YXIDCkWhyhV5lPbxcL3AryyhBns3CT84_CKHowxfsStBfk"
   },
   "22_wealth-engine-5in1": {
     "title": "Wealth Engine 5-in-1 Executive Financial Bundle",
     "kind": "kit",
-    "iv": "7BV3mxaeR4sZuVgb",
-    "ct": "vwr0dA0vu-qwxIdYqOuQu1amRRg8VSoO4NJA8wpNWlnP2Q61jpsRJ740UxGz3nNYsgGHb044ILn1AGulBPdMq4kFldW7HCEWGgS1RqQ6baz8zACLHXSwBOjzG6o8oHgKdKt4MoXvfM0SKvpEgQ9wkfN-bg_z9fNz0nDaqXIr_G83amR8fhwWBaZ-tO6E9e5ydsKI6DS6QKD1BtEZn2ylltsxiz2hKxuP"
+    "iv": "1XU8B05gi5dPNjtq",
+    "ct": "77rOw1nktJewU88LQEYcKkg25ufpvE11hCYFX-lWD-lTxWvWKd27L9FgupZF69MkRrJCR2uP7FHb8Ca_f0i72qt8MsGeoGzg6heWG3q6rY1N2t1nd11Rj5b_nWePPEjL3DA68knxWc3fb1uCc-Szc6HPFRwAZVAuSo7HsPXH58duqVhSnEujBGBdn5qRm40BquHhLDTcKWVNv7CYwch9lWJCIqj8yR1Br2508LEsDho8-ELixY3jEy43woNiNLf5i0m3MbrRqwaH_6yy0hAetht-4gpRQj1gDIQH"
   },
   "23_founder-pitch-5in1": {
     "title": "Founder Pitch 5-in-1 Institutional Series A/B Suite",
     "kind": "kit",
-    "iv": "WfZxGrD7Ehwyg7GJ",
-    "ct": "5BrSZzM0mM3TuTbaKy8K_7nOOiB4ZPqFEC3CUPUsMkRR-7vA9CBNUMEQfDqAFAc640sJfMBpCx4R3zKc6Kt6KQyv-43zeecbHzj5vN4hYrJwyHMIAxvRmhEnkMiws4slnr3STKZ6FcfDGDO0nLGMHDfNoXjoLrKz5Kk6K_t9QNiR9oro58MCmQBgOA315UJrG9zJIZN_UX-vobIWq6R8EztYhGZrnRG1"
+    "iv": "tPgeit2zs7x_sCKN",
+    "ct": "0vHN5lUaEMLkzRvIaAd6hwhC_rs96f32cvzEavRqpPrStQJJS7tZZbiw6G_U0saEwc06ZfIm7vBOo3-1PpZgfVntW2iAECVxKrpfPFV4O5sQ3yLBdaRK1LRDTKZTgVjnQJ-yVTRp3COYNGlsnbTTE7-6ftsMFVoLqEwM0f-7VgjVCMXI3AxuHUK9gH8uGeeqg7C3e6nnseCr2Iu11xp86_y9hpROjDou-GUhnx4PLzhYlJIgChOD2C2oisrrhdYPr7ux8GhB3RPKEPCH4cJEM01rdGNcQtmUtuBA"
   },
   "24_masterclass-deck-5in1": {
     "title": "Masterclass Deck 5-in-1 Accelerator Suite",
     "kind": "kit",
-    "iv": "bY0UBDMvOUKhy9Sy",
-    "ct": "AlMUWJx1CFKHd7blOilGhskGFHnS6-s4A8fIXahYZH7ygA1xp632r2_n1yyU74wu8uGrV03aEuyjtRC5f-qT4c3Tsj2RQlb3kEZ1KsUI6JZag_I-ZXakuuTeumikk2LlLHUJD8YRz-KK5XnQOLNjwlp-IkjO_N2zjjm7Ls8eK4UOllZtVxH30cr1IlsBICnr3pfLOEePNd5D1TrgnFa9lf-BZYy1mAFO"
+    "iv": "S8K28eGIaB6SZJYO",
+    "ct": "pGDlrtVTVlZYXBPeay1TNnqWn1hbMl-xobQjgBQm9ZYaXoicX-R_mnhPStEWTq8yzUAc5FW9rjk8qTDWPbvFW38fuhg7unrczrV9mvGuMWOtXBeO6xxmZodAu3VPiWpdEc0hGehPprHCYLzMuAY786Xq9g-B4a6aBHimNsP7FddDQf3Am_fjcWlVby3jnO0pcqKMtZmaPPgZ8CuyNFIE3Ytp6k-IHdSXhBwBL7Mcc8YfHpvSInYCgbyTbGBz2eijfeOsUlUPcd3mUw4qfBLbsAJyK910NMglzE8c"
   },
   "25_wedding-suite-5in1": {
     "title": "Wedding Suite 5-in-1 Heirloom Planning Book",
     "kind": "kit",
-    "iv": "ywV53V7lTUiGwaT4",
-    "ct": "P7DGGuGOfLqq2uDbxBh_DUW2KQHPqRGsQJXh5iv-ugNQlIU3fNx-uECS4WAFTzLOW2Arudtp4Hvm5YGBCVAW7pDjfnSrACxrP8cQb9cH9XUOMJAWHlPqA6-_BHzH3uospDDlFPFWcI1OHYFHS0HSv8c_mBQ-8g43-QuDqOhUlFzernTh0QUqXRBUz7jdzBUlC5KimJI1Tr80szsVABjqhxVWP-VQSXrx"
+    "iv": "faVAjVOhtIrfJvJU",
+    "ct": "zPgowk4OhHWXXjHLCjHKHg4KVQl62L0XbM6tQHA1QBOQZc7IBlT08JSyxkub4WC4bo7JNYMxYWDO_x_NQHFRoumGtUeqTqhjxPRLUWWhaxi6AMaMu4TPZVUbariyulINj5oU3YhRegAB8sFNzC2ry5AXBH7Kq-n3pL3f1B2Uf9oe7gGAUwAkKvF-lyTTTih65JIPNd_IdlaguiWhhZeqOvK4ry55ts0fsBpwdFohFESdi2MJZjxKXRiMn5Y0eavwQt8jC2X7nYBUZKxYsZ25Xbxp1olgF2LOO8wX"
   },
   "26_fitness-protocol-5in1": {
     "title": "Fitness Protocol 5-in-1 Athletic Periodization Suite",
     "kind": "kit",
-    "iv": "ep1W4-V1OCvH_5dc",
-    "ct": "enm8i1yeNEM4UauA78-IDfvAJag8nXd_k8U27PsbC3YAuslemEDyLueMS96T9zsqak0ThhhtyzgIfd9MR1h4Zb48PwQtPflpxSSjJKfdWfxIUsQ-45nRMIce_vBM18CRMJ7b1i9XJiskwdo7b-F5Gu24VKm9mThKLI84ej-Tuw76pDjB00syKNy4Ufvbqd6hTjcolXx7eFfAFFhr2hxdvUhNwjO_1AOo"
+    "iv": "-5k1uioK97JuRLXO",
+    "ct": "6k3x5EMn39UjcyJcGrzsNXuU_d2XYwX-6-1I0CcF3M_mC6HKXL228BmxfCnT1y6eiwLpiVdSutHRn1KPlQklbHzViwJc-E8Jox1Mp8bBDkmRQUNKgzuH_7-t_Oi6KY_NQIMoXIRTWuapbw_PgC064jleNa2higCE5HMH_2qG9RJ2xzEIJ2KDM6P9FrQ8C-OFflQL7Eiw3CUwUDoywzIPjNH_RTYaVNFG"
   },
   "27_brand-guidelines-5in1": {
     "title": "Brand Guidelines 5-in-1 Architectural Studio System",
     "kind": "kit",
-    "iv": "CdQh4w6WNgMZc8nk",
-    "ct": "JGXcrh5TVoH-6gairSP7lE3qi0HNQZtJDhkLboSCByhOaK6G5o04iVWYsvbu8nT-0D9pURjqCSLJ7uyZI7phNuBdcvBIOAH-vjsBUu6xz_86Ks-x4apjGwy8uKzNk8ZrMHpVcI3JhTPp9mtj3-wYb7g6bCkRw-pv-s6TOBH5du-dwO-Xn2d4ONVTl-pT_HwoYeqe_d3rziuNKtabT91mfvrpPvLLyOo-"
+    "iv": "QK2271c-IhPMSrca",
+    "ct": "Fv6Dzb4o0v-DFiew4dDN-Np0xcvv-po9Pqn2-HoXjgWEREfIACaAY9YHBS42_AdA19OzW6ncj3WrsJalba64kekoG5puvDcyvoGiH8AxYKA9OtsC1Pyml85qm5HFIEIhdf2tHf6-4k0_gUqUpidXwI5xebFglJz5N6cgwLJ-5oBbX9jwgLJ_Li1N-hPuUWUIVKiOemWLoIN-2mYvUHOo5WOcBiEcvqqR"
   },
   "28_viral-carousel-5in1": {
     "title": "Viral Carousel 5-in-1 LinkedIn & IG Growth Pack",
     "kind": "kit",
-    "iv": "B7Do3jdyNsIaPRBr",
-    "ct": "WV0YZoPdk8PhyyoDgaBWLuk5LdANQnoafbBx9K14B7JzOkiwatISghec7Y7Kwua1N1RExOFbLuGGE3Z-3VH_WQAmsc5QxQVxPSjCQ_d2gdzuvExSiWnw7Nh2sW6bGHv_awF98uOeAID-94CuMR7e3zuP6zu10zljmAmoAwsxtDo5hUk_8HdYyhgTdNm__5-RzeTUIHnCPi0n25l8S7pilupH0Aza77Yp"
+    "iv": "RR8jTOLn2aJN0RX2",
+    "ct": "piSkqBi6kWIYXBtuFhT01DRxySpZkCmNFbZEHx48ZWqLXqoLFWCjf5FNynhScCzNmJGn9-pLDYsxfY1ORZ0qK_jqvHu6BQxO14D1kRaPjhCHqquBcjmiW0IG2Fsn1OxteDhNXMkQg__ZLvPuAxhRXFnXCk_AgwAxd7RMkg6KbZmHtWGGFIF95HZLb-74q1oO79n5c74hiU4mXbvMBQPQOWrjNn6vYFNI"
   },
   "29_client-pipeline-5in1": {
     "title": "Client Pipeline 5-in-1 Agency Operations Manual",
     "kind": "kit",
-    "iv": "D6noKSLKj3XIlwPg",
-    "ct": "MEtraYhxrXCDCV4gzVz1FwRMs6t2dD0WVBGz_76yxxpZ4NezYPl8TAFZYKuk42BhCqe6EhUQ-hq0woR2yq9KjaTXiQZNxrHe6GSpgqi34sffinhS_2WGfO5fxL7ioPzbiXAetEKIOhBx2tzaUylU_yqzsGund-s4b1y5CR-ZpVif73vqSsNr3s_tFJUMYo7GgA-I8S2783zVAXFybu6lqoShD4Hr3PF2"
+    "iv": "RkkWU-9MTM8sKmee",
+    "ct": "gUqzqyQF4yqQ0Kwne4QkvEDMY2T3BsDthoSmnA3B-us8UjIBMPXtMGY_XIVy5DSdnsY9CexkiAoViDfX2NBnAKedzhrf8moSQsk7Tky8BAM7QbzZt5NrFLSBsOzA0LV4Dedueu6ym51iyuRjXNKAy5sDlCd0aU1CSOgbDTz-3319qHLU_nl3AUSjxETW0hJ9i8KevhtRNfIzugX3kIXvR5RTQ7F3q1Yc"
   },
   "30_executive-resume-5in1": {
     "title": "Executive Resume 5-in-1 Board & Advisory Career Suite",
     "kind": "kit",
-    "iv": "1nI5odAi17lF10-F",
-    "ct": "0SebsyBYlCKY6sxXCicy1rdFdBa-14zJ-l6jVrLNBU2IsHhQdkccL6UpQVcRUiOTd4tMwENPCSKwSsIJc8F0f_FgqMMcTHulHVbx6D73Zu_W_crOdHS4ErufYUmQVRD-P_SBE8o3v6kDPK2zqiLer643rDsac-WA0V1d96PzvooJVnw9L2pGx9mcT7dG3YUKTHmu_pzRkVBQiBQZhLyYvmfWN74HoQNj"
+    "iv": "J9y5NRSOL3fHlSdL",
+    "ct": "8MGaXHm22-1TQIQom9ro9JTN_qoiu_3OVWHjh8BwOnr2OIn6_5JJ49G3G1u1o_YGGRPXM1hJCkl6YHK9Vn4OWCAwuEcD7j7EHoDaJenC8kR8RkKX39jNUCVPsZ5tnsI9GbCL3cirdOIo8_0nQusiJQXYr8GYiIADixaxf5HGCM-hKdOFKh_f2kv0JnX7bqkyKWRRSGQxvtvIEmG2cVfETon8E5j6thRx"
   }
 };

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="380" viewBox="0 0 420 380" fill="none">
+  <defs>
+    <radialGradient id="halo" cx="50%" cy="46%" r="50%">
+      <stop offset="0%" stop-color="#C5A880" stop-opacity="0.42"/>
+      <stop offset="70%" stop-color="#E8DDD0" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#F3EFE8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="amber" x1="150" y1="100" x2="270" y2="336" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#6B421A"/>
+      <stop offset="50%" stop-color="#3E230B"/>
+      <stop offset="100%" stop-color="#221205"/>
+    </linearGradient>
+    <linearGradient id="goldcap" x1="184" y1="42" x2="236" y2="104" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#F2E2CC"/>
+      <stop offset="50%" stop-color="#C5A880"/>
+      <stop offset="100%" stop-color="#9A7B52"/>
+    </linearGradient>
+  </defs>
+  <circle cx="210" cy="188" r="158" fill="url(#halo)"/>
+  <ellipse cx="210" cy="340" rx="84" ry="12" fill="#181615" fill-opacity="0.14"/>
+  <rect x="195" y="42" width="30" height="32" rx="14" fill="#181615"/>
+  <rect x="180" y="68" width="60" height="32" rx="5" fill="url(#goldcap)" stroke="#9A7B52"/>
+  <rect x="142" y="100" width="136" height="236" rx="22" fill="url(#amber)"/>
+  <rect x="150" y="112" width="14" height="206" rx="7" fill="#FFFFFF" fill-opacity="0.13"/>
+  <rect x="156" y="152" width="108" height="148" rx="6" fill="#FAF7F2"/>
+  <rect x="162" y="158" width="96" height="136" rx="4" stroke="#E2D9CC" stroke-width="1"/>
+  <text x="210" y="182" text-anchor="middle" font-family="sans-serif" font-size="8" font-weight="700" letter-spacing="2" fill="#8A7E72">LUMINA LABS</text>
+  <text x="210" y="210" text-anchor="middle" font-family="Georgia, serif" font-size="13.5" font-weight="700" fill="#181615">CELLULAR 01</text>
+  <line x1="176" y1="222" x2="244" y2="222" stroke="#C5A880" stroke-width="1"/>
+  <text x="210" y="242" text-anchor="middle" font-family="sans-serif" font-size="7.5" font-weight="700" letter-spacing="1.2" fill="#9A7B52">BIO-LIPID BARRIER</text>
+  <text x="210" y="255" text-anchor="middle" font-family="sans-serif" font-size="7.5" font-weight="700" letter-spacing="1.2" fill="#9A7B52">THERAPY COMPLEX</text>
+  <text x="210" y="280" text-anchor="middle" font-family="sans-serif" font-size="7.5" fill="#7D756C">50 ml / 1.7 fl oz</text>
+</svg>
